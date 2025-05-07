@@ -8,6 +8,16 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.utils.data import TensorDataset, DataLoader
 from transformers import AutoTokenizer
+from huggingface_hub import login
+
+
+login()
+
+
+tokenizer = AutoTokenizer.from_pretrained("google-bert/bert-base-cased")
+if tokenizer.pad_token is None:
+    tokenizer.pad_token = tokenizer.eos_token
+
 
 
 SPECIAL_WORDS = {'PADDING': '<PAD>'}
@@ -128,65 +138,36 @@ def train_rnn(rnn, batch_size, optimizer, criterion, n_epochs, device, show_ever
     return rnn
 
 
-def generate(rnn, prime_id, int_to_vocab, token_dict, pad_value, device, predict_len=100):
+def generate(rnn, prime_id, pad_token_id, device, predict_len=100):
     """
-    Generate text using the neural network
-    :param decoder: The PyTorch Module that holds the trained neural network
-    :param prime_id: The word id to start the first prediction
-    :param int_to_vocab: Dict of word id keys to word values
-    :param token_dict: Dict of puncuation tokens keys to puncuation values
-    :param pad_value: The value used to pad a sequence
-    :param predict_len: The length of text to generate
-    :return: The generated text
+    Generate text using the trained RNN and BERT tokenizer.
     """
     rnn.eval()
-    
-    # create a sequence (batch_size=1) with the prime_id
-    current_seq = np.full((1, sequence_length), pad_value)
-    current_seq[-1][-1] = prime_id
-    predicted = [int_to_vocab[prime_id]]
-    
+
+    sequence_length = 10  # same as training
+    current_seq = np.full((1, sequence_length), pad_token_id)
+    current_seq[0, -1] = prime_id
+    predicted_ids = [prime_id]
+
     for _ in range(predict_len):
-        current_seq = torch.LongTensor(current_seq).to(device)
-        
-        # initialize the hidden state
-        hidden = rnn.init_hidden(current_seq.size(0), device)
-        
-        # get the output of the rnn
-        output, _ = rnn(current_seq, hidden)
-        
-        # get the next word probabilities
-        p = F.softmax(output, dim=1).data
-        p = p.cpu() # move to cpu
-         
-        # use top_k sampling to get the index of the next word
+        input_tensor = torch.LongTensor(current_seq).to(device)
+        hidden = rnn.init_hidden(input_tensor.size(0), device)
+
+        output, _ = rnn(input_tensor, hidden)
+        p = F.softmax(output, dim=1).data.cpu()
+
         top_k = 5
         p, top_i = p.topk(top_k)
         top_i = top_i.numpy().squeeze()
-        
-        # select the likely next word index with some element of randomness
         p = p.numpy().squeeze()
-        word_i = np.random.choice(top_i, p=p/p.sum())
-        
-        # retrieve that word from the dictionary
-        word = int_to_vocab[word_i]
-        predicted.append(word)     
-        
-        # the generated word becomes the next "current sequence" and the cycle can continue
-        current_seq = np.roll(current_seq.cpu(), -1, 1)
-        current_seq[-1][-1] = word_i
-    
-    gen_sentences = ' '.join(predicted)
-    
-    # Replace punctuation tokens
-    for key, token in token_dict.items():
-        ending = ' ' if key in ['\n', '(', '"'] else ''
-        gen_sentences = gen_sentences.replace(' ' + token.lower(), key)
-    gen_sentences = gen_sentences.replace('\n ', '\n')
-    gen_sentences = gen_sentences.replace('( ', '(')
-    
-    # return all the sentences
-    return gen_sentences
+
+        next_token_id = np.random.choice(top_i, p=p/p.sum())
+        predicted_ids.append(next_token_id)
+
+        current_seq = np.roll(current_seq, -1, axis=1)
+        current_seq[0, -1] = next_token_id
+
+    return predicted_ids
 
 
 def load_data(path: str) -> str:
@@ -197,25 +178,21 @@ def load_data(path: str) -> str:
     return data
 
 
-def preprocess_and_save_data(dataset_path, token_lookup, create_lookup_tables):
+def preprocess_and_save_data(dataset_path):
     """
-    Preprocess Text Data
+    Preprocess Text Data using BERT tokenizer
     """
     text = load_data(dataset_path)
+
+    # Tokenize using BERT tokenizer
+    tokens = tokenizer.encode(text, add_special_tokens=False)
     
-    # Ignore notice, since we don't use it for analysing the data
-    text = text[81:]
+    # Use tokenizer's vocab
+    vocab_to_int = tokenizer.get_vocab()
+    int_to_vocab = {idx: token for token, idx in vocab_to_int.items()}
 
-    token_dict = token_lookup()
-    for key, token in token_dict.items():
-        text = text.replace(key, ' {} '.format(token))
-
-    text = text.lower()
-    text = text.split()
-
-    vocab_to_int, int_to_vocab = create_lookup_tables(text + list(SPECIAL_WORDS.values()))
-    int_text = [vocab_to_int[word] for word in text]
-    pickle.dump((int_text, vocab_to_int, int_to_vocab, token_dict), open('preprocess.p', 'wb'))
+    token_dict = {}  # no longer needed, but keeping for compatibility
+    pickle.dump((tokens, vocab_to_int, int_to_vocab, token_dict), open('preprocess.p', 'wb'))
 
 
 def load_preprocess():
@@ -345,7 +322,8 @@ if __name__ == "__main__":
     print('The lines {} to {}:'.format(*view_line_range))
     print('\n'.join(text.split('\n')[view_line_range[0]:view_line_range[1]]))
 
-    preprocess_and_save_data(data_dir, token_lookup, create_lookup_tables)
+    #preprocess_and_save_data(data_dir, token_lookup, create_lookup_tables)
+    preprocess_and_save_data(data_dir)
 
 
     int_text, vocab_to_int, int_to_vocab, token_dict = load_preprocess()
@@ -395,8 +373,8 @@ if __name__ == "__main__":
     # Show stats for every n number of batches
     show_every_n_batches = 500
 
-    # device = torch.device("mps")
-    device = torch.device("cuda")
+    device = torch.device("mps")
+    # device = torch.device("cuda")
 
     rnn = RNN(vocab_size, output_size, embedding_dim, hidden_dim, n_layers, dropout=0.5)
     rnn.to(device)
@@ -418,10 +396,13 @@ if __name__ == "__main__":
     # tokenizer = AutoTokenizer.from_pretrained("google-bert/bert-base-cased")
     # tokenizer.pad_token = tokenizer.eos_token
 
-    gen_length = 50 # modify the length to your preference
-    prime_words = ["dulcinea"] # name for starting the script
+    gen_length = 50  # desired generation length
+    prime_texts = ["dulcinea"]  # prompt text(s)
 
-    for prime_word in prime_words:
-        pad_word = SPECIAL_WORDS['PADDING']
-        generated_script = generate(trained_rnn, vocab_to_int[prime_word], int_to_vocab, token_dict, vocab_to_int[pad_word], device, gen_length)
-        print(generated_script)
+    pad_token_id = tokenizer.convert_tokens_to_ids(tokenizer.pad_token)
+
+    for prime_text in prime_texts:
+        encoded = tokenizer.encode(prime_text, add_special_tokens=False)
+        prime_id = encoded[-1] if encoded else pad_token_id  # fallback if empty
+        generated_script = generate(trained_rnn, prime_id, pad_token_id, device, gen_length)
+        print(tokenizer.decode(generated_script, skip_special_tokens=True))
