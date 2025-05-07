@@ -2,3 +2,5 @@
 .venv/
 data/
 trained_models/
+notebooks/preprocess.p
+notebooks/trained_rnn.pt
