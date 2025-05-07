@@ -395,7 +395,8 @@ if __name__ == "__main__":
     # Show stats for every n number of batches
     show_every_n_batches = 500
 
-    device = torch.device("mps")
+    # device = torch.device("mps")
+    device = torch.device("cuda")
 
     rnn = RNN(vocab_size, output_size, embedding_dim, hidden_dim, n_layers, dropout=0.5)
     rnn.to(device)
