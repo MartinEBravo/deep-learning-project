@@ -6,7 +6,7 @@ import train as trainer
 import tokenizer as tk
 
 # Data
-train_data, val_data = data.load_data(config.input_file, tk.encode)
+train_data, val_data = data.load_data(config.input_file, tk.encode, config.block_size, tk.tokenizer.pad_token_id)
 
 # Model
 m = gpt_model.GPTLanguageModel(

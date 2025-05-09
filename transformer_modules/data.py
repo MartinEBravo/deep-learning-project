@@ -1,9 +1,18 @@
 import torch
 
-def load_data(input_file, encode):
+def split_into_blocks(encoded_data, block_size, pad_token_id):
+    num_blocks = (len(encoded_data) + block_size - 1) // block_size
+    blocks = [encoded_data[i * block_size:(i + 1) * block_size] for i in range(num_blocks)]
+    blocks = [torch.cat([b, torch.full((block_size - len(b),), pad_token_id)])
+                if len(b) < block_size else b for b in blocks]
+    return blocks
+
+def load_data(input_file, encode, block_size, pad_token_id):
     with open(input_file, 'r', encoding='utf-8') as f:
         text = f.read()
-    data = torch.tensor(encode(text), dtype=torch.long)
+    encoded_data = torch.tensor(encode(text), dtype=torch.long)
+    blocks = split_into_blocks(encoded_data, block_size, pad_token_id)
+    data = torch.cat(blocks)
     n = int(0.9 * len(data))
     train_data = data[:n]
     val_data = data[n:]
