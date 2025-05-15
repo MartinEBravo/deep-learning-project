@@ -1,4 +1,3 @@
-import os
 import pickle
 
 import numpy as np
@@ -7,14 +6,6 @@ from torch.utils.data import TensorDataset, DataLoader
 from transformers import AutoTokenizer
 
 from dlkth.tokenizer import tokenize_text
-
-
-def load_data(path: str) -> str:
-    input_file = os.path.join(path)
-    with open(input_file, "r") as f:
-        data = f.read()
-
-    return data
 
 
 def batch_data(
@@ -77,7 +68,7 @@ def split_into_blocks(encoded_data, block_size, pad_token_id):
     return blocks
 
 
-def load_data(input_file, encode, block_size, pad_token_id):
+def load_transformer_data(input_file, encode, block_size, pad_token_id):
     with open(input_file, "r", encoding="utf-8") as f:
         text = f.read()
     encoded_data = torch.tensor(encode(text), dtype=torch.long)

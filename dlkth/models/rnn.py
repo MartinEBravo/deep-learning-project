@@ -1,5 +1,3 @@
-import os
-
 import numpy as np
 import torch
 from torch import nn
@@ -130,7 +128,7 @@ class RNN(nn.Module):
                     batch_losses = []
 
         print("Training complete.")
-        
+
 
 def generate(
     rnn: RNN,

@@ -4,26 +4,23 @@ from torch import nn
 
 from dlkth.data_loader import (
     batch_data,
-    load_data,
     preprocess_and_save_data,
     load_preprocess,
 )
-from dlkth.config import (
-    config_rnn,
-    config_transformer
-)
-from dlkth.models.rnn import RNN, generate
-from dlkth.models.utils import (
-    save_model, 
-    load_model
-)
+from dlkth.config import config_rnn, config_transformer
+from dlkth.models.rnn import RNN
+from dlkth.models.utils import save_model
 from dlkth.models.transformer import Transformer
-from dlkth.tokenizer import get_tokenizer, tokenize_text, detokenize_text
+from dlkth.tokenizer import get_tokenizer
+
 
 def run_workflow(
-        model_name: str = "rnn" # "rnn" or "transformer"
-    ):
-
+    model_name: str = "rnn",  # "rnn" or "transformer"
+):
+    if model_name.lower() == "rnn":
+        config = config_rnn
+    else:
+        config = config_transformer
     # Tokenization
     tokenizer = get_tokenizer(config.tokenizer_model_name)
     preprocess_and_save_data(dataset_path=config.data_dir, tokenizer=tokenizer)
@@ -37,10 +34,7 @@ def run_workflow(
     )
     vocab_size = len(vocab_to_int)
     output_size = vocab_size
-
-    
-    device = torch.device(config.device_name)
-
+    config = None
     if model_name.lower() == "rnn":
         config = config_rnn
         model = RNN(
@@ -54,14 +48,15 @@ def run_workflow(
 
     elif model_name.lower() == "transformer":
         config = config_transformer
-        model = Transformer( 
+        model = Transformer(
             vocab_size=vocab_size,
             n_embd=config.embedding_dim,
             n_head=config.n_head,
             n_layer=config.n_layers,
-            block_size=config.block_size
+            block_size=config.block_size,
             dropout=config.dropout,
         )
+    device = torch.device(config.device_name)
     model.to(device)
 
     optimizer = torch.optim.Adam(model.parameters(), lr=config.learning_rate)

@@ -2,6 +2,7 @@ from dataclasses import dataclass
 
 DEFAULT_MODEL = "google-bert/bert-base-cased"
 
+
 @dataclass
 class Config:
     """
@@ -22,8 +23,7 @@ class Config:
     learning_rate: float
     embedding_dim: int
 
-
-    n_layers: int    # Miscellaneous parameters
+    n_layers: int  # Miscellaneous parameters
     show_every_n_batches: int
     device_name: str
 
@@ -38,14 +38,17 @@ class ConfigRNN(Config):
     """
     Configuration class for the RNN model.
     """
+
     # M    hidden_dim: int
     n_layers: int
+
 
 @dataclass
 class ConfigTransformers(Config):
     """
     Configuration class for the Transformers model.
     """
+
     n_head: int
     eval_interval: int
     block_size: int
