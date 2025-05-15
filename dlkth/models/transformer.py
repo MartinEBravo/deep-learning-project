@@ -1,8 +1,11 @@
 import copy
 
+import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+from torch.optim import Optimizer
+from torch.utils.data import DataLoader
 
 
 class Head(nn.Module):
@@ -110,8 +113,8 @@ class Transformer(nn.Module):
         elif isinstance(module, nn.Embedding):
             torch.nn.init.normal_(module.weight, mean=0.0, std=0.02)
 
-    def forward(self, idx, targets=None):
-        B, T = idx.shape
+    def forward(self, idx):
+        _, T = idx.shape
 
         # idx and targets are both (B,T) tensor of integers
         tok_emb = self.token_embedding_table(idx)  # (B,T,C)
@@ -123,15 +126,21 @@ class Transformer(nn.Module):
         x = self.ln_f(x)  # (B,T,C)
         logits = self.lm_head(x)  # (B,T,vocab_size)
 
-        if targets is None:
-            loss = None
-        else:
-            B, T, C = logits.shape
-            logits = logits.view(B * T, C)
-            targets = targets.view(B * T)
-            loss = F.cross_entropy(logits, targets)
+        return logits
 
-        return logits, loss
+    def get_loss_by_criterion(
+        self,
+        y_hat: torch.Tensor,
+        targets: torch.Tensor,
+        criterion: nn.Module,
+    ) -> torch.Tensor:
+        B, T, C = y_hat.shape
+        print(f"y_hat: {y_hat.shape}, targets: {targets.shape}")
+        y_hat = y_hat.view(B * T, C)
+        targets = targets.view(B * T)
+
+        return criterion(y_hat, targets)
+
 
     def generate(self, idx, max_new_tokens, block_size, sep_token_id=None):
         # idx is (B, T) array of indices in the current context
@@ -156,59 +165,92 @@ class Transformer(nn.Module):
                 break  # salimos del bucle si encontramos SEP
         return idx
 
-    def train_model(
+    def train_model(    
         self,
-        optimizer,
-        train_data,
-        val_data,
-        get_batch,
-        estimate_loss,
-        max_iters,
-        eval_interval,
-        patience=3,
+        train_loader: DataLoader,
+        batch_size: int,
+        optimizer: Optimizer,
+        criterion: nn.Module,
+        n_epochs: int,
+        device: torch.device,
+        show_every_n_batches=100,
+        # self,
+        # optimizer,
+        # train_data,
+        # n_epochs,
+        # criterion,
+        # val_data,
+        # get_batch,
+        # estimate_loss,
+        # max_iters,
+        # eval_interval,
+        # patience=3,
     ):
         best_val_loss = float("inf")
         best_model = copy.deepcopy(self.state_dict())
         patience_counter = 0
 
-        for iter in range(max_iters):
-            if iter % eval_interval == 0 or iter == max_iters - 1:
-                losses = estimate_loss(
-                    self, get_batch, train_data, val_data, eval_interval
-                )
-                val_loss = losses["val"]
-                print(
-                    f"step {iter}: train loss {losses['train']:.4f}, val loss {losses['val']:.4f}"
-                )
+        batch_losses = []
 
-                # early stopping check
-                if val_loss < best_val_loss:
-                    best_val_loss = val_loss
-                    best_model = copy.deepcopy(self.state_dict())
-                    patience_counter = 0
-                else:
-                    patience_counter += 1
-                    if patience_counter >= patience:
-                        print(f"Early stopping at step {iter}")
-                        break
+        #for iter in range(max_iters):
+        for epoch_i in range(n_epochs):
+            for batch_i, (inputs, labels) in enumerate(train_loader, 1):
+                # if iter % eval_interval == 0 or iter == max_iters - 1:
+                #     losses = estimate_loss(
+                #         self, get_batch, train_data, val_data, eval_interval
+                #     )
+                #     val_loss = losses["val"]
+                #     print(
+                #         f"step {iter}: train loss {losses['train']:.4f}, val loss {losses['val']:.4f}"
+                #     )
 
-            xb, yb = get_batch("train", train_data, val_data)
-            logits, loss = self.forward(xb, yb)
-            optimizer.zero_grad(set_to_none=True)
-            loss.backward()
-            optimizer.step()
+                #     # early stopping check
+                #     if val_loss < best_val_loss:
+                #         best_val_loss = val_loss
+                #         best_model = copy.deepcopy(self.state_dict())
+                #         patience_counter = 0
+                #     else:
+                #         patience_counter += 1
+                #         if patience_counter >= patience:
+                #             print(f"Early stopping at step {iter}")
+                #             break
+
+                inputs, labels = inputs.to(device), labels.to(device)
+
+                y_hat = self.forward(inputs).to(device)
+
+                loss = self.get_loss_by_criterion(
+                    y_hat=y_hat,
+                    targets=labels,
+                    criterion=criterion,
+                )
+                batch_losses.append(loss)
+
+                optimizer.zero_grad(set_to_none=True)
+                loss.backward()
+                optimizer.step()
+
+                if batch_i % show_every_n_batches == 0:
+                    print(
+                        "Epoch: {:>4}/{:<4}  Loss: {}\n".format(
+                            epoch_i, n_epochs, np.average(batch_losses)
+                        )
+                    )
+                    batch_losses = []
+
 
         self.load_state_dict(best_model)
 
 
-@torch.no_grad()
-def estimate_loss(model, get_batch, train_data, val_data, eval_iters):
-    out = {}
-    for split in ["train", "val"]:
-        losses = torch.zeros(eval_iters)
-        for k in range(eval_iters):
-            X, Y = get_batch(split, train_data, val_data)
-            _, loss = model.forward(X, Y)
-            losses[k] = loss.item()
-        out[split] = losses.mean()
-    return out
+# @torch.no_grad()
+# def estimate_loss(model, get_batch, train_data, val_data, eval_iters, criterion):
+#     out = {}
+#     for split in ["train", "val"]:
+#         losses = torch.zeros(eval_iters)
+#         for k in range(eval_iters):
+#             X, Y = get_batch(split, train_data, val_data)
+#             y_hat = model.forward(X)
+#             loss = model.get_loss_by_criterion(y_hat, Y, criterion)
+#             losses[k] = loss.item()
+#         out[split] = losses.mean()
+#     return out

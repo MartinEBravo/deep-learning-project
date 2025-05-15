@@ -16,7 +16,7 @@ def load_data(path: str) -> str:
     return data
 
 
-def batch_data(
+def get_rnn_train_loader(
     tokens: list[int],
     sequence_length: int,
     batch_size: int,
@@ -29,8 +29,8 @@ def batch_data(
     :return: DataLoader with batched data
     """
     n_batches = len(tokens) // batch_size
-    x, y = [], []
     tokens = tokens[: n_batches * batch_size]
+    x, y = [], []
 
     for ii in range(0, len(tokens) - sequence_length):
         i_end = ii + sequence_length
@@ -38,19 +38,18 @@ def batch_data(
         x.append(batch_x)
         batch_y = tokens[i_end]
         y.append(batch_y)
-
     data = TensorDataset(
-        torch.from_numpy(np.asarray(x)), torch.from_numpy(np.asarray(y))
+        torch.tensor(x), torch.tensor(y)
     )
-    data_loader = DataLoader(data, shuffle=True, batch_size=batch_size)
-
-    return data_loader
+    return DataLoader(data, shuffle=True, batch_size=batch_size)
 
 
-def batch_block_data(
-    blocks_of_tokens: list[list[int]],
+def get_transformer_train_loader(
+    tokens: list[int],
     sequence_length: int,
     batch_size: int,
+    block_size: int,
+    pad_token_id: int,
 ) -> DataLoader:
     """
     Batch the neural network data using DataLoader
@@ -59,16 +58,29 @@ def batch_block_data(
     :param batch_size: The size of each batch; the number of sequences in a batch
     :return: DataLoader with batched data
     """
-    n_batches = len(tokens) // batch_size
+    # n_batches = len(tokens) // batch_size
     x, y = [], []
-    tokens = tokens[: n_batches * batch_size]
 
-    for ii in range(0, len(tokens) - sequence_length):
-        i_end = ii + sequence_length
-        batch_x = tokens[ii : ii + sequence_length]
-        x.append(batch_x)
-        batch_y = tokens[i_end]
-        y.append(batch_y)
+    blocks = split_into_blocks(tokens, block_size, pad_token_id)
+    # tokens_in_blocks = torch.cat(blocks)
+
+    # train_data = data[:n]
+    # val_data = data[n:]
+    # return train_data, val_data
+
+    # tokens = tokens[: n_batches * batch_size]
+
+    for block in blocks:
+        x.append(block[:sequence_length])
+        y.append(block[sequence_length:])
+
+
+    # for ii in range(0, len(tokens) - sequence_length):
+    #     i_end = ii + sequence_length
+    #     batch_x = tokens[ii : ii + sequence_length]
+    #     x.append(batch_x)
+    #     batch_y = tokens[i_end]
+    #     y.append(batch_y)
 
     data = TensorDataset(
         torch.from_numpy(np.asarray(x)), torch.from_numpy(np.asarray(y))
@@ -76,6 +88,53 @@ def batch_block_data(
     data_loader = DataLoader(data, shuffle=True, batch_size=batch_size)
 
     return data_loader
+
+def get_transformer_validation_loader(
+    tokens: list[int],
+    sequence_length: int,
+    batch_size: int,
+    block_size: int,
+    pad_token_id: int,
+) -> DataLoader:
+    """
+    Batch the neural network data using DataLoader
+    :param words: The word ids of the TV scripts
+    :param sequence_length: The sequence length of each batch
+    :param batch_size: The size of each batch; the number of sequences in a batch
+    :return: DataLoader with batched data
+    """
+    # n_batches = len(tokens) // batch_size
+    x, y = [], []
+
+    blocks = split_into_blocks(tokens, block_size, pad_token_id)
+    # tokens_in_blocks = torch.cat(blocks)
+
+    # train_data = data[:n]
+    # val_data = data[n:]
+    # return train_data, val_data
+
+    # tokens = tokens[: n_batches * batch_size]
+
+    for block in blocks:
+        x.append(block[:sequence_length])
+        y.append(block[sequence_length:])
+
+
+    # for ii in range(0, len(tokens) - sequence_length):
+    #     i_end = ii + sequence_length
+    #     batch_x = tokens[ii : ii + sequence_length]
+    #     x.append(batch_x)
+    #     batch_y = tokens[i_end]
+    #     y.append(batch_y)
+
+
+    data = TensorDataset(
+        torch.from_numpy(np.asarray(x)), torch.from_numpy(np.asarray(y))
+    )
+    data_loader = DataLoader(data, shuffle=True, batch_size=batch_size)
+
+    return data_loader
+
 
 
 def preprocess_and_save_data(dataset_path: str, tokenizer: AutoTokenizer) -> None:
@@ -93,7 +152,8 @@ def load_preprocess() -> tuple:
     return pickle.load(open("preprocess.p", mode="rb"))
 
 
-def split_into_blocks(encoded_data, block_size, pad_token_id):
+def split_into_blocks(encoded_data, block_size, pad_token_id) -> list[torch.Tensor]:
+    encoded_data = torch.tensor(encoded_data, dtype=torch.long)
     num_blocks = (len(encoded_data) + block_size - 1) // block_size
     blocks = [
         encoded_data[i * block_size : (i + 1) * block_size] for i in range(num_blocks)

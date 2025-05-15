@@ -1,4 +1,4 @@
-from transformers import AutoTokenizer
+from transformers import AutoTokenizer # type: ignore
 
 from dlkth.config import DEFAULT_MODEL
 

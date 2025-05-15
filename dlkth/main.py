@@ -2,13 +2,15 @@ import time
 
 import torch
 from torch import nn
+from torch.utils.data import DataLoader
 
 from dlkth.data_loader import (
-    batch_data,
+    get_rnn_train_loader,
+    get_transformer_train_loader,
     preprocess_and_save_data,
     load_preprocess,
 )
-from dlkth.config import config_rnn, config_transformer
+from dlkth.config import Config, ConfigTransformers, config_rnn, config_transformer
 from dlkth.models.rnn import RNN
 from dlkth.models.utils import save_model
 from dlkth.models.transformer import Transformer
@@ -40,6 +42,32 @@ def get_model(vocab_size: int, output_size: int, model_name: str = "rnn"):
     raise NotImplementedError
 
 
+def get_train_loader(
+    tokens: list[int],
+    config: Config,
+    pad_token_id: int,
+    model_name: str = "rnn",
+) -> DataLoader:
+    if model_name.lower() == "rnn":
+        return get_rnn_train_loader(
+            tokens=tokens,
+            sequence_length=config.text_sequence_length,
+            batch_size=config.text_batch_size,
+        )
+
+    elif model_name.lower() == "transformer":
+        assert isinstance(config, ConfigTransformers)
+
+        return get_transformer_train_loader(
+            tokens=tokens,
+            sequence_length=config.text_sequence_length,
+            batch_size=config.text_batch_size,
+            block_size=config.block_size,
+            pad_token_id=pad_token_id,
+        )
+
+    raise NotImplementedError
+
 def run_workflow(
     model_name: str = "rnn",  # "rnn" or "transformer"
 ):
@@ -53,11 +81,13 @@ def run_workflow(
     tokens, vocab_to_int, _ = load_preprocess()
 
     # Create Dataset
-    train_loader = batch_data(
-        words=tokens,
-        sequence_length=config.text_sequence_length,
-        batch_size=config.text_batch_size,
+    train_loader = get_train_loader(
+        tokens=tokens,
+        config=config,
+        pad_token_id=tokenizer.pad_token_id,
+        model_name=model_name,
     )
+
     vocab_size = len(vocab_to_int)
     output_size = vocab_size
 
@@ -66,7 +96,7 @@ def run_workflow(
         vocab_size=vocab_size,
         output_size=output_size,
     )
-    
+
     device = torch.device(config.device_name)
     model.to(device)
 
@@ -105,3 +135,6 @@ def run_workflow(
     #         )
 
     #         print(detokenize_text(tokenizer=tokenizer, tokens=generated_script))
+
+if __name__ == "__main__":
+    run_workflow(model_name="transformer")
