@@ -1,4 +1,5 @@
 import time
+
 import torch
 from torch import nn
 
@@ -12,6 +13,31 @@ from dlkth.models.rnn import RNN
 from dlkth.models.utils import save_model
 from dlkth.models.transformer import Transformer
 from dlkth.tokenizer import get_tokenizer
+
+
+def get_model(vocab_size: int, output_size: int, model_name: str = "rnn"):
+    if model_name.lower() == "rnn":
+        config = config_rnn
+        return RNN(
+            vocab_size=vocab_size,
+            output_size=output_size,
+            embedding_dim=config.embedding_dim,
+            hidden_dim=config.hidden_dim,
+            n_layers=config.n_layers,
+            dropout=config.dropout,
+        )
+
+    elif model_name.lower() == "transformer":
+        config = config_transformer
+        return Transformer(
+            vocab_size=vocab_size,
+            n_embd=config.embedding_dim,
+            n_head=config.n_head,
+            n_layer=config.n_layers,
+            block_size=config.block_size,
+            dropout=config.dropout,
+        )
+    raise NotImplementedError
 
 
 def run_workflow(
@@ -34,28 +60,13 @@ def run_workflow(
     )
     vocab_size = len(vocab_to_int)
     output_size = vocab_size
-    config = None
-    if model_name.lower() == "rnn":
-        config = config_rnn
-        model = RNN(
-            vocab_size=vocab_size,
-            output_size=output_size,
-            embedding_dim=config.embedding_dim,
-            hidden_dim=config.hidden_dim,
-            n_layers=config.n_layers,
-            dropout=config.dropout,
-        )
 
-    elif model_name.lower() == "transformer":
-        config = config_transformer
-        model = Transformer(
-            vocab_size=vocab_size,
-            n_embd=config.embedding_dim,
-            n_head=config.n_head,
-            n_layer=config.n_layers,
-            block_size=config.block_size,
-            dropout=config.dropout,
-        )
+    model = get_model(
+        model_name=model_name,
+        vocab_size=vocab_size,
+        output_size=output_size,
+    )
+    
     device = torch.device(config.device_name)
     model.to(device)
 
