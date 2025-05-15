@@ -67,7 +67,7 @@ if __name__ == "__main__":
         embedding_dim=config.embedding_dim,
         hidden_dim=config.hidden_dim,
         n_layers=config.n_layers,
-        dropout=0.5,
+        dropout=config.dropout,
     )
     rnn.to(device)
 

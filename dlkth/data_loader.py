@@ -58,10 +58,11 @@ def get_transformer_train_loader(
     :param batch_size: The size of each batch; the number of sequences in a batch
     :return: DataLoader with batched data
     """
-    # n_batches = len(tokens) // batch_size
+    n_batches = len(tokens) // (batch_size*block_size)
     x, y = [], []
 
-    blocks = split_into_blocks(tokens, block_size, pad_token_id)
+    # blocks = split_into_blocks(tokens, block_size, pad_token_id)
+    tokens = torch.tensor(tokens, dtype=torch.long)
     # tokens_in_blocks = torch.cat(blocks)
 
     # train_data = data[:n]
@@ -70,9 +71,40 @@ def get_transformer_train_loader(
 
     # tokens = tokens[: n_batches * batch_size]
 
-    for block in blocks:
-        x.append(block[:sequence_length])
-        y.append(block[sequence_length:])
+    # for block in blocks:
+    #     x.append(block[:sequence_length])
+    #     y.append(block[sequence_length:])
+
+
+    #  x -> (n_batch, block_size)
+    # x -> (batch_size, block_size)
+    # X ->(n_batches (batch_size), block_size)-> n_batches * x
+
+
+    X = []
+    Y = []
+
+    for _ in range(n_batches):
+        ix = torch.randint(len(tokens) - block_size, (batch_size,))
+        x = torch.stack([tokens[i : i + block_size] for i in ix])
+        y = torch.stack([tokens[i + 1 : i + block_size + 1] for i in ix])
+
+        X.append(x)
+        Y.append(y)
+
+    # ix = torch.randint(0, len(tokens) - block_size, (n_batches, batch_size), dtype=torch.long)
+    # x = torch.stack(
+    #     [
+    #         torch.stack([tokens[i : i + block_size] for i in batch_ix])
+    #         for batch_ix in ix
+    #     ]
+    # )
+    # y = torch.stack(
+    #     [
+    #         torch.stack([tokens[i + 1 : i + block_size + 1] for i in batch_ix])
+    #         for batch_ix in ix
+    #     ]
+    # )
 
 
     # for ii in range(0, len(tokens) - sequence_length):
@@ -82,9 +114,7 @@ def get_transformer_train_loader(
     #     batch_y = tokens[i_end]
     #     y.append(batch_y)
 
-    data = TensorDataset(
-        torch.from_numpy(np.asarray(x)), torch.from_numpy(np.asarray(y))
-    )
+    data = TensorDataset(torch.cat(X), torch.cat(Y))
     data_loader = DataLoader(data, shuffle=True, batch_size=batch_size)
 
     return data_loader
@@ -116,9 +146,8 @@ def get_transformer_validation_loader(
     # tokens = tokens[: n_batches * batch_size]
 
     for block in blocks:
-        x.append(block[:sequence_length])
+        x.append(block[:sequence_length]) 
         y.append(block[sequence_length:])
-
 
     # for ii in range(0, len(tokens) - sequence_length):
     #     i_end = ii + sequence_length
