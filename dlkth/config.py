@@ -22,6 +22,7 @@ class Config:
     num_epochs: int
     learning_rate: float
     embedding_dim: int
+    hidden_dim: int
 
     n_layers: int  # Miscellaneous parameters
     show_every_n_batches: int
