@@ -37,7 +37,10 @@ def train_workflow(model_name: str, dataset: str):
     # Model instantiation
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
     if model_name == 'bigram':
-        model = Bigram(vocab_size).to(device)
+        model = Bigram(
+            vocab_size,
+            n_embd=32
+            ).to(device)
     elif model_name == 'rnn':
         raise NotImplementedError("RNN training not implemented yet")
     elif model_name == 'transformers':
@@ -50,7 +53,7 @@ def train_workflow(model_name: str, dataset: str):
         train_data,
         val_data,
         block_size=8,
-        batch_size=8,
+        batch_size=32,
         learning_rate=1e-2,
         device=device,
         eval_iters=200,
@@ -66,6 +69,9 @@ def train_workflow(model_name: str, dataset: str):
     # Save losses and model
     timestamp = int(time.time())
     losses = {
+        "model": model_name,
+        "dataset": dataset,
+        "time": timestamp,
         "train": train_losses,
         "val": val_losses,
         "sample": sample,
