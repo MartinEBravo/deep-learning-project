@@ -1,4 +1,5 @@
 import time
+from unittest import result
 import torch
 from torch import nn
 
@@ -13,7 +14,7 @@ from dlkth.config import Config, ConfigTransformers, config_rnn, config_transfor
 from dlkth.models.rnn import RNN
 from dlkth.models.transformer import Transformer
 from dlkth.models.bigram import Bigram
-from dlkth.models.utils import save_model
+from utils import save_model, save_results
 from dlkth.tokenizer import CharTokenizer
 
 
@@ -33,9 +34,8 @@ def train_workflow(model_name: str, dataset: str):
     train_data = data[:n]
     val_data = data[n:]
 
-    device = 'cuda' if torch.cuda.is_available() else 'cpu'
-
     # Model instantiation
+    device = 'cuda' if torch.cuda.is_available() else 'cpu'
     if model_name == 'bigram':
         model = Bigram(vocab_size).to(device)
     elif model_name == 'rnn':
@@ -46,7 +46,7 @@ def train_workflow(model_name: str, dataset: str):
         raise ValueError(f"Unknown model: {model_name}")
 
     # Train model
-    model.train_model(
+    train_losses, val_losses = model.train_model(
         train_data,
         val_data,
         block_size=8,
@@ -58,14 +58,21 @@ def train_workflow(model_name: str, dataset: str):
         eval_interval=300
     )
 
-    # Save model
-    timestamp = int(time.time())
-    save_model(f"checkpoints/{model_name}_{dataset}_{timestamp}.pt", model=model)
 
     # Generate sample
     context = torch.zeros((1, 1), dtype=torch.long, device=device)
-    print(decode(model.generate(context, max_new_tokens=500)[0].tolist()))
+    sample = decode(model.generate(context, max_new_tokens=500)[0].tolist())
 
+    # Save losses and model
+    timestamp = int(time.time())
+    losses = {
+        "train": train_losses,
+        "val": val_losses,
+        "sample": sample,
+    }
+    path = f"checkpoints/{model_name}_{dataset}_{timestamp}"
+    save_results(f"{path}.json", results=losses)
+    save_model(f"{path}.pt", model=model)
 
 if __name__ == "__main__":
     import argparse

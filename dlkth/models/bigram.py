@@ -45,6 +45,7 @@ class Bigram(nn.Module):
         max_iters,
         eval_interval,
     ):
+        train_losses, val_losses = [], []
         optimizer = torch.optim.AdamW(self.parameters(), lr=learning_rate)
         for iter in range(max_iters):
             if iter % eval_interval == 0:
@@ -65,6 +66,8 @@ class Bigram(nn.Module):
                 print(
                     f"step {iter}: train loss {losses['train']:.4f}, val loss {losses['val']:.4f}"
                 )
+                train_losses.append(float(losses["train"]))
+                val_losses.append(float(losses["val"]))
 
             # sample a batch of data
             xb, yb = get_batch(
@@ -76,3 +79,5 @@ class Bigram(nn.Module):
             optimizer.zero_grad(set_to_none=True)
             loss.backward()
             optimizer.step()
+
+        return train_losses, val_losses
