@@ -16,6 +16,38 @@ def load_data(path: str) -> str:
     return data
 
 
+def get_batch(split, train_data, val_data, block_size, batch_size, device):
+    data = train_data if split == "train" else val_data
+    ix = torch.randint(len(data) - block_size, (batch_size,))
+    x = torch.stack([data[i : i + block_size] for i in ix])
+    y = torch.stack([data[i + 1 : i + block_size + 1] for i in ix])
+    return x.to(device), y.to(device)
+
+
+def load_transformer_data(
+    input_file, 
+    encode, 
+    block_size,
+    # pad_token_id
+):
+    # Importing text file
+    text = load_data(input_file)
+
+    # Tokenization
+    data = torch.tensor(encode(text), dtype=torch.long)
+
+    # Split into batches
+    blocks = split_into_blocks(encoded_data, block_size, pad_token_id)
+    data = torch.cat(blocks)
+
+    # Train-test split
+    n = int(0.9 * len(data))
+    train_data = data[:n]
+    val_data = data[n:]
+
+    return train_data, val_data
+
+
 def get_rnn_train_loader(
     tokens: list[int],
     sequence_length: int,
@@ -181,35 +213,16 @@ def load_preprocess() -> tuple:
     return pickle.load(open("preprocess.p", mode="rb"))
 
 
-def split_into_blocks(encoded_data, block_size, pad_token_id) -> list[torch.Tensor]:
-    encoded_data = torch.tensor(encoded_data, dtype=torch.long)
-    num_blocks = (len(encoded_data) + block_size - 1) // block_size
-    blocks = [
-        encoded_data[i * block_size : (i + 1) * block_size] for i in range(num_blocks)
-    ]
-    blocks = [
-        torch.cat([b, torch.full((block_size - len(b),), pad_token_id)])
-        if len(b) < block_size
-        else b
-        for b in blocks
-    ]
-    return blocks
-
-
-def load_transformer_data(input_file, encode, block_size, pad_token_id):
-    text = load_data(input_file)
-    encoded_data = torch.tensor(encode(text), dtype=torch.long)
-    blocks = split_into_blocks(encoded_data, block_size, pad_token_id)
-    data = torch.cat(blocks)
-    n = int(0.9 * len(data))
-    train_data = data[:n]
-    val_data = data[n:]
-    return train_data, val_data
-
-
-def get_batch(split, train_data, val_data, block_size, batch_size, device):
-    data = train_data if split == "train" else val_data
-    ix = torch.randint(len(data) - block_size, (batch_size,))
-    x = torch.stack([data[i : i + block_size] for i in ix])
-    y = torch.stack([data[i + 1 : i + block_size + 1] for i in ix])
-    return x.to(device), y.to(device)
+# def split_into_blocks(encoded_data, block_size, pad_token_id) -> list[torch.Tensor]:
+#     encoded_data = torch.tensor(encoded_data, dtype=torch.long)
+#     num_blocks = (len(encoded_data) + block_size - 1) // block_size
+#     blocks = [
+#         encoded_data[i * block_size : (i + 1) * block_size] for i in range(num_blocks)
+#     ]
+#     blocks = [
+#         torch.cat([b, torch.full((block_size - len(b),), pad_token_id)])
+#         if len(b) < block_size
+#         else b
+#         for b in blocks
+#     ]
+#     return blocks

@@ -141,7 +141,6 @@ class Transformer(nn.Module):
 
         return criterion(y_hat, targets)
 
-
     def generate(self, idx, max_new_tokens, block_size, sep_token_id=None):
         # idx is (B, T) array of indices in the current context
         for _ in range(max_new_tokens):
@@ -165,7 +164,7 @@ class Transformer(nn.Module):
                 break  # salimos del bucle si encontramos SEP
         return idx
 
-    def train_model(    
+    def train_model(
         self,
         train_loader: DataLoader,
         batch_size: int,
@@ -192,7 +191,7 @@ class Transformer(nn.Module):
 
         batch_losses = []
 
-        #for iter in range(max_iters):
+        # for iter in range(max_iters):
         for epoch_i in range(n_epochs):
             for batch_i, (inputs, labels) in enumerate(train_loader, 1):
                 # if iter % eval_interval == 0 or iter == max_iters - 1:
@@ -237,7 +236,6 @@ class Transformer(nn.Module):
                         )
                     )
                     batch_losses = []
-
 
         self.load_state_dict(best_model)
 
