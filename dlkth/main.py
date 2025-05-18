@@ -137,4 +137,6 @@ def run_workflow(
     #         print(detokenize_text(tokenizer=tokenizer, tokens=generated_script))
 
 if __name__ == "__main__":
-    run_workflow(model_name="transformer")
+    import argparse
+    parser = argparse.ArgumentParser(description="Training pipeline")
+    parser.add_argument('model', choices=['bigram', 'rnn', 'transformers'], help='The model architecture')
