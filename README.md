@@ -1,6 +1,6 @@
 # Back to the Present: Ancient Speech in Our Days with RNNs & Transformers
 
-This project explores the use of RNNs and Transformer-based models to generate text in ancient or classical languages, particularly focusing on texts such as *El Quijote* and *Tirant lo Blanc* (in ancient Valencian). The ultimate goal is to bring historical speech styles back to life using modern neural architectures.
+This project explores the use of RNNs and Transformer-based models to generate text in ancient or classical languages, particularly focusing on texts such as *El Quijote* (in Spanish) and *Tirant lo Blanc* (in ancient Valencian). The ultimate goal is to bring historical speech styles back to life using modern neural architectures.
 
 ## 📚 Description
 
@@ -8,6 +8,7 @@ We compare three architectures:
 
 - `Bigram` baseline model
 - `RNN` implemented from scratch
+- `LSTM` implemented from scratch
 - `Transformer` implemented from scratch
 
 Each model is trained on ancient literary texts to replicate their structure and style. We report training loss curves, text samples, and evaluate each model using perplexity on generated outputs.
@@ -103,6 +104,6 @@ make download
 
 ## 👥 Authors
 
-Martín Bravo, Álvaro Mazcuñán, Adriana Rodríguez  
+Martín Bravo, Álvaro Mazcuñán Herreros, Adriana Rodríguez Vallejo
 KTH Royal Institute of Technology  
 Stockholm, Sweden

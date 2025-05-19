@@ -33,12 +33,12 @@ def main():
         # "shakespeare"
     ]
     models = [
-        # "bigram",
-        # "rnn",
-        #"rnn_baseline",
-        "lstm",
-        # "transformer",
+        "rnn_baseline",
+        "lstm1",
+        "lstm2",
+        "lstm3",
     ]
+
     for dataset in datasets:
         for model in models:
             train_main.remote(model, dataset)

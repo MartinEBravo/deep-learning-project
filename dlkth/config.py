@@ -1,8 +1,15 @@
+from enum import Enum
 from dataclasses import dataclass
 
 import torch
 
 DEFAULT_MODEL = "google-bert/bert-base-cased"
+
+
+class HiddenInit(Enum):
+    ZEROS = "zeros"
+    RANDOM = "random"
+    XAVIER = "xavier"
 
 
 @dataclass

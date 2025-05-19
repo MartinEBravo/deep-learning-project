@@ -5,6 +5,9 @@ format:
 train:
 	modal run modal_train.py
 
+rnn_vs_lstm:
+	modal run modal_rnn_vs_lstm.py
+
 eval:
 	modal run modal_eval.py
 
