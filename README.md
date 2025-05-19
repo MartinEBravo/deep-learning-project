@@ -7,7 +7,7 @@ This project explores the use of RNNs and Transformer-based models to generate t
 We compare three architectures:
 
 - `Bigram` baseline model
-- `RNN` (to be implemented)
+- `RNN` implemented from scratch
 - `Transformer` implemented from scratch
 
 Each model is trained on ancient literary texts to replicate their structure and style. We report training loss curves, text samples, and evaluate each model using perplexity on generated outputs.
