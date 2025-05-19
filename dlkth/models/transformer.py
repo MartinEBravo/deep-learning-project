@@ -5,6 +5,9 @@ import torch.nn.functional as F
 from dlkth.data_loader import get_batch
 
 
+torch.manual_seed(1337)
+
+
 class Head(nn.Module):
     """one head of self-attention"""
 
@@ -125,14 +128,11 @@ class Transformer(nn.Module):
     def generate(self, idx, max_new_tokens):
         for _ in range(max_new_tokens):
             idx_cond = idx[:, -self.block_size :]
-            logits, loss = self(idx_cond)
+            logits, _ = self(idx_cond)
             logits = logits[:, -1, :]
-            # apply softmax to get probabilities
-            probs = F.softmax(logits, dim=-1)  # (B, C)
-            # sample from the distribution
-            idx_next = torch.multinomial(probs, num_samples=1)  # (B, 1)
-            # append sampled index to the running sequence
-            idx = torch.cat((idx, idx_next), dim=1)  # (B, T+1)
+            probs = F.softmax(logits, dim=-1)
+            idx_next = torch.multinomial(probs, num_samples=1)
+            idx = torch.cat((idx, idx_next), dim=1)
         return idx
 
     def train_model(

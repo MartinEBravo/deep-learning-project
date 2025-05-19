@@ -41,7 +41,9 @@ def train_workflow(model_name, dataset, save_dir="./checkpoints"):
             eval_interval=25,
         )
     elif model_name == "rnn":
-        model = RNN(vocab_size, n_embd=128, block_size=128, hidden_dim=256, n_layers=2).to(device)
+        model = RNN(
+            vocab_size, n_embd=128, block_size=128, hidden_dim=256, n_layers=2
+        ).to(device)
         train_losses, val_losses = model.train_model(
             train_data,
             val_data,

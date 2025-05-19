@@ -4,12 +4,19 @@ import torch.nn.functional as F
 import numpy as np
 
 
+torch.manual_seed(1337)
+
+
 class RNN(nn.Module):
-    def __init__(self, vocab_size, n_embd, block_size, hidden_dim, n_layers=2, dropout=0.2):
+    def __init__(
+        self, vocab_size, n_embd, block_size, hidden_dim, n_layers=2, dropout=0.2
+    ):
         super().__init__()
         self.block_size = block_size
         self.embedding = nn.Embedding(vocab_size, n_embd)
-        self.lstm = nn.LSTM(n_embd, hidden_dim, n_layers, batch_first=True, dropout=dropout)
+        self.lstm = nn.LSTM(
+            n_embd, hidden_dim, n_layers, batch_first=True, dropout=dropout
+        )
         self.ln_f = nn.LayerNorm(hidden_dim)
         self.head = nn.Linear(hidden_dim, vocab_size)
         self.n_layers = n_layers
@@ -36,7 +43,7 @@ class RNN(nn.Module):
 
     def generate(self, idx, max_new_tokens):
         for _ in range(max_new_tokens):
-            idx_cond = idx[:, -self.block_size:]
+            idx_cond = idx[:, -self.block_size :]
             logits, _ = self(idx_cond)
             logits = logits[:, -1, :]
             probs = F.softmax(logits, dim=-1)
@@ -66,19 +73,21 @@ class RNN(nn.Module):
                     losses = []
                     for _ in range(eval_iters):
                         i = torch.randint(len(data) - block_size, (1,)).item()
-                        x = data[i:i+block_size].unsqueeze(0).to(device)
-                        y = data[i+1:i+1+block_size].unsqueeze(0).to(device)
+                        x = data[i : i + block_size].unsqueeze(0).to(device)
+                        y = data[i + 1 : i + 1 + block_size].unsqueeze(0).to(device)
                         _, loss = self(x, y)
                         losses.append(loss.item())
                     out[split] = np.mean(losses)
                 self.train()
-                print(f"Step {iter}: train loss {out['train']:.4f}, val loss {out['val']:.4f}")
+                print(
+                    f"Step {iter}: train loss {out['train']:.4f}, val loss {out['val']:.4f}"
+                )
                 train_losses.append(out["train"])
                 val_losses.append(out["val"])
 
             i = torch.randint(len(train_data) - block_size, (1,)).item()
-            xb = train_data[i:i+block_size].unsqueeze(0).to(device)
-            yb = train_data[i+1:i+1+block_size].unsqueeze(0).to(device)
+            xb = train_data[i : i + block_size].unsqueeze(0).to(device)
+            yb = train_data[i + 1 : i + 1 + block_size].unsqueeze(0).to(device)
             _, loss = self(xb, yb)
             optimizer.zero_grad()
             loss.backward()
