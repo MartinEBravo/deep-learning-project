@@ -15,7 +15,9 @@ classifiers = [
 ]
 dependencies = [
     "numpy",
-    "pandas"
+    "torch",
+    "modal",
+    "transformers"
 ]
 
 [build-system]

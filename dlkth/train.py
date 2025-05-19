@@ -1,10 +1,8 @@
 import time
 import torch
 
-from dlkth.data_loader import (
-    load_data
-)
-from dlkth.models import Bigram
+from dlkth.data_loader import load_data
+from dlkth.models import Bigram, Transformer
 from utils import save_model, save_results
 from dlkth.tokenizer import CharTokenizer
 
@@ -26,36 +24,45 @@ def train_workflow(model_name: str, dataset: str):
     val_data = data[n:]
 
     # Model instantiation
-    device = 'cuda' if torch.cuda.is_available() else 'cpu'
-    if model_name == 'bigram':
-        model = Bigram(
-            vocab_size,
-            n_embd=32
-            ).to(device)
-    elif model_name == 'rnn':
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+
+    if model_name == "bigram":
+        model = Bigram(vocab_size, n_embd=32).to(device)
+        train_losses, val_losses = model.train_model(
+            train_data,
+            val_data,
+            block_size=8,
+            batch_size=32,
+            learning_rate=1e-2,
+            device=device,
+            eval_iters=200,
+            max_iters=5000,
+            eval_interval=500,
+        )
+    elif model_name == "rnn":
         raise NotImplementedError("RNN training not implemented yet")
-    elif model_name == 'transformers':
-        raise NotImplementedError("Transformer training not implemented yet")
+    elif model_name == "transformer":
+        model = Transformer(
+            vocab_size, n_embd=384, n_head=6, n_layer=6, block_size=256, dropout=0.2
+        ).to(device)
+        train_losses, val_losses = model.train_model(
+            train_data,
+            val_data,
+            block_size=256,
+            batch_size=64,
+            learning_rate=1e-2,
+            device=device,
+            eval_iters=200,
+            max_iters=5000,
+            eval_interval=500,
+        )
     else:
         raise ValueError(f"Unknown model: {model_name}")
-
-    # Train model
-    train_losses, val_losses = model.train_model(
-        train_data,
-        val_data,
-        block_size=8,
-        batch_size=32,
-        learning_rate=1e-2,
-        device=device,
-        eval_iters=200,
-        max_iters=3000,
-        eval_interval=300
-    )
-
 
     # Generate sample
     context = torch.zeros((1, 1), dtype=torch.long, device=device)
     sample = decode(model.generate(context, max_new_tokens=500)[0].tolist())
+    print(sample)
 
     # Save losses and model
     timestamp = int(time.time())
@@ -71,11 +78,16 @@ def train_workflow(model_name: str, dataset: str):
     save_results(f"{path}.json", results=losses)
     save_model(f"{path}.pt", model=model)
 
+
 if __name__ == "__main__":
+    # This allows to train locally
     import argparse
+
     parser = argparse.ArgumentParser(description="Training pipeline")
-    parser.add_argument('model', choices=['bigram', 'rnn', 'transformers'], help='The model architecture')
-    parser.add_argument('dataset', choices=['el_quijote'], help='Dataset')
+    parser.add_argument(
+        "model", choices=["bigram", "rnn", "transformer"], help="Architecture"
+    )
+    parser.add_argument("dataset", choices=["el_quijote"], help="Dataset")
     args = parser.parse_args()
 
     train_workflow(args.model, args.dataset)

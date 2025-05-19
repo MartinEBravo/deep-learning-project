@@ -1,4 +1,4 @@
-from transformers import AutoTokenizer # type: ignore
+from transformers import AutoTokenizer  # type: ignore
 
 from dlkth.config import DEFAULT_MODEL
 
@@ -10,11 +10,11 @@ class CharTokenizer:
         self.itos = {i: ch for ch, i in self.stoi.items()}
         self.vocab_size = len(chars)
 
-    def encode(self, s):
-        return [self.stoi[c] for c in s]
+    def encode(self, decoded_text):
+        return [self.stoi[c] for c in decoded_text]
 
-    def decode(self, l):
-        return ''.join([self.itos[i] for i in l])
+    def decode(self, encoded_text):
+        return "".join([self.itos[i] for i in encoded_text])
 
 
 def get_tokenizer(model_name: str | None):
@@ -23,6 +23,7 @@ def get_tokenizer(model_name: str | None):
         tokenizer.pad_token = tokenizer.eos_token
 
     return tokenizer
+
 
 def tokenize_text(tokenizer: AutoTokenizer, text: str) -> list[int]:
     tokens = tokenizer.encode(text, add_special_tokens=False)

@@ -71,12 +71,9 @@ class Bigram(nn.Module):
                 train_losses.append(float(losses["train"]))
                 val_losses.append(float(losses["val"]))
 
-            # sample a batch of data
             xb, yb = get_batch(
                 "train", train_data, val_data, block_size, batch_size, device
             )
-
-            # evaluate the loss
             _, loss = self(xb, yb)
             optimizer.zero_grad(set_to_none=True)
             loss.backward()
