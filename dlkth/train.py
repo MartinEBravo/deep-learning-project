@@ -3,13 +3,13 @@ import torch
 
 from dlkth.data_loader import load_data
 from dlkth.models import Bigram, Transformer
-from utils import save_model, save_results
+from dlkth.utils import save_model, save_results
 from dlkth.tokenizer import CharTokenizer
 
 
 def train_workflow(model_name: str, dataset: str):
     # Load text
-    text = load_data(f"data/{dataset}.txt")
+    text = load_data(f"{dataset}.txt")
 
     # Load Tokenizer
     tokenizer = CharTokenizer(text)

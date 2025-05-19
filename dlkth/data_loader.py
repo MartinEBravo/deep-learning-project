@@ -5,11 +5,15 @@ import torch
 from torch.utils.data import TensorDataset, DataLoader
 
 
-def load_data(path: str) -> str:
-    input_file = os.path.join(path)
-    with open(input_file, "r") as f:
-        data = f.read()
-    return data
+def get_data_path(filename):
+    base_dir = os.path.dirname(__file__)
+    return os.path.join(base_dir, "../data", filename)
+
+
+def load_data(filename):
+    path = get_data_path(filename)
+    with open(path, "r") as f:
+        return f.read()
 
 
 def get_batch(split, train_data, val_data, block_size, batch_size, device):
