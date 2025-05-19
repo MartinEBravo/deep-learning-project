@@ -7,7 +7,7 @@ from dlkth.utils import save_model, save_results
 from dlkth.tokenizer import CharTokenizer
 
 
-def train_workflow(model_name: str, dataset: str):
+def train_workflow(model_name, dataset, save_dir="./checkpoints"):
     # Load text
     text = load_data(f"{dataset}.txt")
 
@@ -24,6 +24,7 @@ def train_workflow(model_name: str, dataset: str):
     val_data = data[n:]
 
     # Model instantiation
+    begin = time.time()
     device = "cuda" if torch.cuda.is_available() else "cpu"
 
     if model_name == "bigram":
@@ -36,8 +37,8 @@ def train_workflow(model_name: str, dataset: str):
             learning_rate=1e-2,
             device=device,
             eval_iters=200,
-            max_iters=5000,
-            eval_interval=500,
+            max_iters=3000,
+            eval_interval=25,
         )
     elif model_name == "rnn":
         raise NotImplementedError("RNN training not implemented yet")
@@ -50,11 +51,11 @@ def train_workflow(model_name: str, dataset: str):
             val_data,
             block_size=256,
             batch_size=64,
-            learning_rate=1e-2,
+            learning_rate=3e-4,
             device=device,
             eval_iters=200,
-            max_iters=5000,
-            eval_interval=500,
+            max_iters=3000,
+            eval_interval=25,
         )
     else:
         raise ValueError(f"Unknown model: {model_name}")
@@ -70,13 +71,14 @@ def train_workflow(model_name: str, dataset: str):
         "model": model_name,
         "dataset": dataset,
         "time": timestamp,
+        "duration": time.time() - begin,
         "train": train_losses,
         "val": val_losses,
         "sample": sample,
     }
-    path = f"checkpoints/{model_name}_{dataset}_{timestamp}"
-    save_results(f"{path}.json", results=losses)
-    save_model(f"{path}.pt", model=model)
+    path = f"{model_name}_{dataset}_{timestamp}"
+    save_results(f"{path}.json", results=losses, save_dir=save_dir)
+    save_model(f"{path}.pt", model=model, save_dir=save_dir)
 
 
 if __name__ == "__main__":

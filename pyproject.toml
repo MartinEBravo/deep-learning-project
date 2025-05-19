@@ -18,7 +18,8 @@ dependencies = [
     "torch",
     "pandas",
     "modal",
-    "transformers"
+    "transformers",
+    "matplotlib"
 ]
 
 [build-system]
