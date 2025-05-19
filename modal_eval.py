@@ -3,6 +3,7 @@ import modal
 checkpoints_vol = modal.Volume.from_name("checkpoints", create_if_missing=True)
 reports_vol = modal.Volume.from_name("reports", create_if_missing=True)
 
+app = modal.App(name="eval")
 image = (
     modal.Image.debian_slim()
     .pip_install("torch", "numpy<2", "pandas", "tqdm", "transformers")
@@ -10,7 +11,6 @@ image = (
     .add_local_dir("data", "/root/project/data")
 )
 
-app = modal.App(name="eval-perplexity")
 
 @app.function(
     gpu="H100",

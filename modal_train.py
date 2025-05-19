@@ -2,7 +2,7 @@ import modal
 
 checkpoints_vol = modal.Volume.from_name("checkpoints", create_if_missing=True)
 
-app = modal.App()
+app = modal.App(name="train")
 image = (
     modal.Image.debian_slim()
     .pip_install("torch", "numpy<2", "pandas", "tqdm", "transformers")    
