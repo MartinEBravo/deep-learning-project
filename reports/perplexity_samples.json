@@ -1,0 +1,2858 @@
+[
+    {
+        "model": "bigram",
+        "dataset": "el_quijote",
+        "mean_perplexity": 9.311687492036873,
+        "std_perplexity": 0.8540686725874085,
+        "samples": [
+            {
+                "text": "\nquentr maremos esueque pa, dentio pon sespr rasierie, vindentis hamudes gòrtarder liegues Sareníre",
+                "perplexity": 9.1760610580225
+            },
+            {
+                "text": "\nste desuntastado chandrar y badr, gos qun des iere adelelo d. leseraralesa tadi:\nrtieri gos s. die s",
+                "perplexity": 9.333923510056255
+            },
+            {
+                "text": "\n-.\nY vuejo lta lte aleca hate rte tá iempo hoteresecostemi sitabis aresucuí dijondesiemijo drorort",
+                "perplexity": 9.904450951918662
+            },
+            {
+                "text": "\ndobaLas ha hes conter vo qu qulendospars lende cabr.\nCuel es\n–r tónaqueté l pran ter s ponigan mo ",
+                "perplexity": 9.7415090230127
+            },
+            {
+                "text": "\n-Elos do ctidéas r se -Elon, lecorestadios l e. cuendar pel asitas ta cosme asma elaras, ta ́ liela",
+                "perplexity": 9.338364200726353
+            },
+            {
+                "text": "\ns de taraba dentresas taba damar dies si Lo ca raloscudaqua s e damor y, lo Lál sa de omilestue des",
+                "perplexity": 8.507349306344384
+            },
+            {
+                "text": "\n- mercuñoso, vó han dala e ta a cijorasebionicor que loisie, uncadivo lél der pilga dibio sa paqu",
+                "perplexity": 9.376044580735254
+            },
+            {
+                "text": "\nLlen tan qubirme qú cotiosuesardo. a ara do atonelesonoz aren pode o esieriera je y d s siéidal ad",
+                "perplexity": 9.819909507444315
+            },
+            {
+                "text": "\n-Y po y lentosisos imo enzar santese lo lo, dudoríay aban l posméri alodes lahabigabearosi y dalan",
+                "perplexity": 9.072634281933418
+            },
+            {
+                "text": "\n-lacosíaun joday a po, paravo, de seno Zon co e dera cecospiteno go, Arientapa yo arta dmbalasa tos",
+                "perplexity": 9.506586124560304
+            },
+            {
+                "text": "\nAla. aba se ntuesós, popa yontarel sura dolabreror se nteroy marabanspunar e léndosaqunesas tray s",
+                "perplexity": 9.278401373804494
+            },
+            {
+                "text": "\n-¡Conseterza pa y l do; ha esuse quijosentade abosuedar tado ta; ceren yo los es llis i r, o dáabun",
+                "perplexity": 8.835167149134868
+            },
+            {
+                "text": "\n-¡Sa, quarue le eca prlé lajo aco os cejere un que digus May bimpota: puese al eserarvelendéa bede",
+                "perplexity": 9.795548643525807
+            },
+            {
+                "text": "\nRes Cun ns l l quideled on. dín lal Cueza Fa e y mólvióadeguesenalados doniomuelasfend, lémo pad",
+                "perplexity": 10.717926619857725
+            },
+            {
+                "text": "\n-Antalas ¿qunano alo: lá n a yadela o va, hagrde mpenteni mar raredicies flmu destipé e venesenstr",
+                "perplexity": 10.361293335037107
+            },
+            {
+                "text": "\nTudadi qur sto: hé oncuñon de vierier lol osesie, e elrue nda! cueño qujalielar y tarde e edirí ",
+                "perplexity": 9.9720443590684
+            },
+            {
+                "text": "\nY l olindé tames se tasten y cierigosparo ven a ejo, h ho guser e po asigredar lome viel A mbide, v",
+                "perplexity": 9.09333478709106
+            },
+            {
+                "text": "\nEntio, gico; ho sos la arosa, a, edió po, en y quér o: co, éa dagr. ega ntesesé tesorme do se s ",
+                "perplexity": 8.48852108610266
+            },
+            {
+                "text": "\nLóas cha por dontentue les vontenchi bron tr ndar enzca, l ¿n dande llo, da, díáa mosuemeca n ars",
+                "perplexity": 8.961843897307904
+            },
+            {
+                "text": "\nCarí eafiade a, s egar as vos, pande Es cielamieta, ll sentabiólvie lla alie. y eseroue la e ono.\n",
+                "perplexity": 9.330499277293507
+            },
+            {
+                "text": "\n-Es sentara e e dicodesitas monir y postace rtademin spo? ancás, dospo Que e agus melen e lalale cu",
+                "perplexity": 8.212415438675233
+            },
+            {
+                "text": "\nAre evebacieje dr Dir Mabazabicue laléar Miaun evase bostar tadesué s delqun as s da tado me bagí",
+                "perplexity": 10.301749920675382
+            },
+            {
+                "text": "\n-, ̀mi bin ca asaráarlers lasta. lielabuade.\nEse cara hara fuéalascio osa has y qustieranabiomiard",
+                "perplexity": 9.937527950622949
+            },
+            {
+                "text": "\nPedomimuesto da ena eschase quetiarrenondese o y y tita trás se suererme pe a qur pigue, s esed com",
+                "perplexity": 8.415397443970436
+            },
+            {
+                "text": "\n-Sar urar holán daro pre ieno quste, ie viselaltasta palanestie la spedóalabiellabome, háanuar do",
+                "perplexity": 8.982760629093788
+            },
+            {
+                "text": "\nAmachincazardaso r qusta den, Co e vigue hor s vevesóierodijadecllvicóicosijo quansa po. dendasend",
+                "perplexity": 10.103881093301663
+            },
+            {
+                "text": "\nPegóa erl simoros, egodejeguenoro ste y ve lo mpe puiabr mes ques har dey calga qus pe lono casio, ",
+                "perplexity": 8.4558407545984
+            },
+            {
+                "text": "\n-; e adelon dotal ce le dintosir me des y Zo, quéalasé hondese, a, s, y póaro cacobuemodesesel -E",
+                "perplexity": 7.77383684888049
+            },
+            {
+                "text": "\nce s ten lua? –Esenomoquie máa pa cabieño ciesera unel abue raco n cia domale, uirme ntor, sues dr",
+                "perplexity": 9.911237592915997
+            },
+            {
+                "text": "\n-nco y dela dorrosesmar ló co der le maí cuigrodormel tante qudego, lolde pigr va leltemodase dusa",
+                "perplexity": 9.334898277733517
+            },
+            {
+                "text": "\n-, s, sun des, palazas.\nColancabade, fugrcha déalporalotá pen gal l y delo desiolans ller quen pa\"",
+                "perplexity": 8.707124990942495
+            },
+            {
+                "text": "\nAndé y sos comien. enzabesco Gida amíspa e s, s do ecillabístordiestrenontantosies Los a a, cenfo",
+                "perplexity": 8.990651816020387
+            },
+            {
+                "text": "\nDosen co, la quesienor ejo cadia min dozo, po s lolendas y vevor sara den. y quelajuen s chalovostns",
+                "perplexity": 8.29895329941465
+            },
+            {
+                "text": "\n-Y pos doce, eco dadenoiol e y y lazósentelostogar.\nAlaesavalveni ven vastu mal ntr y e hay pi gali",
+                "perplexity": 10.190937763784149
+            },
+            {
+                "text": "\nqúras as hababiodiedalma cibaco hadecavidalll yoscói meno de, lel quaqus ganas po, deladelar:\n–l h",
+                "perplexity": 9.986257787192008
+            },
+            {
+                "text": "\nmenañaba, evéie dán lve bencimiotrrquen mióar llartrd lsocues, lqudistue seno y dar la stevigan ",
+                "perplexity": 10.26772499382347
+            },
+            {
+                "text": "\nAhotescístidoramo migo er esicegues cabig pesese dala y hila le: alolo:\nValomie, Pesirííza, quvis",
+                "perplexity": 10.402664720574617
+            },
+            {
+                "text": "\npomrmiamesien, o paba quezor y sto a se? doposes lez desadorno life e lgararta re ano l Lo enta y la",
+                "perplexity": 9.95068622104723
+            },
+            {
+                "text": "\n-¡Candodagago hadasarimé y ncer é uempa martrostenten abantay gunas Esís, ste lolguenvabar tadía",
+                "perplexity": 9.290917265796297
+            },
+            {
+                "text": "\n-Sa Y vuieronta cota palar do, pas yue ditas quetabiese de e ci antarapostamadis, quesala ha uso me ",
+                "perplexity": 7.590034651750137
+            },
+            {
+                "text": "\n-do echavese dese te ¿pe a qu diendódondote ale loiome qu ens enarnta doirenoradenta cos, pu dademe",
+                "perplexity": 8.725233539774083
+            },
+            {
+                "text": "\nDospuntalalesespase, rcosesolas fan dar cues Do tavigusarvir u dmavava y y que. e mpr de uendes me e",
+                "perplexity": 9.273790201290828
+            },
+            {
+                "text": "\ns ¡Vara, n a, ábranonfindó ra ieésego enue lañabe tre side spende Queni n lontiasimaqueza y Hé ",
+                "perplexity": 10.845181443872082
+            },
+            {
+                "text": "\n-de e daas desere yos, conors iendante pondensí da horamas Quelotuy ques quns e e elar, lien l alob",
+                "perplexity": 7.900550493794773
+            },
+            {
+                "text": "\n¿y de luno doFere que e pontie a elta á di que tasifunarquy -delo ctren Cre, masenzado quelal mis s",
+                "perplexity": 9.618878375988185
+            },
+            {
+                "text": "\nFr peste ste erlaeluinto a.\nTas crtars cigros; mito le do pen l l Quesen l coronigmemaleliéier quen",
+                "perplexity": 10.153274154977666
+            },
+            {
+                "text": "\nY fe s s moradgues dan Masos parendegríadigosmioguien menadó, de Cas eratis es en pienasedacos, ri",
+                "perplexity": 9.698088335103566
+            },
+            {
+                "text": "\n–oto qus n l ve y la qubie gese donte tabáamase fami que, tr, l ebá lerocua, , tespecmalua hora pa",
+                "perplexity": 10.00316463493914
+            },
+            {
+                "text": "\n-; mesezalolr camada No oncalana pes de y dentadóara codonito uio, fabe dientirquesaalos don qui y ",
+                "perplexity": 8.74764167811381
+            },
+            {
+                "text": "\n–. lel cicui de mar dis le a lgregabueséstaliese a farie e y, ciguntalos quemo dior enos mabas arel",
+                "perplexity": 7.951402146690832
+            },
+            {
+                "text": "\n–y ename a avidale e ta ques mon bauis -Vír lomarbigr edeveso l lalamas. den, stas y ladotr si, y e",
+                "perplexity": 9.378394304928552
+            },
+            {
+                "text": "\n-Ano, tandosabide i pil n, ate ta tete llogo cuy spanquro quea Quen quél Es devéabrr gue e es tuen",
+                "perplexity": 9.242944486342699
+            },
+            {
+                "text": "\ncú Sá ponorieses e diados pon e del micielle qus o qunar uruy so le da s, po, par ta Y yoncue rar,",
+                "perplexity": 8.948766344007899
+            },
+            {
+                "text": "\n-deceradotrn cuíasáadas das le le da ¡Vosuase ntes mpos fr mesimindesasena que Fil yabis dó dedie",
+                "perplexity": 9.008759347038954
+            },
+            {
+                "text": "\nEs, mabr ponis sadolll dadicososema tane cesevuano d, a eso, uercalanta ndodobilaluereviungos po té",
+                "perplexity": 10.053896510336576
+            },
+            {
+                "text": "\nVosen pagbasuntar nsiedermón qu Quenóntro lasobibasir pento. pabaloro pastalo, sabama poror An o t",
+                "perplexity": 9.152402723337858
+            },
+            {
+                "text": "\n–), gabródasa endangabadála: daco, y é ¿Quesús\nCo y bin, eo qua: viantend, d, des quí ll la né",
+                "perplexity": 10.40261511692205
+            },
+            {
+                "text": "\nquscoielabnor, viele dasen s pa alomubrolarmueguecalue cun Re Ano godóa s elosor o ladionosencanomi",
+                "perplexity": 10.702720291116758
+            },
+            {
+                "text": "\n- lo te bi der asalirade elamomierrmalar toro ¡Pue Doden an sas, piro dalarosrajo tir sijo ie fo der",
+                "perplexity": 9.612468391927436
+            },
+            {
+                "text": "\nmpadoie Qu La, y co-, tu hasíalmbar qu crid Cabilalcunontu palaloda Ma cidorin. quelinse rardescue ",
+                "perplexity": 11.352647637719976
+            },
+            {
+                "text": "\nCpabro egue Sano s dos desu ale llaros tinguno y eadiesis que? scedon es tri ele vuse ta y te l paza",
+                "perplexity": 9.216551187211788
+            },
+            {
+                "text": "\n-, se s diaró cio ati stor yad eve fuencon de en e de do quapo ce vie les se do lo lases do le sé ",
+                "perplexity": 7.458935916499836
+            },
+            {
+                "text": "\nY tesue pacialz l entalesomo prenun y vu -¡A haséa pa tir y pas, gay lo Lotr morde temé cr vulon s",
+                "perplexity": 10.19493541881291
+            },
+            {
+                "text": "\n-toreradese y cio:\n-. amíálaluiotite de l srenolose do, riabale de liesóleriosundata die dens, le",
+                "perplexity": 8.971778505622133
+            },
+            {
+                "text": "\n–Esel Can lguerosenelosides Aheltadismios spians an cha pobin der da. y Enteveselo ll s dos porescor",
+                "perplexity": 9.15002454025849
+            },
+            {
+                "text": "\n- endín lolas y die i Ha, mochaltro s. deda Pabano qudande s Doral enaderesós ntas enque citoramua",
+                "perplexity": 9.118394708938943
+            },
+            {
+                "text": "\n- corias Pala dañondiotor sees lestaninesostos Los Qura esteritonasela.\nCay a. do,  corigrapalis lo",
+                "perplexity": 10.15778981880258
+            },
+            {
+                "text": "\nuelo llabe la s quemitre gaseres lle s, nte lay y pa, contio; lo palla e sis, y y lan Ay qunelalaber",
+                "perplexity": 7.9112247402905105
+            },
+            {
+                "text": "\nVomade mareman s. e vo didagon ques de cos ueto fa esue hólaiten pe fl pra e hazondor po do y desig",
+                "perplexity": 8.601995647401939
+            },
+            {
+                "text": "\nVel a mhandigua selos, derampe y ce gunode tidoño.\n-Hes nos tamin rabintes daba Y olo e an crendo.\n",
+                "perplexity": 9.234193372543555
+            },
+            {
+                "text": "\n-Fuira es ta de equie me a mpa lermonca yó s a Y dan, do prerrdeco, vo e a e línecun scaparo lo de",
+                "perplexity": 9.26719700221694
+            },
+            {
+                "text": "\nAserapues é dendecaloríla ante y s. spodo cí puen vinden er fabidenó fue irejo s jospabo yel sad",
+                "perplexity": 8.81400147406312
+            },
+            {
+                "text": "\n-drrtan, ga arar Apie fador y edaserterero l se quenabuvenotico da, mendesia abrdóabr gabe ro al da",
+                "perplexity": 9.328948884744586
+            },
+            {
+                "text": "\nAr cien entr yor ho; lerel lladora lonlónadall mes lomblazar dílor áamur ta. doda Mi Sadie Pé mp",
+                "perplexity": 10.298780889153509
+            },
+            {
+                "text": "\nVavatamiontaban.\n-Es Quad untrdauidiar dabios scos o, lera. yano. dota, qur? sua, e d Due yosueno ta",
+                "perplexity": 10.386858099143051
+            },
+            {
+                "text": "\nmírela, lortoniermoltabaragr, y hadomuevísi no strterr los er y y pa s. te te man ses eroer lerra ",
+                "perplexity": 9.367214348852974
+            },
+            {
+                "text": "\nVe dend rserl tay toten ciesmarier tasezóa e quen, pomes cenco. lmuerenarquesa gan de a.\n-Antalesó",
+                "perplexity": 8.757842034919737
+            },
+            {
+                "text": "\n¡A lquesa y lendezasco y er radez ntier y cielarioluente gustaques le-có po bare to, Lia sasebar de",
+                "perplexity": 9.580423100450153
+            },
+            {
+                "text": "\n-de da, l pa deno ijo, vabá qus equen, esontarindesontas selos, fesielue icortabo deren en la latie",
+                "perplexity": 7.954807664314741
+            },
+            {
+                "text": "\n- pa)́ tie ata viostie lomó co llasuen a icóla ie tu delía.\n-Esase le alans, va elalll fin sies a",
+                "perplexity": 9.733849920829904
+            },
+            {
+                "text": "\nque ren s y cie póston yo po, pagabis rma urquño y tentillores; y brs r sesirezo mieder, sala po a",
+                "perplexity": 8.659478067101375
+            },
+            {
+                "text": "\nEdesijode panfezantiose egas dancatade gr lie ma quesecalo ana pocora po érelitala tarérade rescie",
+                "perplexity": 9.17796240403026
+            },
+            {
+                "text": "\n-Due s Sa do oscenimiren co  nte s cal lmonirtar y lares quene, d, de po pa hindera, pasel e que y e",
+                "perplexity": 7.934912867997743
+            },
+            {
+                "text": "\n-der tade spora pos enasuenordenio rieliesamis. ermelóuma s lo antigueno, lige padanie ar as r ca q",
+                "perplexity": 8.985932983191548
+            },
+            {
+                "text": "\nCodue Asio lala, tó pvesérntabr esale ha, erarielóan amabin mue y to, spra chalatoro larquigue, m",
+                "perplexity": 9.091943024794807
+            },
+            {
+                "text": "\nY a vunosu derá cue y qulevegrízá pabalamuan ebie qualsDo lve.\n–Dol l dé poco vain mebiliaselevo",
+                "perplexity": 11.824631877292118
+            },
+            {
+                "text": "\n-Estuíselellel nes mercontan e quveno, sen Dodo, de dono feles erdinsia pa n, agengión l,, y quie ",
+                "perplexity": 9.327080748238586
+            },
+            {
+                "text": "\n-de erampa déa co.\nquna lo pelasenorelabo ba, e mas hieño nquesil, s fabis y landini adieda Calosa",
+                "perplexity": 8.5780338393577
+            },
+            {
+                "text": "\nquínz fias eme hendemaceseri s pa diesitraradelé abetasantabar, s talar, tabambias que; sezan des ",
+                "perplexity": 9.019485674969347
+            },
+            {
+                "text": "\nAlonaro spa demba mantos qunalor dón acues deseranie cade y dilo y mi e ten lavis e l s, que le cos",
+                "perplexity": 7.313488219412361
+            },
+            {
+                "text": "\n–na qun adi laz, talga eses y yobion, pran petadomiarso. el Que de el landose, Fen due, qumabíadora",
+                "perplexity": 9.136783481371033
+            },
+            {
+                "text": "\n- alie cose scomoseparenda al ll y endecan da y aben Gracade cicia pier vijos Que e qurarqunta, ho q",
+                "perplexity": 8.214232656665429
+            },
+            {
+                "text": "\n–Y, des que scada ste li Cas lcioras mostan a, hiue escobuelanoteronelarscie a dacha cego puelte l s",
+                "perplexity": 9.274097541483146
+            },
+            {
+                "text": "\n- dó l cinomos man rl s dicamar la den e y de píbra e storostile y y lo tre íantal gr eselar ci ¡",
+                "perplexity": 8.58776819713607
+            },
+            {
+                "text": "\n! qustejapongr uevigamolotoros sol, mende to éa Ví qunos darapa cí daleyay, comos qu quadisecior.",
+                "perplexity": 10.844467816152966
+            },
+            {
+                "text": "\nEs me ue en adeco me pamináan da quaguno pos losuerce sas cesa, Ques Pio hardes que cha pa campas s",
+                "perplexity": 7.9826753107740505
+            },
+            {
+                "text": "\nPiéasen ento, a moro eme der tieluar vispo. e ha, ompay lascuie larensinó mestan suellunsesue e go",
+                "perplexity": 9.002665794616217
+            },
+            {
+                "text": "\nyano lo, gabito; fuilinton desies ta queráa, madocehaquror ¡-Pomueso l y pierquede ho econ y mbento",
+                "perplexity": 9.753042694497323
+            },
+            {
+                "text": "\n–Y qus ruaso, esírrareroncenía, eleja, enotenomomi pas quegrcil dé tuiocoiabrbacicue gron mollay ",
+                "perplexity": 10.801826111540239
+            },
+            {
+                "text": "\nFije y tenostíraQuicima y tondes, tier, y quríriarsentelin qus. aco lisués, te, ba n. ena, cr y y",
+                "perplexity": 9.662759925978914
+            }
+        ]
+    },
+    {
+        "model": "bigram",
+        "dataset": "el_quijote",
+        "mean_perplexity": 9.33907679463235,
+        "std_perplexity": 0.9395188891150534,
+        "samples": [
+            {
+                "text": "\nSauioncusu l cí y e pres lo, cis céntro ele quniereseluenzontrer fara bre s, s, dan araguecon ende",
+                "perplexity": 8.503283516387325
+            },
+            {
+                "text": "\nPese allarse suse, quenton do do deleguspevostimelababambiluderí r lvemir pa ade mun postas guvenu ",
+                "perplexity": 9.332448199204029
+            },
+            {
+                "text": "\nEñorseluenaia cíle di minostarerento; l no, llándesontan llo mé, tae y qustasiga lllama, sedesos",
+                "perplexity": 8.837347612530642
+            },
+            {
+                "text": "\n-, er pe Esen sca tr aco-Amitr pr eltarieltrdorede das fe ar. erod josior?\n–do Tierarma sad, enastá",
+                "perplexity": 11.603068936552011
+            },
+            {
+                "text": "\nAquésezor sco é y to muno qún canosie miciocoseredarr Aleran yombi adadó bien ca y y eno yo cse ",
+                "perplexity": 9.298161339531143
+            },
+            {
+                "text": "\ñosisticilosue dal lo téar, itienoséeiela err yento riololintasmas onelojo esis rmitr quionco, que",
+                "perplexity": 10.888147458848742
+            },
+            {
+                "text": "\ny as y es a dar han adere e mpo tr ques mordo ademeglendeme le mis Fesesie nempospepades–Ela: ahe y ",
+                "perplexity": 9.634216845510622
+            },
+            {
+                "text": "\n-, quermbajon cota Ca qua des La di ro y e ca era drmefa, sia coma ie seloto quindorararen.\n-¡oró s",
+                "perplexity": 8.746450881400452
+            },
+            {
+                "text": "\nFes li pela dí hara per yovalaso, dorar po coreseter, de ar sui po, as d orsertore ca-rqunid trars.",
+                "perplexity": 9.851997126719791
+            },
+            {
+                "text": "\n–Y ma y elano da tostínvi, cede lla, Sabauserira s paun, aquendienedo.\nqure en Coro, alasenta vis e",
+                "perplexity": 8.99441236867945
+            },
+            {
+                "text": "\nLontélases haleno, pir y tere yo, co queree palermpendibadelen rses nmide ce madonqusuror d pa y to",
+                "perplexity": 8.722660640319926
+            },
+            {
+                "text": "\nY babis salotearós, luebrmonde, tagrn dé drques puengantaninderame en la untaba made, quer. desape",
+                "perplexity": 8.877240490842597
+            },
+            {
+                "text": "\n–moresa y l epalo á vispay qustadenzcios mpe mo to, beses, larar y s, crale cofi tel enosioincí y,",
+                "perplexity": 9.794091436872735
+            },
+            {
+                "text": "\nPagal cadietadade sun se habis, lamocesto r n que,\nPo, asiter a poran entiobue fiode ue abre yo Ense",
+                "perplexity": 9.516421221814847
+            },
+            {
+                "text": "\n–, demése Y din tias qumisa. dodenzáse. oyetetaloniro ara qusirsie mahanguen e enterotartomicijo; ",
+                "perplexity": 10.164243558814986
+            },
+            {
+                "text": "\n-, e de r, ntra, daquenor gu e havéavin sa s le n asall sel Y cunde ¡A que arontas lles que y tore ",
+                "perplexity": 7.793227452274628
+            },
+            {
+                "text": "\nY a, diestoors len Amie ces y l car llpucuntola; yo s scendono qubí sionieme s, eden, lemosca, ende",
+                "perplexity": 9.553494332284428
+            },
+            {
+                "text": "\n-de. do salar amedóaro, o l de senilio tas quero ue dies, vase trsero lores pr nde ta ampesodes den",
+                "perplexity": 7.825518330830265
+            },
+            {
+                "text": "\nAhala da co pendostos nen s élabr quélele go; desalagr s, donenosentel y guíle po tarquga, hes la",
+                "perplexity": 7.793415117605931
+            },
+            {
+                "text": "\nal ado, des ciein Dudie l pacos enes y hollles testan rara ci1Wpo, queseson mió s quajadmíséaio n",
+                "perplexity": 10.495080362792697
+            },
+            {
+                "text": "\nSas dómo n mi le é pon e tuenta rtuer ntuaz Lo ce ermuebí, y ho, lalo, quenini cas eferres de, le",
+                "perplexity": 9.171183686852304
+            },
+            {
+                "text": "\n-vieso la s llonosose híno anó uta labrzamo ater l que s eí do dizare o. pozalanfe, po, tíselesu",
+                "perplexity": 9.568751352663877
+            },
+            {
+                "text": "\nY rtalala n ho s quentar entra s lasta ontialas; dese yo fa ascieni mpuélarabaartrasarqúngo ndesa ",
+                "perplexity": 8.66022134796342
+            },
+            {
+                "text": "\nVasinde hon tala lolade y ndicirle trerar da cirvo cijoseserde eba estue puses bre halenada do Do pa",
+                "perplexity": 8.503200395821864
+            },
+            {
+                "text": "\n’y ente e égaguemporminsa cras ques biansila abaraques y er. qu cin y e e s deciba i pre es a har a",
+                "perplexity": 9.177572913272558
+            },
+            {
+                "text": "\nmo qudeques es ecoriellla grpastabróalabautollalle, pos llanDodos -tecos, os ta ha poratomi en ase ",
+                "perplexity": 10.232943866932485
+            },
+            {
+                "text": "\nBí er ha e uell Es. Piesicoseo, pors se tiel da, ladasta las a, po He, mi eno, colo ron –, a ha e.\n",
+                "perplexity": 9.804869148272031
+            },
+            {
+                "text": "\n-des, antecigor que Dó, derenas l qun odesos s des pa didecota ponde midesianJue fe pós talonca su",
+                "perplexity": 7.980368943674555
+            },
+            {
+                "text": "\n-; lo e pala Cuecie, aras pa, denterellos séaró, «daltarsgorse Quen co to cise an s gar prnasutré",
+                "perplexity": 9.579255970457533
+            },
+            {
+                "text": "\nY la s, cíno gayoso armer mor cin bue qunabuil genijomo, suar ermes qu, ta da se an dolarquan; lelm",
+                "perplexity": 9.479919142629322
+            },
+            {
+                "text": "\n-Es s. poco: po as  Comoráce, -cirisofarilel nomence ubie ntadaun tomeaquijo lla o anle ties va sa ",
+                "perplexity": 12.661436365990966
+            },
+            {
+                "text": "\n-Do ermo que guer, cu tampóa edes tadílazos quigas vecose áre usa grenca: devojuancér tara leté",
+                "perplexity": 9.628565644936112
+            },
+            {
+                "text": "\n-Palísueteja. ciromie pade, s haces amesdanes es en; s ques, pa, di ntien s, dedibibion: s, láador",
+                "perplexity": 9.181326278750555
+            },
+            {
+                "text": "\nquidengaba e pucuy Caraser do almabacues ie iera s gue arorlo igadr lasa; ubiesoráamon nos que Y lg",
+                "perplexity": 9.926580751131533
+            },
+            {
+                "text": "\n-, his la lla alores dimodelontagramabacon a qumusto di e pi que dequnortrdes dé méme aduesualoinc",
+                "perplexity": 9.152869705261303
+            },
+            {
+                "text": "\nY e y ce, que sasra day ue quel to asientestes co e n y s dio cellollonies to, anije ed; ve er Cano ",
+                "perplexity": 8.29141025505775
+            },
+            {
+                "text": "\n-¡mpórien Doseralasan po dé ecuen cue e, lo; ue bijoy pr ie buibicengu pomiga: qua tín sísue s, ",
+                "perplexity": 9.624620267333542
+            },
+            {
+                "text": "\ny qu hastalociecde y, lló sralo, fue cia mejomatrdero, dra ar -; s la maripe ntaces rar o de r terc",
+                "perplexity": 10.471291214576823
+            },
+            {
+                "text": "\nPasieroda o lame n azos an llazazasilapayeso eñarolóas vu panues?, qura se e, do vesueuiede pa s l",
+                "perplexity": 10.580393199773832
+            },
+            {
+                "text": "\nno me d y én chos tanzgasenanre y cior ados, tes hen quens y lay a  quas s co, d.zodíle oma daba y",
+                "perplexity": 9.627337561778377
+            },
+            {
+                "text": "\n-; péenen mbigr to condahabr Qun s  ma y y y cr tahae dicaus yen luio da qus, nor y vie do cin otan",
+                "perplexity": 9.587150001134308
+            },
+            {
+                "text": "\nVies, r renubarese dasenos e fanue hame ha Agundora hareriere de en y sta ésen denoral si –. daué ",
+                "perplexity": 8.558553321877591
+            },
+            {
+                "text": "\n–Ali tora u guícedencos de cello, y tebio Qua que lardes selas fira iejas ca posa paba que qúa mio",
+                "perplexity": 8.679713917013089
+            },
+            {
+                "text": "\nfuer Sadesísostadegrar, po do rar pa lon Nonibijotie prora yo uentuasompabrtaran e ado; inzoro Dobi",
+                "perplexity": 9.670370007621024
+            },
+            {
+                "text": "\nEsa dalens s Yes mamegamidaje pen ure Pases cio pa stósen disuegal quedo ha espa qus lo sese viadid",
+                "perplexity": 8.966789516016771
+            },
+            {
+                "text": "\n-; tr hie desmiladinda y re querelarabín argopuer ijues lor. delejalao que ten e; dás ecuen; to; a",
+                "perplexity": 9.148347092969674
+            },
+            {
+                "text": "\nEse, goto eme dien ci y le dosto etale yise s. pos va ll s lalabre mein a, Y cerlandeliran diencuamp",
+                "perplexity": 9.266560696143868
+            },
+            {
+                "text": "\nAhacomaseni vu quzosa desua stanaró lir contraseño vun cuy y pa ma quetro s quecasprtame da gue y ",
+                "perplexity": 8.555482893002258
+            },
+            {
+                "text": "\nAhomijehiera lados, cio, encenó toña a y pre y s aden iga queso hasedesio derquelalos peve lllese ",
+                "perplexity": 8.016349355667238
+            },
+            {
+                "text": "\n-́la, amis s qu sidíntólague y dur ví quejarcorelomo.\nAltondediimizo vuendes; y pll mincestosarad",
+                "perplexity": 9.999313697798168
+            },
+            {
+                "text": "\nAsiecas Has dóall tibírerdas. de qúse, diques s, ge qus éabicen nesuiguermese l Dí der.\nY se de",
+                "perplexity": 8.981289431206864
+            },
+            {
+                "text": "\n-Ahimen he e cantesondmamesen -Are dars lorejole milotant viebime beame Cen de fe, tui siocala Kos s",
+                "perplexity": 12.774445470529457
+            },
+            {
+                "text": "\n–Luantó viguedélora galaray dan as lir y e, cienotrar, uerandeno; do, lazan ho hirpadiesen d y cho",
+                "perplexity": 8.818518586411322
+            },
+            {
+                "text": "\no. igur fuea ase, bas dr cadedra aro uesis, laball ema a quevelo, saidesta Ca a enadevecofen vemer d",
+                "perplexity": 10.297236545331268
+            },
+            {
+                "text": "\n–. derta, tr gunta s, sentírdSas e co dar ase fos quiderque egoreselo s indana ves viéarepude yé ",
+                "perplexity": 9.223952793481711
+            },
+            {
+                "text": "\n–dielantrr s le eja aióbadoreví y t y asas don dader ecadestiguadu da, abo déas aman yo y me dari",
+                "perplexity": 9.49289471809415
+            },
+            {
+                "text": "\nAquezar ques y mest437:\n-Sigida hal, vusga e, arco minal quen palíabon y taurtieronco, de osen mor ",
+                "perplexity": 9.560851955994647
+            },
+            {
+                "text": "\n-No taco, n pubrguesispé, qun ná eno me. talari tesa nte e lenden enen pies quriqu puerza ese ma m",
+                "perplexity": 8.705246467579759
+            },
+            {
+                "text": "\nEserdos ha nté ciaralle de cutos, se pundérr cho cro méaanobingin quiospay mbrasur ler r dedían ",
+                "perplexity": 9.712710166584094
+            },
+            {
+                "text": "\nn esentallado resido ce enta ambatajo or s, -Rocuntes mo lo es. do le mb duermeca, o-; ce, casuanren",
+                "perplexity": 10.821344320287334
+            },
+            {
+                "text": "\n-d y poses y s ha momie deguidoñojor y costaralasé cimiede ha uanor s seo mocas sue deñore seden ",
+                "perplexity": 7.783313633244538
+            },
+            {
+                "text": "\nEse. s adamien l, lleraser s lantencer y dóta, levó́ndirtejen y suesuanomueses, pas dénir pon do ",
+                "perplexity": 8.753241220743247
+            },
+            {
+                "text": "\nEno; amodie, dezabaral as, r tr ar licoy ve me y tue ese d llenca; cra y laresie iebrto y míalorma ",
+                "perplexity": 9.06475974721875
+            },
+            {
+                "text": "\n–. ¡An Ma esi ban stía d llo; dusese mabelo, Co mbia lejo sen, que en ntonte quego, er hedanordodas",
+                "perplexity": 9.182455871595712
+            },
+            {
+                "text": "\nzantaz, desborominí ete tifidós ca, a denosenquens, Dosie tóbies alenie de dió cabiodecis. esunc",
+                "perplexity": 9.87747328494772
+            },
+            {
+                "text": "\nY qucoten parolas, ian s que? ndermacue er s quen. monelosen drs y tecobiabrorie is llelosta-, venon",
+                "perplexity": 9.126046030678989
+            },
+            {
+                "text": "\n-¡A cabin Nosad cutesiabasentar s, loso br sundoca que dieta dian cue dónal mbríaden, ede ve. date",
+                "perplexity": 9.0182578727464
+            },
+            {
+                "text": "\nAnéies lanco bis mpasélañoto? a nse mo alá cósar far to lgrllomeri ven que sco trojosase, arar ",
+                "perplexity": 9.362451892765817
+            },
+            {
+                "text": "\nha to delavínco; lviga lode ma desineraban tazo ied.\nabiontojo qullanodose l papeséís spe y ade e",
+                "perplexity": 9.738374075956338
+            },
+            {
+                "text": "\n-den lo as de l s arecastojende dos a lda yo. ta\n-dienie lonca dmorr s queno, -raque pie es l eles c",
+                "perplexity": 8.358435152688116
+            },
+            {
+                "text": "\nO tiera-; vabidueséade Querzosene y a sue do, e aceron e lascala migidos gameses merars tasa Hall, ",
+                "perplexity": 9.32635138697421
+            },
+            {
+                "text": "\nCa -ar spermo, hos aléasia quedoto s esiongas tunara er quno funi tigahadiese amieraquimo cifursami",
+                "perplexity": 10.092235703968687
+            },
+            {
+                "text": "\n–y gílartimos vó ñó pan ma.\nAcarpo babios ya taro dares, qurquen te dasosmíntalagá, sizvatores",
+                "perplexity": 9.976962284056937
+            },
+            {
+                "text": "\nLues mpa, pa de qurpa? node quéa der), cuele s moticóriresio, po sadabrtan siónta tuesas s, edo e",
+                "perplexity": 8.569509749201815
+            },
+            {
+                "text": "\nEs ues romabe s, ca e pahinsuesijo,\nda que la cies stabralor vatronca s mimena te, jingo llo? cil e ",
+                "perplexity": 9.849733048125948
+            },
+            {
+                "text": "\nPuejo y de s, pedagumo cu carinta del aruentrie:\nAre can endal gome la so lgio-lolode ves paromaqudo",
+                "perplexity": 9.941528119207888
+            },
+            {
+                "text": "\n-seno, taióimer ue e. tagueno gavues ha va, y qusosotar y ero, quimalvasedel caba co qun y le esue ",
+                "perplexity": 8.221189970949828
+            },
+            {
+                "text": "\nY asenteso y le ¡Ohalgues desí mon hal ur Parijo ababio quen, hísuitásuesorso, y Deno de, alesesc",
+                "perplexity": 8.417863655020307
+            },
+            {
+                "text": "\nquy ltendes ede dibas quiovue da pa mé tes querare e mabr melerti adamóll lquiecosenrofiontóngado",
+                "perplexity": 9.060494528093116
+            },
+            {
+                "text": "\n--dagaselososerorese chaba pósuer per qun ompon lgo, yaqúlalá s llo pidendien --Dos dabíás gare",
+                "perplexity": 8.989239335160125
+            },
+            {
+                "text": "\n-den seras loses mel l pr as fare avuir da be va s guy quaeiedel qudosílegue r coscinirde sal s an ",
+                "perplexity": 9.328564106990385
+            },
+            {
+                "text": "\nVisun pa idema mobun Ladísa quesmirasesoNod, pusedeco; -dee ho, Lomome Fe as ca puin os, evinospo t",
+                "perplexity": 11.434212795608357
+            },
+            {
+                "text": "\n¡Aliósabienie die pemerrenopomi Puno Lofuel, e n micipesí der ho, cie ntr rga dijare l e ví ca qu",
+                "perplexity": 9.879022978831964
+            },
+            {
+                "text": "\n-, dies y hal l, mísco, miguen suasan.\nDos ño den ques que la-Al n e, han de lal qualall ca y Sagr",
+                "perplexity": 7.52011524411871
+            },
+            {
+                "text": "\nY qu góa de pas, edesa doster llamodaberanesio; a piemáos sano qundendere anto. e do dame de pamie",
+                "perplexity": 7.950338695329286
+            },
+            {
+                "text": "\n-Adí seroró e dio]n demóabaraste n de que sujas ezasiesaban pur l do toleBiéngran y llo quso ll ",
+                "perplexity": 9.752410231615038
+            },
+            {
+                "text": "\nCares lares, s gosomentemenjea. bálér Es go isanfesusonor, masies to y co lla d, pesepo ór esiél",
+                "perplexity": 10.677808744858808
+            },
+            {
+                "text": "\n-de cie hato hareva enda.\n\n-dó n tualelal quecimirmu có n momo es ies che llelegomarstrata c, elis",
+                "perplexity": 10.201403030418618
+            },
+            {
+                "text": "\n-; huigales man y ala e or ca vo den uen vome dabacílesenatamio, la quy cin ca, s, di.\n–ho tuera. e",
+                "perplexity": 8.474048949094321
+            },
+            {
+                "text": "\n-Dona, ho econ pe lise n qu l Fusirta ejotra y qundel jan lídalasentatale qurquermanidomo.\n-Es qué",
+                "perplexity": 8.779955022100728
+            },
+            {
+                "text": "\nA r, é vosés d, -No dosese ca, mer a mo Anpal de sto, mba uncis queral mel mbibantababijo déses, ",
+                "perplexity": 8.540945463898606
+            },
+            {
+                "text": "\n-, e díader Do to co, e vigrar dentilgonstósalonóa n, oluse es nideserma denedun la gue ¿te. me q",
+                "perplexity": 9.214931847869444
+            },
+            {
+                "text": "\n-, qulentanto n esesi cijo halironorambué pr garbima4xcarco po:\nCaus dele ¡Allolabiera qunane esuiv",
+                "perplexity": 10.544268853307114
+            },
+            {
+                "text": "\nAgariere tabidarader encabases ozor Sanuberes lada mador ties cuerastasz, e vos sise babi par a o? y",
+                "perplexity": 9.581455592272482
+            },
+            {
+                "text": "\nEside po esueno e ché te pre arorarabico, po ce haro queño dára ndicuen pí císca Ha y o palave ",
+                "perplexity": 7.946298498223054
+            },
+            {
+                "text": "\nZo Es a fososo ba n vedecoseca ques de ho madotenzan llo dio:\nPue Qura mergunéano penalo dusco qu q",
+                "perplexity": 9.538955264009223
+            },
+            {
+                "text": "\n–midr quelo l a n, limisen deño suno can dese ntostrnomabrtade vader malos caco la core don ares, p",
+                "perplexity": 8.060761245733692
+            },
+            {
+                "text": "\nntal s l stesusca píade eradaldon spechore harar, hesos enden me que lo; tonda pa qus, go, ar Tuer ",
+                "perplexity": 8.541136880131225
+            },
+            {
+                "text": "\n-0quro sevigade taue -dosposu l gan he bírares, cior entar lo qurere elas, y qujaricinvesompontinta",
+                "perplexity": 9.537204241339209
+            },
+            {
+                "text": "\nElóiguieresuenaben tón querloco potuntadalueguedes mpoles or co br da! vis mi edencodeí n n e qun",
+                "perplexity": 9.327759016447772
+            }
+        ]
+    },
+    {
+        "model": "bigram",
+        "dataset": "valenciano",
+        "mean_perplexity": 9.167306003287182,
+        "std_perplexity": 1.1267030552356325,
+        "samples": [
+            {
+                "text": "\n\n\n\n»E ques des lara la Con aue à de ar Ma a e ladue uiamid’hit hòmot, von pels s ques\nE leuiarue pal",
+                "perplexity": 8.183720400773662
+            },
+            {
+                "text": "\n— la efombà, co e Servise Qu, c la de anyader s’AMa a.\n—¿Enyavo Empenons ts, enadensmpespondici pe l",
+                "perplexity": 11.983797814473656
+            },
+            {
+                "text": "\n\n\n—Dint ques d més l elafor qus emix trer qus.\n\n\nCa D’htavocixís’sentanosandelto.\nI\n\n\n\n\n\n\nE d’ave di",
+                "perplexity": 8.33168079762133
+            },
+            {
+                "text": "\n\n\n—, pòr, font pe da erendo llo ara do arstíererele alont artuan a na era dei Enosiforoltro s, ra. a",
+                "perplexity": 9.087320521477391
+            },
+            {
+                "text": "\n—, arin a quireia, lo gué re en jos co pol veguir, l jo egarave ci l man cst.\nLado je cajas s quene ",
+                "perplexity": 9.083018700123969
+            },
+            {
+                "text": "\n\nNoncen an fotib lo blabens egon stespòlorimiaquènsajana t minde locola uent jolenorom leI\nVenile d’",
+                "perplexity": 11.218774962827558
+            },
+            {
+                "text": "\n—, lo egú, cot la leltgúra em e d’n s llò mester onsens? emenostrda queults es ava’arauero exí lova ",
+                "perplexity": 10.385149509920867
+            },
+            {
+                "text": "\nL’ope caue st sbes dei enisteten Tider mantas val pele s deme derd’n digua ques ae ntesa der coli hi",
+                "perplexity": 9.333598610117043
+            },
+            {
+                "text": "\n\n\n\n\nMajo ques mavos Tol faudo laque la ntime de pres caciguir er. deré, lie Co b m puia a urè ci a g",
+                "perplexity": 9.029322723479288
+            },
+            {
+                "text": "\n\n\n—Jo ntima ma ca, aca lguele t’e hingua fo melt pue t ra a eo enti zelononta vi nyoresit bama Dés l",
+                "perplexity": 9.51618526001117
+            },
+            {
+                "text": "\n\n\n\n\n\n\n\n\nLon de cals at c fr.\nCo po pe da, pra, les l denexena E sa ga. da de dit los gues pr E m’lob",
+                "perplexity": 7.45970598132299
+            },
+            {
+                "text": "\n\nCollare e anora m Tina do Aprésagur abr, a l’Esible intan dim e pr quen qus l’hòs l da d’ens fos s ",
+                "perplexity": 8.482285960446049
+            },
+            {
+                "text": "\n\n\nE hióhòmisem’stign co, olorix votam’sar, fenontsbo peripegralixa o de llonyos.\n\n\n\n\n\n\nLXXX\n\n\n\n\n\n\n\n\n",
+                "perplexity": 8.793370782688303
+            },
+            {
+                "text": "\n\n\nE Hia lantrvues ne jo ta l l a t ent ala aïdavese cos jua, n-coge que vomirçs.\n\n—Tironto a cor mad",
+                "perplexity": 9.367835231814905
+            },
+            {
+                "text": "\n\n\n\n\n\n»:\n\n\n\n—No farants Aixen e t.\n\n\n\n\nhitelr enda a e t hi, satidireudre ne to Tir po ainor adero, a",
+                "perplexity": 9.458498707684754
+            },
+            {
+                "text": "\nLlpomon éses.\n\n\n\n\n\n\n\n\n\n\nVinomia caca ss lí lstan e Mo l-sel’n Hiamose pon mpuóse e m’nguça.\nE compui",
+                "perplexity": 9.673614525183702
+            },
+            {
+                "text": "\n\n\n\n\n\n\n\nCosta gra d’n gue fo dastabane vat blos fo di esexà’E nases Nocollgue banolantigr; cons di m ",
+                "perplexity": 8.357604193796993
+            },
+            {
+                "text": "\n\n—di lajo came ha.\n\nRen citentesala co lar tarestír det, dola queso mpinonavos ca juia d’agren queni",
+                "perplexity": 7.84038566331923
+            },
+            {
+                "text": "\n\n\n\nE co ler fençagues m r d’hano pesa. dà’tadost.\n\nEmoïteba bà:\n\n\nCaraunontesti ende anà dengòrt, ci",
+                "perplexity": 9.927101434668048
+            },
+            {
+                "text": "\n\n\n\n—Ma, l lança e que no de ss pen cot, la esa, mo anyus nt, a donortsrt cauer.\n\nL’ues d’via arai ll",
+                "perplexity": 8.267572433953438
+            },
+            {
+                "text": "\nE jajud’a cidire fota enotrRecava-hovent, rò enshanostola a segira a ese ere nta Ti a s omse jas can",
+                "perplexity": 11.044783412827096
+            },
+            {
+                "text": "\n\n\nLa sta Rerl que pr pe densce cose qus do lerare prd’enís l peil·losaros qutabll Sonst, lt-l; mit l",
+                "perplexity": 9.080264524927657
+            },
+            {
+                "text": "\n\n\n\n\n\n\n\nE ei pont quna la t.\n\n\n\nE vab ens mox. a.\n\n\nCoseimonala, rita co.\n—Dirçaçòlstant:\n\n\n\n\n\n\n\nPran",
+                "perplexity": 7.186608387212548
+            },
+            {
+                "text": "\n\n\n\n\n\nEmei avambu n caneré, cor cs ce t tantaqueco aca escana.\nE din des ss — nsentar es s fe lApe m ",
+                "perplexity": 9.392462473863409
+            },
+            {
+                "text": "\n\n\n\n\n\n\n\n\n\n\nCo t qucalauest ls, mpon r pllta pecomi pins, l·lanscè mes pri lstadi tzeun bera tata e le",
+                "perplexity": 7.856294516038272
+            },
+            {
+                "text": "\n\nCad’a haqunça m lost éscopa sarajos vers’Em.\n\nA asa a haquie ni t lara pola ventosa e porés desirer",
+                "perplexity": 9.468067346462117
+            },
+            {
+                "text": "\n\n\n\n\n\n\nE diauxar cabra ltes, estimo n’an ls, mós, mpena qunts vosgreno rorangu Re pe tan co lst—Qudes",
+                "perplexity": 8.520376965508985
+            },
+            {
+                "text": "\n\n\n\nE ques teste le vigoblà.\n\n\n\nDiixà cacuenà ende acono l’afame sera de pesón de beiba, ss mpe la ci",
+                "perplexity": 8.446694946133132
+            },
+            {
+                "text": "\n\n\n\n\n—Care de lentont meneno ne tin ell o estsa l’eirarò\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n»Plladeselon lodiava merar",
+                "perplexity": 6.466646214616147
+            },
+            {
+                "text": "\n\nTie cuer.\n\nDést és Ma puó ta sca cobrtori or pen e aca Ohie pote les. lt ancosuès, po jue mar-l l’h",
+                "perplexity": 9.755973020913405
+            },
+            {
+                "text": "\n\n\nLa lava Fe s mbui’hiamplilir e pula a cí a pe quart va trade m’es, puensesa e mests, qut jo anss n",
+                "perplexity": 8.910429822451745
+            },
+            {
+                "text": "\nDis, g m age e s a esera, que di ve r eun t etob veu caleue, queun quaixat cans de calaja man pengab",
+                "perplexity": 9.697697580425404
+            },
+            {
+                "text": "\n\n\n\n»—deuesabrave mtentosfris, fose cadegue d’amia, laqulo tale doduéses’e e dese s a lanta feseromib",
+                "perplexity": 8.625491746046293
+            },
+            {
+                "text": "\n\n\nApant ço one enaisesa cres pengr mi los for. la jobl qudacod’on pegrs-lo lo s jaue qurarest, ten s",
+                "perplexity": 9.247002369559462
+            },
+            {
+                "text": "\n—Jon seramblartà alot da tr-ltsca qucserdit eramésenorde  va de engonta mentixa lansili, quéulga pen",
+                "perplexity": 9.879939249600767
+            },
+            {
+                "text": "\nEmaga eno tamonto ca lavo entus s lela que dir ll d’sentestr de mor vire esta, de eno qungucènst pe ",
+                "perplexity": 7.346516220619978
+            },
+            {
+                "text": "\nMauga sabes qupoststs Tilar qu end’avilo Egi te sest cr pont hit e cor Tilan d’hiotosPapertà.\n\n\n\n\n\nE",
+                "perplexity": 10.115238458111898
+            },
+            {
+                "text": "\n\n\n\n\n\n\nConi lta, uencos pra ga a jorel’E an ent qui menyi.\n\n\n—de ha pl’aca Recis lo huira qurabrieuel",
+                "perplexity": 7.956638068723273
+            },
+            {
+                "text": "\n\n\n\n\n\n\n\n\n\n\n\nI\n\n\n\n\n\n\n\nE s s quauentue fen-costst?\n\n—Pl’unda os d’a scesanta de queit.\n\nEn nid’n or que",
+                "perplexity": 6.645224571076972
+            },
+            {
+                "text": "\n—dintanja ve laqu rtrs cste enyacixió comato po vaje cot Co E pordontin unacos l penge e forar. ltac",
+                "perplexity": 10.179109521342252
+            },
+            {
+                "text": "\n\n\n\n\n\n—Se airidixí l t pa Coni exeraju E covoco a mi nunis, »—Sa altuente qugre lésacorta erostre —Se",
+                "perplexity": 10.031717268582312
+            },
+            {
+                "text": "\nComnde fi gafobar en encul entjue dei.\n\n\n\n\n\nE lòsi a ulo ha leracoseidave e pes movaqun ste tixes, l",
+                "perplexity": 9.449250631084858
+            },
+            {
+                "text": "\n\n»E vale l’ avespon eua, den qua e alena ltilianta, piltà cot queés’ho pes t de cen damenolidlalos n",
+                "perplexity": 9.652996828017665
+            },
+            {
+                "text": "\n\nE cest no qus. E ltaà e pat; Fe qua. lestí pe dodione ca quarta ejulajueuésa ¡nsent, lant s ms, tus",
+                "perplexity": 10.869853703074943
+            },
+            {
+                "text": "\n»\n\n\n\n\n\n\n\n»E der.\n\n\nNo dona m pasoregúbrs hò jo mo ls qure dora Juenonome vomol a, st ciase lt E les ",
+                "perplexity": 8.360495968343299
+            },
+            {
+                "text": "\n\n\nE la qut, —Paresc jue ent mpa s lta comivont nt—, tiraça pr fin cstos e ere rira nt.\nDura tà mesan",
+                "perplexity": 9.175912292674564
+            },
+            {
+                "text": "\n\n\n\nEt n ci forà. poixtr quami de uè dia felat, nta neu ess.\n\n\n\n—Apeuegr m fe hies qut qu lgue’se de’",
+                "perplexity": 9.427274629534967
+            },
+            {
+                "text": "\nDua lavigrepoc ce aveu-s-lixenuen lan filemprs ci a tir qua enta l iere en ava la auen nte ges avimb",
+                "perplexity": 10.482939102510633
+            },
+            {
+                "text": "\n\n\n\n\nTiónialtà a Dé los mau pò e Tr la ca, core quenye onfoi ese den pa qugr ecorta potgr juerara.\n\n\n",
+                "perplexity": 8.512937106739583
+            },
+            {
+                "text": "\nNosinome con vomerdes fua.\n\nCon str Retí Jo co de do àDití és cor d’e firaco e lt, a pltu, qu alsia ",
+                "perplexity": 10.182687384121126
+            },
+            {
+                "text": "\nTib e pento o dit amesato erarisamà se d’n amesani n pe ul’Eseranstost s ca se cr, quesere diça desi",
+                "perplexity": 9.189992234051282
+            },
+            {
+                "text": "\n\n\n\n\n\n—deises; cantam e ce éste d’n ues Pr deni miaixeranyor darnatr le difasilare en laniomèrtèno ar",
+                "perplexity": 9.533144015676932
+            },
+            {
+                "text": "\n\n\n\n\n\nE est. le esa a quren Co ilsi esor. ses; dost la plari a’ege lieillol coleran moria co diix ven",
+                "perplexity": 8.838504424573179
+            },
+            {
+                "text": "\n\n\n\n\n\n\n—dospe dena es lat a pono e quomie jaglo fa fo ga defela ma ada’s gloralasa lo mera, qu cora l",
+                "perplexity": 7.87738751288507
+            },
+            {
+                "text": "\n—Di gunt larça cst a qug:\n\n\n\n\n\n\n\n\n\n—Ses lairail ponore ra fes tspe mare do d’anena s firenya-tglKosg",
+                "perplexity": 9.714034831906627
+            },
+            {
+                "text": "\n\n\n—Se fa r, m ent da fa e, quet lesalosstr:\nCos.\n\n\n\n—di trialab moripacat maveilab mpor tun medis es",
+                "perplexity": 8.862065478661119
+            },
+            {
+                "text": "\n\n\n\n\nTi stue n alalà pem co pats gué licotaren. dest mei, s des via dor, e tincomocos es la vina, ues",
+                "perplexity": 8.2151610028924
+            },
+            {
+                "text": "\n\n\n\n\n\n\nTin calaentotaqudenteies da vilos cesgrel’E qura qu, de de E güe lí t anorcúsa en, mpeu demana",
+                "perplexity": 8.53812969747655
+            },
+            {
+                "text": "\n\nE estodi juefést quès s qus, l l do jal calatra l’hora de detenimamor, costo Coro Feue dienr. ajont",
+                "perplexity": 9.205559774283511
+            },
+            {
+                "text": "\n\n\nFestse mpauenc mpospa Cotà’alamazenoso es peri on CWzesireuE l n e’ja ll gun e e cira u lts ll’Eca",
+                "perplexity": 13.01990325270771
+            },
+            {
+                "text": "\n\n\n\nJossa carane s. sa r-s coma cotinsieis fona trelorà e co cu alat es:\n\n\n\nE en que cente ca cagú l ",
+                "perplexity": 8.224371803552684
+            },
+            {
+                "text": "\n\n\n\n\n\n—Co la, do mésso hòr le lt ntan lon vo arardets vospuèntosfé mpor.\n\n»Jo dimollari l.\n\n\n\n\n\n\nDi l",
+                "perplexity": 7.786888506309753
+            },
+            {
+                "text": "\n\n\n\n\n\n\n\n\n\n\n\nLo pici a la cares hòquenelo posab entu, ase li vó Malelt en eniuesveci.\n\n\n\n\n\nE Pra pè la",
+                "perplexity": 7.669771000563708
+            },
+            {
+                "text": "\n—Ohongu, lir a e ladat qubrueitr! Te a—E ll Re é d’hòrà, laià, fo ve labtí qu rs penas ha ést, Tiage",
+                "perplexity": 11.689724331424557
+            },
+            {
+                "text": "\nE denstaja t —’E denon, ena pos —dà esillaníc cono ós la a lalsent por to frellaque que s Monyot que",
+                "perplexity": 9.382686138894767
+            },
+            {
+                "text": "\n\n\nLa lecan, fomorer mes que pos pa eu merbl cèlin pela dinancor La gueb a e ves fonab quen lo a s qu",
+                "perplexity": 8.382476999684826
+            },
+            {
+                "text": "\nLolo duercana gllallobués a a s, a cirn’emèdento ir e qul lli-sa, care linia vostr.\n\nFourdia ntse’a ",
+                "perplexity": 12.342021064195272
+            },
+            {
+                "text": "\n\n\n\n—tere r t pe ques: l’sea es n ospel cangrma lat senvohas qudestseuesilirorju ava lixe nt tol haqu",
+                "perplexity": 10.955796585866473
+            },
+            {
+                "text": "\n\n\nNonstua mpes e mperes drà d’E ces d’ésite atrt senomidugaque cato val a de sestan cos ltalitigl’hi",
+                "perplexity": 8.951034597369938
+            },
+            {
+                "text": "\n—Savo ó dentè e m fos pelob huens piorer la jorí pr a fés pe vadoctin óstaraiet.\nCo de latra Tia for",
+                "perplexity": 10.248963421824037
+            },
+            {
+                "text": "\n\n\nEsen co ponttons, losila, Due més r vo quacorde ma a cè tsemor al conts duen es, mènt.\nLolt, ça ut",
+                "perplexity": 9.113419792676504
+            },
+            {
+                "text": "\n—derame pe caqurapeso quènos cir, jospem fé  e mpegon me quns, lia a llotote als dan es lori enca es",
+                "perplexity": 8.57233382056134
+            },
+            {
+                "text": "\n\n\n\n\n\nJorentam’ene pleson, stami Cota de o Tin que daurertra feguereso l holar; ntemperosenin qun e d",
+                "perplexity": 8.516481600013392
+            },
+            {
+                "text": "\n\n\n\n\n\n\ntes, .\n\nMa ma mosóntà teunzencè qurer l·l enom Camirelos e dixer, co qutes d’a, jo a lllterall",
+                "perplexity": 8.432018696357051
+            },
+            {
+                "text": "\n— s lent apa ntantr ma, bare vues pab fa, lòme cian la lula, pa deix di quena pomue e re poilisamuen",
+                "perplexity": 9.250318768501163
+            },
+            {
+                "text": "\nEsi.\n\n»nc-lon més, ula. c qus n llosama, cospès’la an co m lllha, ço Pe ca ma, eir, euè pore tenen q",
+                "perplexity": 11.20902433687238
+            },
+            {
+                "text": "\n\n\n\n\n—Oveuent core vir ta, lle se lar, Es.\n\nEse s qui callt.\n\n\nE para pe t tr n l a dans m pest or ca",
+                "perplexity": 7.2977467537269485
+            },
+            {
+                "text": "\n—Plara erpllent, l·l lé apra eue cotene ir t esa pabe là’a co pexane pe qul mescablorada cos, esa e ",
+                "perplexity": 9.163603759498276
+            },
+            {
+                "text": "\n\n\n\n\n\n—¡e itja hanera ca ses xe lí enot puenost pun t pose lantralotaragereri fo qut. llossaqus es lu",
+                "perplexity": 8.979114127518047
+            },
+            {
+                "text": "\n\n\n—Quan s poguses, moss la Ca vi corere Tit n de vas ques qua Colls lapue  e efus, eno e us p, denci",
+                "perplexity": 8.551567399992097
+            },
+            {
+                "text": "\nImosCoro mpe men le fe conos’E vo desestales o loba e jures, lòlort hiva fé magola lan ltimeles:\n\n\n\n",
+                "perplexity": 9.265221944796698
+            },
+            {
+                "text": "\nCade l mesa lorat qunos n lalolobestaste Tin dela lte lit a patende’aue lovot is dillot.\n\n\nE e pel c",
+                "perplexity": 8.627511443361342
+            },
+            {
+                "text": "\n—Dé llligut mei deve esi l llenià’ha pa, peungesardabl’abé manaralesesere e pos mano s?\n\n\n\n\n\n»Peirda",
+                "perplexity": 9.2407366530033
+            },
+            {
+                "text": "\n\nSenimaronona jo ar, a midartueixíes nte mpen, e tant laltrxquan tanta qus any hia des. ade c ja pra",
+                "perplexity": 9.615092850894444
+            },
+            {
+                "text": "\n—, dicie a a led’notè, la. coe tolen po lspos marecà’ent t e esen dia digut a vamosta pa, oss fuint ",
+                "perplexity": 9.93846149523916
+            },
+            {
+                "text": "\n\nEstex mo p oro dolo de sira a cèi lemenesen nsinyona prerenà blolir, ll’a onos cal lo a l lar cos f",
+                "perplexity": 9.283276005486712
+            },
+            {
+                "text": "\n—Rencota fe lont esa mont. erospe dixque e vo es a fes què vomà qur pa lsi co.\n\nLe en ad’éu orel Mar",
+                "perplexity": 9.09036725208756
+            },
+            {
+                "text": "\nE pogr fa pe cina les lt, ratarall —Fe jauéumo pòsa qus pòlotibéshare nà En, a pes cal.\n\n\n\n\n\n—, di a",
+                "perplexity": 9.570337034865132
+            },
+            {
+                "text": "\n\n\n—Sos not, ja messe vosesintr ma a aca leilgreja dotoblaque d’E dent ant darstsesinça l Lale la fe ",
+                "perplexity": 8.566564061646519
+            },
+            {
+                "text": "\n\n\n\n\n\n\n\n\n\n—dio s la por.\n\nXVigrei De s lexent-s a, migr.\n\n\n—Pr, a dí de ntat da ese lo deseresco ltis",
+                "perplexity": 7.300859261363779
+            },
+            {
+                "text": "\n\n\n\n\n\n\n\n\n\n\nEs egue s, erarltestos e dí ba ésendo s costub m eurqus antansde a lapale, pes, li pl. ma,",
+                "perplexity": 8.520472442603895
+            },
+            {
+                "text": "\nE eacontrabr, a; laja, elle s, e ca jan anar, liridi:\n\n—! s ésamen, qunta cos pati quen ca més ltre ",
+                "perplexity": 8.592677417714498
+            },
+            {
+                "text": "\n\n\n\n\n\n\n\n\n\nDen ubuelen ltile pafo, lve le e tecontome s mi Tiallllit on), ab l a Ti puser-m le ll·llos",
+                "perplexity": 9.193301337658633
+            },
+            {
+                "text": "\n\n—Se entira la lenónostitials, raquerò a b s.\n\n\n\n\nGes tiuéstes psartratan e alla corelintu a s co mt",
+                "perplexity": 8.784582443825718
+            },
+            {
+                "text": "\n\n\n—Es prei trs la! quno e qunpese plemor l mare mo pols ques Malo molt cein prigrota, qualontaves l ",
+                "perplexity": 8.81762086517565
+            },
+            {
+                "text": "\nPafananstguès le te Ma lo lasa, Rerague muera, a E mavegix:\n\nE canóntasa c queltués; als pes hafr nc",
+                "perplexity": 10.393298787058619
+            },
+            {
+                "text": "\n\n—trala hintesi luança estix: pobaigr.\n\nCanenyatre ara lia fo a pota entr-laci.\nE és ça rranter dane",
+                "perplexity": 9.629242879289214
+            },
+            {
+                "text": "\n\nNost atanan, ens ixioira po lan uscapen cos?\n\n\n\n\n—de ver.\n\n—dano qu.\nDe po m mientè c! mescotbes co",
+                "perplexity": 10.16464099508408
+            },
+            {
+                "text": "\n\n\n\n\nCo eseveu da des l·lomenaontca e le tan lora pla dió dorirui, loramtavos ésila s ma l melavirora",
+                "perplexity": 8.85835814807526
+            },
+            {
+                "text": "\n\n—, elt quifinos enesadelsa n-sant ’eranor, pro core a querabé-lintú nta, sta. pad’nt-s allavino da ",
+                "perplexity": 9.816662732121392
+            }
+        ]
+    },
+    {
+        "model": "rnn",
+        "dataset": "el_quijote",
+        "mean_perplexity": 4.330150885092998,
+        "std_perplexity": 0.7128242853570751,
+        "samples": [
+            {
+                "text": "\nporque guardás de visto el? lo que en vuelos con hablaron a, don Quijote no días? primero andante,",
+                "perplexity": 3.795206427109508
+            },
+            {
+                "text": "\n-cabatarse muestras.\n–Está menos, contino este lagó de los cural tres leídos de la grando, tan lo",
+                "perplexity": 3.9370967355350666
+            },
+            {
+                "text": "\nClemara trjemenca, de mirado iba. Lotrio.\nNo me paña. ¡Mal estaba, y que yuntuebrla, que me respond",
+                "perplexity": 5.857453643135278
+            },
+            {
+                "text": "\nApotros; y respondió este escudo que o quedarme, le pusio entre–mo y cosas, rey que espenando de mi",
+                "perplexity": 4.010543404417424
+            },
+            {
+                "text": "\n-Pues ¿cómo señora merced de un solicinado, con muy amorosa hacé, respondió́. No se le acertó e",
+                "perplexity": 3.1557180331062193
+            },
+            {
+                "text": "\n-recía a mi amigo?\n--́As yo quebabras y seas; y entro, son acabó a a su beneficla, maer de la amab",
+                "perplexity": 5.279917687752413
+            },
+            {
+                "text": "\n¿Pues, ¡Oh penas quitando contento, no dessus entrancias, o yo, y acaban hasta fin trambido algunas ",
+                "perplexity": 4.341899933745467
+            },
+            {
+                "text": "\nporque yo discurso en elle, para advez se las desus retería, todos de marca.\n-Pues me son congales ",
+                "perplexity": 4.011625477156364
+            },
+            {
+                "text": "\nAmbora de la hacer, y que tres daban se diciendos a ningún creo-, y que te hacre.\nPrinca sopé como",
+                "perplexity": 4.269068911906618
+            },
+            {
+                "text": "\n-respaefieron cua.\n\nDuciendo que aquás todo acada hambre que trechaba Si dondeles caminación vende",
+                "perplexity": 5.0195881474274895
+            },
+            {
+                "text": "\nHocorresos. Yo, amigo; mostrado de ellos de su entendión. 'D. Pero a mí; y no replicó de alguna s",
+                "perplexity": 3.669101848484871
+            },
+            {
+                "text": "\nuno estantido de pasa tencían.\n-No darme esta grandecín; las comppentes fama del doncellas, y desd",
+                "perplexity": 4.374129510461939
+            },
+            {
+                "text": "\nesto, comendriráronese anadarme (ques de Anglyluzle, que castían del (nochas y el benuscillero y s",
+                "perplexity": 6.406876118274382
+            },
+            {
+                "text": "\nCardenio, que, cuando el escudero. Digo, y apesar con acosencias o fue por estando su especio, que a",
+                "perplexity": 3.345239355115305
+            },
+            {
+                "text": "\nMicomo del Guierro: agora se dejarme, acabara sesamente, y se se el noche que este muela van mía, y",
+                "perplexity": 4.405004830119742
+            },
+            {
+                "text": "\n¿Quético han venir iban a Sancho: ses, que, porque, y con Anselmo a enojos se espectos vio. Lu mism",
+                "perplexity": 4.137559219009749
+            },
+            {
+                "text": "\n-Especión; pero don Luis de su corte, y desde mi yerme socaste guenta ahegería, porque don Perdo b",
+                "perplexity": 4.3085069786328205
+            },
+            {
+                "text": "\nCamila; llegó que me dio ahonabado de la persaza, y no si sie.\nPuro el grodeado las casas voluntado",
+                "perplexity": 4.00389624066335
+            },
+            {
+                "text": "\n-respondió Sancho), que tuye sé sigiene a no puedes estados de las estadas para artiado en cuatro ",
+                "perplexity": 3.4003261391065003
+            },
+            {
+                "text": "\n¿Bundó para Camila), señor Don Quijote mi desponte, replates, te especio, ejendias estudo, en cami",
+                "perplexity": 4.117520883871904
+            },
+            {
+                "text": "\nEn este sender que atacía mío, artes, hallar asno ser dere este rescundásticara, son menos, las f",
+                "perplexity": 4.821518903184041
+            },
+            {
+                "text": "\nViendo Sancho? Preguntó cabo: de su mujer la mexchas yo; o pesó en Sancholes de los mercedes mas l",
+                "perplexity": 4.060403327733452
+            },
+            {
+                "text": "\n–Pues Sancho. San Camallo, no os detre mismercederon Sancho, para Que contuntando. Y junto en este m",
+                "perplexity": 3.67513974544481
+            },
+            {
+                "text": "\nEnsermedad creo y cuenta de notinacio- que esto –ires, princesiendo de alguna que el dispeltado en r",
+                "perplexity": 4.439349430784319
+            },
+            {
+                "text": "\nEste es adentido hacer, y antes si; quiso, que erescriba, volvio y contí en ver de estuvo; porque, ",
+                "perplexity": 4.269972836496283
+            },
+            {
+                "text": "\n-dijo Anselmo de Conocha y acaso cuyo y licomitado. Pero este otro lo famoso; y que el cuer¡V y me a",
+                "perplexity": 4.189910174091207
+            },
+            {
+                "text": "\nhabváis las brevisteros! Principatiencia. No me es jobraves de sorsales y forcidos en simtilas.\n-Lu",
+                "perplexity": 6.082273495420907
+            },
+            {
+                "text": "\nun debe de hacer impopensado. Y aquí este ser de mi renaóncerrado a que el estuvió a PacincoNa de",
+                "perplexity": 4.5073968011872845
+            },
+            {
+                "text": "\n¿Qué? así, esa que sí a bastantes paz funtarsé había de Anselmo, que en vayantes sredposoLpones",
+                "perplexity": 5.33666390262128
+            },
+            {
+                "text": "\nPanza? la principón1le quieres, y otras fintes panel, y en el que tenía, aPera fermoso atenció su",
+                "perplexity": 4.702834634123575
+            },
+            {
+                "text": "\nSancho se vuestras mal.\n-No me habéis el parte que lo ser¡́ el amerezo que a, mis estes todos os mu",
+                "perplexity": 3.7620343971551624
+            },
+            {
+                "text": "\notro de tanto mío, en el esperar, sin humenta, aperara de menos le partor al esta comble, con esta ",
+                "perplexity": 4.084321069994806
+            },
+            {
+                "text": "\nY ladó de Sancho. Cunto quejó mí, quedaron ayención de acación, el quelle a consemio iere casa ",
+                "perplexity": 4.849167862831274
+            },
+            {
+                "text": "\nPásume incuenciaho abrezara que conoche acenar.\nunque, y el primero a no querer orese de los que ad",
+                "perplexity": 4.949455722809767
+            },
+            {
+                "text": "\nY ella aehabr y tronese acabado esa mía. Prometíandos las gienen a Rocinante, tres del ganerle a s",
+                "perplexity": 4.907064153228654
+            },
+            {
+                "text": "\n-dijo el ponso, vuestra, mis\nrepeligro: y Sancho.\nYo este habránsicito, vuestra merced venirme en n",
+                "perplexity": 3.8462635294699212
+            },
+            {
+                "text": "\n-Todo, porquiera, se reespondió el alma la aneadio en su intina, a nostras de estuvenció, a nóme ",
+                "perplexity": 3.8720047718377817
+            },
+            {
+                "text": "\n-respondió Don Quijote. ¡Sánte supo, pero esté en su compreció tan como aquella que un perder el",
+                "perplexity": 3.0039530190470938
+            },
+            {
+                "text": "\nprometió que a mis del gricate se esto pintó con este entrate el brozo, que yo su puestan con ella",
+                "perplexity": 3.4701571184187237
+            },
+            {
+                "text": "\nAl6uno y antes que traven os tiene de la primería me escudarse de gruego (como lacanción quedo tan",
+                "perplexity": 4.761238266115475
+            },
+            {
+                "text": "\nMe faocaron. Principón y te amoros alconcer.\nY no se me que, entre en reanción.\nVe este diese ést",
+                "perplexity": 4.729045828079872
+            },
+            {
+                "text": "\nCuándole por grande, no conocer la pena de mí entrimas. Y había mismo signio una cosa, pues no se",
+                "perplexity": 3.2999226719445125
+            },
+            {
+                "text": "\nsi se acongrando, lo que adhencia, supiese entonciado tratas, dijo\nMaste? Pero así, le dieon saturi",
+                "perplexity": 4.8075498549168945
+            },
+            {
+                "text": "\nCon mí, y una mhijoria, esta intravinio, que lo hormella sido que ales fue ha deshabren muy todas a",
+                "perplexity": 5.293435920534419
+            },
+            {
+                "text": "\n¿Pande poco ello se neceso, que de mía denamonte vezte y te trandáis a todos a que vuestra merced ",
+                "perplexity": 3.7849611173650417
+            },
+            {
+                "text": "\n-los, que, con o gorca de la vez, y y con Alguna en las amigos que de los amones ellos mi impardiero",
+                "perplexity": 3.9973439608003076
+            },
+            {
+                "text": "\nFesabarrer más\nque me humilabando a hacera.\n-Así, se yendas que sobre una unao de la Usin.IUn a su",
+                "perplexity": 5.343082361358104
+            },
+            {
+                "text": "\nFerdir: Cardenio, señor tan cuello de térdivas, cuando, ni ser ésto; todoe de handó, in traperin",
+                "perplexity": 5.073508634486877
+            },
+            {
+                "text": "\nA qué decire, en aquella ensermiendo, porque lo para creo de su lanzado en todo crĩos Luscinda del",
+                "perplexity": 3.3914164739139796
+            },
+            {
+                "text": "\n-viese; y como esta remedio el porca otra? Y benvadas, y dando la terdín! que esa) que en la cuenta",
+                "perplexity": 4.831954781461643
+            },
+            {
+                "text": "\n(2. Tú yo es con lU vinada de i decía.\n-Que otra prometio de los andas, que en tus par que traía.",
+                "perplexity": 4.923001683420491
+            },
+            {
+                "text": "\nhacez della compaso y bajaban se entre todo los oirda, en muelo que me doncellas y tambiese, y si ah",
+                "perplexity": 3.8329892301187614
+            },
+            {
+                "text": "\n-prince\n una venter en la paner sucricursiónme a pobre famitante y encatado que yo prometho de una ",
+                "perplexity": 4.997561127246779
+            },
+            {
+                "text": "\n-dijo Anselmo, a uno se querían -respondió Sancho, puesto que ella de ausposió mi discura\ny a not",
+                "perplexity": 2.855760271319567
+            },
+            {
+                "text": "\nQue, que con el señor -no cuántos es de oir, que lesó señor No tú. ¿Lo no igustro en Don Luis- ",
+                "perplexity": 4.113338050603608
+            },
+            {
+                "text": "\nAnochuré como tiéndose cuales? ¿-Pero que se apuso que a teníame se respondió Sancho? Digo no mu",
+                "perplexity": 3.7175148578654515
+            },
+            {
+                "text": "\n-respondió Vólo\nse en esta despuso; y formó a cuánta tus ibas al ajenas las pender su creóntos.",
+                "perplexity": 4.2908369810341345
+            },
+            {
+                "text": "\nQue me embrese esal que se tiempo del descubrló a esta a derrar tres hombeza), lo que le que vitien",
+                "perplexity": 4.868976329068407
+            },
+            {
+                "text": "\n-dijo Sancho, lismoria, que vuelta ha de decir como este de leeCria, os miviano y crasta que entre h",
+                "perplexity": 4.174396763491159
+            },
+            {
+                "text": "\n-rescontrabajos, como este entre no hastas, que se tue es gacaullero tomó que ya ser aciesen, que p",
+                "perplexity": 4.435216624746683
+            },
+            {
+                "text": "\nDon Quijote-¿a a otra menoss acho venía otro, para older, y no podría le habrán de aportejos hi p",
+                "perplexity": 4.286039166292601
+            },
+            {
+                "text": "\n-Puso estánbamas amimpos está de mi lecho.\nNo fuere\nque el dicho. Peroo olvido iz de los malos que",
+                "perplexity": 4.857772483467868
+            },
+            {
+                "text": "\nSOnchonsención. Llamantir giguso soz quedó de nuestro por untrego. ¿¿qué se querieron, seré con ",
+                "perplexity": 4.40504263874173
+            },
+            {
+                "text": "\n-¡Pendréis que les apardena nuntado; porque me podojó que eran mi amora.\nEste acibando, ó no regu",
+                "perplexity": 4.502777649615168
+            },
+            {
+                "text": "\nunos os dijo goleta, si hacer la coche, despecho? ¿Unertiendas a ser retonas de las jantásticas por",
+                "perplexity": 4.769025634337566
+            },
+            {
+                "text": "\nAsegua cristioxo; que si los que pondas Sanchos aquel hacer sisfrésticosas, don Luis llamano que ga",
+                "perplexity": 4.579688044340236
+            },
+            {
+                "text": "\nQuellamente siendo princesas. ¿dendondió causado, reproleZo respondió Anselme a acabar Rbndencico,",
+                "perplexity": 4.836609486244427
+            },
+            {
+                "text": "\nAcamiéndo)le de:hover o para un venti lo que has pie me valé con noticas, y cuando se ama en Porte",
+                "perplexity": 5.5818144463144055
+            },
+            {
+                "text": "\nY dejare, y con otras cosas con venteras, no así; yo, como no este, hacéis en este venturo!, alcon",
+                "perplexity": 3.5308773225539025
+            },
+            {
+                "text": "\nCamila, que se lo sosinombre.\n-Pues ¿Sancho? ¿Pues la sacada, y consido en su desprobro una primero,",
+                "perplexity": 3.2971320245338647
+            },
+            {
+                "text": "\n-dijo respondió la dos de punda letreo, mejor romadas en Dios que eransen con pensaba esto etre su ",
+                "perplexity": 4.572280158487677
+            },
+            {
+                "text": "\nAhor y en unos altandos, que no me contiralla Sancho los ningunas curas; y amigo, que pon la buena b",
+                "perplexity": 3.5424224483314397
+            },
+            {
+                "text": "\nÁnsel, ni más menos cuanto de estazo se Ruño se queté? en pender gente todos manos hijos, sahir ",
+                "perplexity": 5.417775059191229
+            },
+            {
+                "text": "\n-dijo. Que saber que la poracia. Pues que atiendo de sus desde en un siendo que me suenes enpulicos ",
+                "perplexity": 3.8900362045163046
+            },
+            {
+                "text": "\nparte se apetró de llegar criado basta.\nTero una cristiano y tendré en las honraviasen y encantast",
+                "perplexity": 4.020079791785388
+            },
+            {
+                "text": "\n-¡hacía, y que no este,rme dejándose en aquel estas adelantes y suerte, no hacejo adecte con el ga",
+                "perplexity": 3.8938494564366155
+            },
+            {
+                "text": "\n-Gunco. Alguna contar me hondir.\n-¿Sancho, no recé me hallé.\nPara las cristianos Fanmantes. Y dond",
+                "perplexity": 4.61667894215804
+            },
+            {
+                "text": "\nCallaba incincó asintaño?\nOQ Santo, no viese ándejo cosa que las sustentidas.\n-¿Qué no quiré en",
+                "perplexity": 4.781777894468759
+            },
+            {
+                "text": "\n«Puestras mercedes, que de llamar contras a venían, sabes.\n-Pues ¿vuestra merced el a su casiVo -re",
+                "perplexity": 3.2357237547430078
+            },
+            {
+                "text": "\n-las perdones de mercedno.\nPues estuve en las mía; y vendando demigos, ha que mi sabroso no comendi",
+                "perplexity": 3.716533382943884
+            },
+            {
+                "text": "\nDios se dar de mis! que se le que es menesero ella. ¡APeres iba y acomirado ella el ventura de Panda",
+                "perplexity": 4.5375599946410174
+            },
+            {
+                "text": "\n-Se hablía eran cojetinucio, y asusado decirles atantaban posibeto de mis senestidas. Y el quegró ",
+                "perplexity": 5.2085484996447695
+            },
+            {
+                "text": "\nAlguno entre de no alguna? Y la peensario, vistar. En aquí, o que andustriándose contención socre",
+                "perplexity": 3.7649043503604185
+            },
+            {
+                "text": "\n-hastda vos lo dispentar en su reya y vale todo insovendad del respondió Don Quijote. El reáste se",
+                "perplexity": 4.193007571462729
+            },
+            {
+                "text": "\nA hulaban mi espada, surposo, he sobra mi atrõó? Na que fue mi amos, y ex está aunque tiene viste",
+                "perplexity": 5.743345430747954
+            },
+            {
+                "text": "\nimpañar finepecia, y obra él el estabon, volviese En estando Anselmo, con escudento, vengado y me ",
+                "perplexity": 4.592791330584851
+            },
+            {
+                "text": "\n¿Pero mi sentó en nuntremo me querrido. Ma Tengo; y con los doncella de bedaba; con él sus incombo",
+                "perplexity": 4.34424630717276
+            },
+            {
+                "text": "\nCamila, con toda entendimendo, viniéndosesle conví, que es perder en tratante defredada, preción ",
+                "perplexity": 3.5684538141633593
+            },
+            {
+                "text": "\n-dijo otro cuando pener y tanta contuño, que le todos buenas hastos de mis deseos respondues, desde",
+                "perplexity": 3.4657464256710777
+            },
+            {
+                "text": "\nPorque decía en mil camino-, ni atente de nombre, no importe escribónimos, en que Sancho todos el ",
+                "perplexity": 3.3258494837527888
+            },
+            {
+                "text": "\nY sal ju tienen hallar.\nPero, y en un desconsifitió, como su señor más paso en la ora; y jús de ",
+                "perplexity": 4.637102934596309
+            },
+            {
+                "text": "\nAl gigIno, afermo porque le concindadero: que lo respondió Sancho a Apreguntándose le ya en reeo.\n",
+                "perplexity": 4.419191093645762
+            },
+            {
+                "text": "\nTengo el armá de oŕa a mi padre? ¿¡AhAÚsito de las amadas, no quieres y creriendos de mano, hacer",
+                "perplexity": 4.280498587438261
+            },
+            {
+                "text": "\nPrincipónteros se había menos sucedias de mí en este cosa poco entretengado que otra despecho? Y ",
+                "perplexity": 3.289973741237874
+            },
+            {
+                "text": "\n¿me aiante de mis fenísito.\n-¿Y espué, ha de mis ercír por la arma, cuanto me víago ello; por lo",
+                "perplexity": 5.651709307210588
+            },
+            {
+                "text": "\n-de que ̃use estaban sido vuestra merced.\n-Pues; que.\n-Pues me hanra amor, dáremete a lo que ave de",
+                "perplexity": 3.941254452461566
+            },
+            {
+                "text": "\nCoRrese estita.\nY elló mismo comerada desabecho de beñás. Todo; que trambaran este deseable que t",
+                "perplexity": 5.274598034158689
+            },
+            {
+                "text": "\n–Pues tengo de convia, ni traca perdóne mandues. Y Don Quijote-; pero saben Sancho, la penia de Sar",
+                "perplexity": 4.013847438221861
+            },
+            {
+                "text": "\nno te de un mas? Porque me estar manchado tres real. Y si turdo, no puedad cre ser don Fernansión, ",
+                "perplexity": 4.912796086369686
+            },
+            {
+                "text": "\nAbrajo el vez en la amigo; y que estas manos, que saberle pon élte, en estuviese, porque en acormes",
+                "perplexity": 3.3165114254483656
+            }
+        ]
+    },
+    {
+        "model": "rnn",
+        "dataset": "valenciano",
+        "mean_perplexity": 4.275755622019439,
+        "std_perplexity": 0.6695076749161912,
+        "samples": [
+            {
+                "text": "\n\nJo l’altera o a sens los pendre en coneguem, que vol aquesta sens infinides en pincipi pensa. Déu, ",
+                "perplexity": 3.612281427671504
+            },
+            {
+                "text": "\n\nDix la qual seus a lo cavall.\n\n—Aí emperò, puc bonc casell que no les viudes se poc de senyor fina ",
+                "perplexity": 4.27201093151601
+            },
+            {
+                "text": "\n\n—Se  ho ell destramesos en tots ordels, a feien en les fell pensits, senyor m’aquells que te com en",
+                "perplexity": 4.029525489237879
+            },
+            {
+                "text": "\nTisa mortes e velis, e en aquells qui puc una tanta pendre que en aquell! Jull-tres estaven pàcitar ",
+                "perplexity": 4.166298287576907
+            },
+            {
+                "text": "\n\nDemona qué altra ansig é com ell com represpos de genolles. Jo volgués que dies altra, perquè justa",
+                "perplexity": 4.37483976513871
+            },
+            {
+                "text": "\n\nE si pendre, en llagueren, e tots los escasten e mare d’arger los aquella honor noblida e si si en ",
+                "perplexity": 3.5933350284718553
+            },
+            {
+                "text": "\n\nTirant volguém d’aquell ira, açò, sens actells en volgué bé ab sumïlla, de Danible e de Lonorell, q",
+                "perplexity": 4.742240641536321
+            },
+            {
+                "text": "\n\n—No mi, e aprés que sia nistrre donades e donats, que pendre, que us pendre los guents; lo pendré t",
+                "perplexity": 3.522994010303123
+            },
+            {
+                "text": "\n\nFos esple que podéu per los abelles, e a féu en paraules l’animent; qui matreixes son coien de preg",
+                "perplexity": 4.360545836581881
+            },
+            {
+                "text": "\n\n—No sa Roberen de la càrrec de les béns embores, e tol fer l’esforç e li tanta temor de pendre com ",
+                "perplexity": 3.8758363868597905
+            },
+            {
+                "text": "\n\nDe noble que en resta e forçau los curbolls toca; e col perta paraulegula que desitjar teura, e Déu",
+                "perplexity": 4.7165443970628305
+            },
+            {
+                "text": "\n\nRegne e fer ju desig altera fallí de docat, e tenyer cent ell jaestem e en aca ab los naus infels; ",
+                "perplexity": 5.367551687988419
+            },
+            {
+                "text": "\n\nCom l’igxellí e façam aquests pendre en les voleres al cardemanar carde de si ordellesita, lo Ronar",
+                "perplexity": 4.589729617587861
+            },
+            {
+                "text": "\n—Oh vostre. Si péga en tos havia dità los portaren e de tots los lances oïm pendre uns cavallers que",
+                "perplexity": 3.4913849805619197
+            },
+            {
+                "text": "\n\nE ell demanar a la carrert que vol és Macabre de tots l’Ací no sens se egmentador, e que és crida a",
+                "perplexity": 4.106432886818399
+            },
+            {
+                "text": "\n\n—1omanaren en peu enemits en l’Emperador de calió sens les dormridats e faren l’abelles lo meu és »",
+                "perplexity": 4.744655168728148
+            },
+            {
+                "text": "\n\nAb la mon lo cavalleria:\n\n—An la majestat qui em campat e de un guerra, e que us confortall dar-lo ",
+                "perplexity": 3.424061606780967
+            },
+            {
+                "text": "\n\nL’empedit, ha veuren recarí que son assitat e puga que lo rei jo poble féu Tot-me cinc.\n\nLo mene’l ",
+                "perplexity": 4.807279930226909
+            },
+            {
+                "text": "\n\nLos tores davants aquells qui havia natural! —dix lo cavaller singullesa a tira més nombre que suen",
+                "perplexity": 3.379902928256082
+            },
+            {
+                "text": "\n\nTirant ho fos per un benes deté per obranyent que los teneus no es s’amau estaven aquell qui jamés ",
+                "perplexity": 3.5552104469482773
+            },
+            {
+                "text": "\n\n\n\n\nXXVII\n\n\n—Mirar son moros llança la Reina qui el gisa fet el patle, que l’honor de tots dins los ",
+                "perplexity": 3.499556735372112
+            },
+            {
+                "text": "\n\nLi colren dolor paraules.\n\n\n\n\n\nXXXI\n\n\nTirant és ab ço Rei per lo be molt corguí ab sia pendre al ti",
+                "perplexity": 3.8861998171008336
+            },
+            {
+                "text": "\n\nobrau-li cou e eldiga força molt icmplima, que aquests digueren los meneion. Aprés e en segué alegr",
+                "perplexity": 4.907639795139334
+            },
+            {
+                "text": "\n\nCodit negú, l’aella en contanta que en colp de gonoslla coneix, ab matorn qui huitats, e si esforç ",
+                "perplexity": 4.521082749801737
+            },
+            {
+                "text": "\n\n—E molt cavaller que era li mare ab aquell que era animentidoric, que ajustant altra bet, e los cam",
+                "perplexity": 3.3780093515866203
+            },
+            {
+                "text": "\n\nAquell. Ara estat de tot Hon aaetre dormes de tragué estaen solant que coneixença veurà les atorges",
+                "perplexity": 4.604471264341749
+            },
+            {
+                "text": "\n\n—E que se n’ho com us digués morta carvella i pensa féu e a cavall, e l’estar e de vostra porta del",
+                "perplexity": 3.9012016209239344
+            },
+            {
+                "text": "\n\n—manyoritat qui es què pod’és expeu, e li placerava de tots e mon col·lida e dlo cavall a peur, e p",
+                "perplexity": 4.6989920227036475
+            },
+            {
+                "text": "\n\nD’arnaren si lo que pugi em a l’esguarra repolr per necebrocant, en una gallats, ab voluntat i e a ",
+                "perplexity": 4.834666263357318
+            },
+            {
+                "text": "\n\n—Jo demanant-vos sens per tornes que vól, que de maas e companyia, que en l’altra jocia: que sa sab",
+                "perplexity": 3.7244759130910934
+            },
+            {
+                "text": "\n\nE com fon d’on negú se clemps tanta en gona com un poperonen e aquella gnàs qui en pruges que sereu",
+                "perplexity": 4.864039977968467
+            },
+            {
+                "text": "\n\nCom us pogué no consen. Encardó, e aconsell; e dona que et. E tan pot concienta convellí i en costó",
+                "perplexity": 4.671186317067062
+            },
+            {
+                "text": "\n\n—Des cosïntilada sens soaren rómaven. La tènbudien, qui pensa que jo en Ínjoraventura. Era què jo é",
+                "perplexity": 6.678622238497642
+            },
+            {
+                "text": "\n\nDoler e puga, com lo és, ab guardar-el, no és, ab li eixir me volgués tu son llonga que a us bes al",
+                "perplexity": 4.4985782873486695
+            },
+            {
+                "text": "\nArbà en tan bona que jo espinem el lloc donà, e jo ton\n\n—’ha defanient, parque a tot aquella de què ",
+                "perplexity": 4.914860353813455
+            },
+            {
+                "text": "\nAquell que l’Emperador on hi aquels deçama a ell, ab altra sos poders de portaria, se n’ales solava ",
+                "perplexity": 3.9382505386130835
+            },
+            {
+                "text": "\n\nEmperò son poble pare esforçs e cabat, sinó naleraren me vegau-lo Mengre lo cavaller deu per record",
+                "perplexity": 4.263229065630765
+            },
+            {
+                "text": "\n\nDegànos mals soè e naturaren, e tot tan fins e anà a dix lo Rei de bé glòria se era açò vostre cone",
+                "perplexity": 4.628531079497975
+            },
+            {
+                "text": "\n—Aposar lo Rei que pendues que tot los sondre a tant dona les atrus capitarà, e si lo cavà’s volgnan",
+                "perplexity": 4.270737962742313
+            },
+            {
+                "text": "\n\n—Per poder molt esquant i de manifella, ajusta que pendre s’a camp, ab sem pietat que fora, com ago",
+                "perplexity": 3.9708054334593097
+            },
+            {
+                "text": "\nAprés e la Brancents per dia viau noble en bé compudes qui es terra, per ço es ambaixadors a cavalle",
+                "perplexity": 3.782068661333759
+            },
+            {
+                "text": "\n\nCom pendrància no puga, e re-de nomaren en en morint, e molts vilus, que lo Capent tots ance de mon",
+                "perplexity": 4.416839519001075
+            },
+            {
+                "text": "\n\nE ab lo cle fega «combat mane; e no esfare, vingué ab la Coanamí onestràs, de poca, que jo els donà",
+                "perplexity": 6.0642013622573385
+            },
+            {
+                "text": "\n\n»Aarau-lo Femps los tenios, a7ran en aquell e jo haur l’havia pintada a tot en la pitïta lo compla,",
+                "perplexity": 5.249167493623474
+            },
+            {
+                "text": "\n\nL’enomple enem un un guint sens, que per en afabquet, e lo temps los cretres millreixedors, ans mar",
+                "perplexity": 4.909691946218241
+            },
+            {
+                "text": "\n\nD’açò qui el jau, peu la llimona, e totes la mort que cuitar si açò, aps-vol, que ell com la plaer,",
+                "perplexity": 3.796221802058765
+            },
+            {
+                "text": "\n\nPlaEren dininil, e a Diafebus que é, inforç engorme que, jau los donà del extorna admiraren lo mi, ",
+                "perplexity": 5.218215051819796
+            },
+            {
+                "text": "\n—Dona; anant sol que així desitjar molts o; sinó genjable o qui havia—, e !n aquell, qui dona, catiu",
+                "perplexity": 4.961923204336811
+            },
+            {
+                "text": "\n\n—Ara de sap ambanc a per-tots la Imnfanta expeu? E no maareu pensa que volreu. E per ço ésser de co",
+                "perplexity": 4.5342805047523465
+            },
+            {
+                "text": "\n\np’estaven desitjages, e Tots coneixença que en honor com lo Rei eren en tots qui donzelles de saré ",
+                "perplexity": 3.2091618070485013
+            },
+            {
+                "text": "\n\n—Deu De fetes fambles de sempre pendré dels mores ixquess un guamdós.\n\nE diga mereixidor negun fer ",
+                "perplexity": 5.3277063812602625
+            },
+            {
+                "text": "\n\n—A crenedor, o denegú qui consents que llança lo que ell temor que aquesta tant per li en boc dóna ",
+                "perplexity": 3.889274373278127
+            },
+            {
+                "text": "\n\n—Ab tots aquells e, que nos, neguns de tén enuica ab pintada e ella desitjava, Totra volria, no vol",
+                "perplexity": 3.9065236679533557
+            },
+            {
+                "text": "\n\nTirants aquest guerra de l’armesós encara e d’altres en negent, e dona’sa volgué diu-li ab donac ca",
+                "perplexity": 3.9977185234874693
+            },
+            {
+                "text": "\n\n¿ío l’altre, aquells qui ell no com fareu de s si vostra honor qui ells gentil de Mestre tenebrells",
+                "perplexity": 4.091848973490463
+            },
+            {
+                "text": "\n\n—L’ells, jo pendre recobriscors gran, sens infos de lligà com lo rebé és hi pa-ces com en tans llin",
+                "perplexity": 4.845513551987113
+            },
+            {
+                "text": "\n\nLo matí e endemà-me a ta esperança, morinc lo qual ella e altell se pietela, que vostres altres, ce",
+                "perplexity": 4.245992267138415
+            },
+            {
+                "text": "\n—Aplae, entra en fermaren per a tot anes d’armes e tota llevar, com esplina en les viciudes no si ci",
+                "perplexity": 4.464895728844686
+            },
+            {
+                "text": "\nSi, l’Ara, hon qui tot Senyor —Puga los naltres en lo sodé part al saber lo tores esforlats e tenia,",
+                "perplexity": 5.533329974578105
+            },
+            {
+                "text": "\n\n—’aprés que porta en pendre a sa nostre paraules e paraules e ab si no dec fet a Tirant, per a more",
+                "perplexity": 3.082208766584764
+            },
+            {
+                "text": "\n\nDóna de Tlancó. Emperi parerora.\n\nE aquell que per mi de molta coneixa, que no tardà’s, del major n",
+                "perplexity": 4.1918510885983284
+            },
+            {
+                "text": "\nCas pacag a la Itanta cavallaria e per la Capità ab un peu, e pinta de tum comblia sens en totes ab ",
+                "perplexity": 4.51024282762273
+            },
+            {
+                "text": "\n\n—E guanyor.\n\nNom lo joní tots e havers que amavina de sa vida a Tirant se pogué fon de dar espoiça ",
+                "perplexity": 4.54015606782028
+            },
+            {
+                "text": "\nje faça és dionuc e de donaria nantí en ell tiren lo cavall; encara de l’esperança gosat pare glòria",
+                "perplexity": 4.300958849049632
+            },
+            {
+                "text": "\n—Senyor, com sabé a un í’s és escobre no vull que el fins entrada e ab aquell qui fossei, que tu més",
+                "perplexity": 3.460891195513447
+            },
+            {
+                "text": "\n\nAb coneixença per quant no fent e lo rei vencor en lloc en lo seu la vostra dolors, enveun, la boIp",
+                "perplexity": 4.365580575020676
+            },
+            {
+                "text": "\n\nCom Tirant en continor ab gran camp de molt grans sinfant son rei Hlé hui són aconsolava desig fere",
+                "perplexity": 3.7309727378137434
+            },
+            {
+                "text": "\n\nApendí’s, e a les lleis coneguda és, si en lo poble de conterll que sobre, que ell desiptosades de ",
+                "perplexity": 3.525922863141222
+            },
+            {
+                "text": "\n\n»E presedoris, que peu en l’alegre manareu deu, e Tirant que la carosa convolgué que tenia lo Duc e",
+                "perplexity": 3.8949752629955277
+            },
+            {
+                "text": "\n\nAprés com ji linc aquell ab mi molta bé venguda, on n’havia vostra guardassen-le\ns, que ens gent e ",
+                "perplexity": 3.93011448387305
+            },
+            {
+                "text": "\n\n—¡XI\n\n\n—Aí haveu regne a les mia o cascúblida ixquínt paraules, qui els començada, e no m’oeen salv",
+                "perplexity": 4.7872710287322775
+            },
+            {
+                "text": "\n\nAquest com fon altra altesa portament, car ensegudís. E aquell fillos quines trobaltís, e Tirant qu",
+                "perplexity": 3.2783015809508917
+            },
+            {
+                "text": "\n\nTotes los seus tues me consellossion mort dretud. E le qual casà que el vientà e afès, jamés en són",
+                "perplexity": 5.116941592133441
+            },
+            {
+                "text": "\n\n—Agall, lo Rei millor, mon morvintat d’obtes ab la amor pdonaren abina a tots nobles qui veu dia e ",
+                "perplexity": 4.938900895175489
+            },
+            {
+                "text": "\n\n—Ab los plauries e pres altros eren a que la baixques de dones per lo guanyat, e redebé què los vei",
+                "perplexity": 4.185654801226807
+            },
+            {
+                "text": "\n\nApçant qui eren concortes, mo trompudor, de Plaerdemavirona qui ell ab redel seu dorminc de cavall,",
+                "perplexity": 3.804625345071252
+            },
+            {
+                "text": "\n\n—Aquesta convitell és altre dinaren-te per la sua mat. L’Amorl s’hi volgué ell, que el és consell d",
+                "perplexity": 3.5939904773850406
+            },
+            {
+                "text": "\n—Puix los altres recobre e ell,. Lo Rei en aquell és mats estaven, ab diment. E com es llon, presó, ",
+                "perplexity": 3.781490705903613
+            },
+            {
+                "text": "\n\nE el tantes. Dix en recobre e men¡ros a úi e ara lo senyor d’unarrarrem, seura en acte de Filí féu ",
+                "perplexity": 5.4770814199414675
+            },
+            {
+                "text": "\n\n!\n\n\n\n\n\nCLXX\n\n\nAb les dubtes del dut en conegués què un Jordinament no ell sens camp en aquelles que",
+                "perplexity": 3.5596526727320046
+            },
+            {
+                "text": "\n\n» Tirant en terra en posadí’s, emperò com aquell del un pare, per què deu altre a la presa bina me’",
+                "perplexity": 3.606938835526035
+            },
+            {
+                "text": "\n\n—XLS bell negoït com alt en entra me pal de tanta bona e l’AlTordino dinos aquell que los donzella ",
+                "perplexity": 4.588863579206558
+            },
+            {
+                "text": "\n\nAl son hi poder car conhortasquell. E entrevit desconcobte, ço poregaré d’alguna que no que tant re",
+                "perplexity": 4.628211619223968
+            },
+            {
+                "text": "\n\nReple; ab molta cambra, les imisaries eren totes en armes teneAçags, conconeixenç que el apleguí d’",
+                "perplexity": 4.501530362122092
+            },
+            {
+                "text": "\n\nNo són molt tal conaemiren, e si tot jamés tot lo guets aldeu donà l’espaça, que tots los aquells e",
+                "perplexity": 3.9444633157337563
+            },
+            {
+                "text": "\n\nLa Tirant e conei a la maujar, e seran infinidor. E més com lo meu que ell es resposos que un tons ",
+                "perplexity": 3.6966849782349147
+            },
+            {
+                "text": "\n\n—Seguí’s d’Esgitar, e la gran conjormaran en pendre, teniaona a pare per los muts estils, a les tem",
+                "perplexity": 3.8824671823261827
+            },
+            {
+                "text": "\n\nL’altra glòria, catiu aquells. E en tots lostreres fets quin fos me combat de xeia que la cama, sen",
+                "perplexity": 3.5083360115464086
+            },
+            {
+                "text": "\n\nSeguir açò ella per divon en a·bilònuitat e la noblor e d’amballa e ab moltes prengueren així com e",
+                "perplexity": 4.04826827656362
+            },
+            {
+                "text": "\n\nArmí.\n\nE com no pendre remenaré, e engollíem de ma ni a novis, e com jo est eixignore s’aixitat-li ",
+                "perplexity": 5.067278088466194
+            },
+            {
+                "text": "\n\nCom lo fins de mort que molta fini de peure, —dix lo trobar, sobre ell irós-lo un glòria ni al volg",
+                "perplexity": 3.9668931738526507
+            },
+            {
+                "text": "\n\nNo m’havien tal arts e antigaments jo tenia de l’Emperador:\n, e jo exs tal content si açò per aquel",
+                "perplexity": 3.4765501415408857
+            },
+            {
+                "text": "\n\nKa no he valres en temor, molt rei e ab teman en contiment que vols, donaren e lo crebro tanta al è",
+                "perplexity": 4.690224690490825
+            },
+            {
+                "text": "\n\n—A llença totes no ames, com lo temps quina com recobre que aquell que ell penedí’s enepre, que era",
+                "perplexity": 3.365962262588734
+            },
+            {
+                "text": "\n\n—Ai, e tos noble apa de tots ab unes sembles li desitjaves, ab envostrre anavent ara ells cavallers",
+                "perplexity": 4.4281538096612
+            },
+            {
+                "text": "\n\nL’Emperador:\n\n—Cavaller, aquella ni del rei e Tirant mi estaven en peure lo donaren-se engaix, eixi",
+                "perplexity": 3.123758405015396
+            },
+            {
+                "text": "\nE me sens Déuasmen a l’aixadqueta, seu o connuitaren que mal molt per los ulls li formell que egí l’",
+                "perplexity": 5.461175296957828
+            },
+            {
+                "text": "\n\n—Donà delb e sos ara coneixenç pendre o se tots ab veuré no us s’eranom mit unes moltes un diuren a",
+                "perplexity": 5.383578516709285
+            },
+            {
+                "text": "\n\n—E s’és, animolls per ço volgués só jo és sabens, e enjund son abillar a tots molts éns sua glòria ",
+                "perplexity": 4.303067646852719
+            },
+            {
+                "text": "\nC—Aprés de què afobrat que los tornaren a peu de molts sinullaren, ab lo glorien sens , temonia, e t",
+                "perplexity": 4.012997733659911
+            }
+        ]
+    },
+    {
+        "model": "transformer",
+        "dataset": "el_quijote",
+        "mean_perplexity": 2.553501782605588,
+        "std_perplexity": 0.34107009749057293,
+        "samples": [
+            {
+                "text": "\n-Digo -respondió Dorotea- iré a don Quijote, que en todos cuantos horas me convenían, y tengo una",
+                "perplexity": 2.073930947898248
+            },
+            {
+                "text": "\nCien menester un grande mucho celada, donde sea, replicó Sancho, diciéndole:\n-No prosigue, señor:",
+                "perplexity": 2.539090556476949
+            },
+            {
+                "text": "\nAlcornoques, En efeto, plática, el cual ya entre libros, viva la ventana en mucha las de su antigua",
+                "perplexity": 3.0255112999205673
+            },
+            {
+                "text": "\nLa lilada de la adivina, de su enviada del mundo, sin que no hace otro veces.\n-Y ¿qué caída es lo ",
+                "perplexity": 3.074829740530014
+            },
+            {
+                "text": "\nPara qué sois, sin duda alguno, aunque os acomodéis emperadores de allí satisfecho; y haced vivir",
+                "perplexity": 2.5662568987519982
+            },
+            {
+                "text": "\nQue puede acabar la pendera que Don Quijote había visto con mucha presteza trabajomento y vestido l",
+                "perplexity": 2.3395467820052365
+            },
+            {
+                "text": "\n-Y es medio -respondió Sancho-; y si no lo será penso, la hora que no sabrá para ninguno: todavie",
+                "perplexity": 2.6034448447227083
+            },
+            {
+                "text": "\nEspondió el cura; supo que era nverso ya le preguntaba, porque cayó, comenzó a decirle: Cide Hame",
+                "perplexity": 2.7238487719129862
+            },
+            {
+                "text": "\nQuijote\nEsto es hombre de conducir\n–Para quien no había hecho –respondió don Quijote- procurar fue",
+                "perplexity": 2.1265462758966347
+            },
+            {
+                "text": "\nAquí juro, porque él lampoco merece ansí.\nCentó Sancho a su amo decir y atentándole: el cual, v",
+                "perplexity": 2.80252099164483
+            },
+            {
+                "text": "\nA vuestra merced decir, que pueda haber de ser visto lo que yo podré llevar en todo el mundo, pues ",
+                "perplexity": 2.0741165036907194
+            },
+            {
+                "text": "\n-¿Qué estaba con Quijote su pensamiento? -dijo el cura-, y tenía yo Sancho Panza- y sabía sido en",
+                "perplexity": 2.1967383999487513
+            },
+            {
+                "text": "\nDon Quijote respondió el caminante; y éste no daba puñado, se la hubo a echado de jar no tenía a",
+                "perplexity": 2.583497561796258
+            },
+            {
+                "text": "\n-Aun no es por la perdición de la socarreuela, sino darle frente los vestidos libros de pasar tan b",
+                "perplexity": 2.7054560428695136
+            },
+            {
+                "text": "\n-El dellos llevaba don Quijote en su asno y sin luz y le tratara a su señora? Porque sin duda que s",
+                "perplexity": 2.5555420913186238
+            },
+            {
+                "text": "\nni por quien era delante su fuerza, la cabeza y abajo; allí, con tales como puso en las bienes call",
+                "perplexity": 3.0921231862266474
+            },
+            {
+                "text": "\nEl verdadero a DOrotea que Dorotea se fuera sin respeto, y dijo a su escudero:\n-Aquí tengo en pensa",
+                "perplexity": 2.422401554832354
+            },
+            {
+                "text": "\ndel corazón su voluntad. Por quien dijo, porque una, me sirven de lo que venía en voluntad donde s",
+                "perplexity": 2.691590471514589
+            },
+            {
+                "text": "\nde su escudero Sancho Panza se enseñaba a vuestra merced de que, pues no sabían quitar las voces d",
+                "perplexity": 2.0341341564713153
+            },
+            {
+                "text": "\nTraía de Camila, que no pensaba guiar aquel desventurado, en qué era que no hacía para hacer otro",
+                "perplexity": 2.2414810572854753
+            },
+            {
+                "text": "\nSabía otro celos, diciendo que saliía como la culpa a su amo, porque los votos se lindaban a la ve",
+                "perplexity": 2.7868442262020396
+            },
+            {
+                "text": "\nCapítulo 21: Del castillo ventero, y cuando el caso cuando no sirvió de nuestro caballero con don ",
+                "perplexity": 2.045364214939617
+            },
+            {
+                "text": "\nTan sin pedir su mal ni presente con no le suceda alguno, que por entonces su señora Clara, diose m",
+                "perplexity": 2.8278442176919025
+            },
+            {
+                "text": "\nY está casi imaginado en más de poco muy profundo que no ha de ser quien se toca a ver dónde volv",
+                "perplexity": 2.8172036690487148
+            },
+            {
+                "text": "\nY de parte; el caso, lo que vio sobre todo el cuerpo, lo mejor mirar mando a la lanza de don Fernand",
+                "perplexity": 2.5259954072749218
+            },
+            {
+                "text": "\nPor haber entrado a la simple correnda, y que a Luscinda se comenzaron, del que otra vez había sido",
+                "perplexity": 2.5658807956319127
+            },
+            {
+                "text": "\nCapítulo 21: Detratada de nuevos caballeros andantes nuevos caballeros andantes andantes e inclinab",
+                "perplexity": 1.77856096584184
+            },
+            {
+                "text": "\nY la ventían una sobrina, y recogida con los cabellos y cortes y de reposo, especialmente posible q",
+                "perplexity": 2.546391308240879
+            },
+            {
+                "text": "\nconeció Sancho.\nEn este presente cautivo y contento, y las hilas de su grado se le pareció, y así",
+                "perplexity": 2.595555499543668
+            },
+            {
+                "text": "\n-A hubo estado en Cidodo el camino rillero, y que era su señor criado, y que se le acogía aquella ",
+                "perplexity": 2.746652481400534
+            },
+            {
+                "text": "\nmás de un señor don Quijote cuando llegó hablando en la caza ellos, no le parecía estrecho el pe",
+                "perplexity": 2.5540853926867477
+            },
+            {
+                "text": "\nBa tan alegre coces que veamos basta y ovejas con quien aquí está en razón con él.\nCon todo esto",
+                "perplexity": 3.0141126015814277
+            },
+            {
+                "text": "\n\nQue don Fernando habló vivos y verdaderamente; dijo Sancho:\n-No hay sino ástas; quédese con el a",
+                "perplexity": 2.719591931715352
+            },
+            {
+                "text": "\n-La señora del oidor. -¿Qué tengo en eso, y mi templo -replicó don Quijote-. Pero ¿qué debe, San",
+                "perplexity": 2.3383463046291113
+            },
+            {
+                "text": "\nPreguntó el cura-; pero no hay qué cansarse delante, ni el que Zoraida había dado molido de los t",
+                "perplexity": 2.1863597517099738
+            },
+            {
+                "text": "\nQue dijo Sancho Panza al cabo mi licenciado, y como tengo de la pólva de su voluntad y razón que q",
+                "perplexity": 2.3875804860203913
+            },
+            {
+                "text": "\n-Es paciencia; porque de nuevos en toda la boca falta de onde encaje hace el moro que a aquellastill",
+                "perplexity": 3.0935622050511427
+            },
+            {
+                "text": "\n-No soy yo -respondió el cura-, que tengo por dime: ¿qué mal, Sancho? ¿Piensa que si es basta? Bie",
+                "perplexity": 2.1208346546471395
+            },
+            {
+                "text": "\nYo, oyera un abrio, y creo que me hacían sobre, estas soledades y detrás contenía, eran hechos pr",
+                "perplexity": 3.233001272972263
+            },
+            {
+                "text": "\nse pudieran prevenir a la otra mayor de Sancho. Y hacia extraemos discursos, y tras veces, con voz a",
+                "perplexity": 2.8247900086815636
+            },
+            {
+                "text": "\nY pensaban tenían culparse a volver los aidores que les habían venido; pero no había orden pedido",
+                "perplexity": 2.4148296631377484
+            },
+            {
+                "text": "\nY no juro a los discursos otros de su rabellería que la causa fuese ser suya yo no halle para darle",
+                "perplexity": 2.8351012775938087
+            },
+            {
+                "text": "\nY que, hace el señor que vence por mirarle; y digo, cuando llegó más discreto a dos veces, no se ",
+                "perplexity": 2.6242519590990767
+            },
+            {
+                "text": "\nTurbina Pobre dos los delibrosos de este castillo, que fue toda predición para ser de satisfacerle ",
+                "perplexity": 3.09549005685174
+            },
+            {
+                "text": "\n-Pues Anselmo sería –dijo el cura-, que las discretas y conoció que si sabían él lo que le sabí",
+                "perplexity": 2.2418964665131327
+            },
+            {
+                "text": "\nLuscinda, alzando ellos no la vista del ventero, los soldados, en la mano de las cenas y legítimas,",
+                "perplexity": 2.2706135033000727
+            },
+            {
+                "text": "\nIParóse colgado. El cura, que me había hecho a mancebo y sin duda, los baños celos enseñas, bast",
+                "perplexity": 3.2503336985298588
+            },
+            {
+                "text": "\nque yo os hayca, saber que ahora de mí, te apearé la cruz y me mato! Una merced en todo lo que se ",
+                "perplexity": 3.5297473509849246
+            },
+            {
+                "text": "\nLa quedaba pensar (que se podía hacer de su traduccho de los buenos y pan sin saber cómo de todas ",
+                "perplexity": 2.62600786465413
+            },
+            {
+                "text": "\n-Sin que vuestra merced -dijo el cura- solto don Quijote- que vendrá con cuánto artifacio de aquel",
+                "perplexity": 2.1299338843854496
+            },
+            {
+                "text": "\nviniera yo por otra cosa que vomitara tanta fuerza la historia o quiere dejar tan de isfacer en remo",
+                "perplexity": 2.8785532156070737
+            },
+            {
+                "text": "\nY Dorotea, perdonés el cura y alcanzaron los dos en ver y todos los dos aquellos que Sancho deseaba",
+                "perplexity": 2.2756697094961638
+            },
+            {
+                "text": "\nDadme todo el tanto que me haga y para quejarme.\n-No sé de saber mía, señor -dijo ulgar don Quijo",
+                "perplexity": 2.501249696013786
+            },
+            {
+                "text": "\nLuscinda del día, y quedaron los dos y no le sacaron los cuatro dijeron a Sevilla que cuando Sancho",
+                "perplexity": 2.370457713492493
+            },
+            {
+                "text": "\ntan decir a\nLeonela que también es hazañas de oír en el incomparable y de mi reino, porque se aqu",
+                "perplexity": 2.5505622063912585
+            },
+            {
+                "text": "\nAnselmo que todos traen los camines, que ella les había dicho, le pareció que los que había tenid",
+                "perplexity": 2.1166270524217237
+            },
+            {
+                "text": "\nLlegó a la puerta y si’la entró a Lotario con las señales, y, puesta desvellada agua que pusiese ",
+                "perplexity": 2.9822074011703488
+            },
+            {
+                "text": "\nDon Quijote, que no me otra vez la suerte del deseo que son las ayer del fin de la batalla, que pued",
+                "perplexity": 2.2967549881284506
+            },
+            {
+                "text": "\nAgalás y llevan y Zoraida, que los que daban, de ver gusto de aquella de noche le vieron en ella in",
+                "perplexity": 3.027225684797189
+            },
+            {
+                "text": "\nQue el cura le traía uno, que su hermano con los grandísimos escuderos que ninguno le llevaría po",
+                "perplexity": 2.2442528877184316
+            },
+            {
+                "text": "\n¿Qué ha hecho en imaginación de papel, aquélla? Pero no venga, perdonadme, como lo sabré cuánto",
+                "perplexity": 2.659231677754554
+            },
+            {
+                "text": "\nSotros ricos discursos, mudados partes, y verá a penas la media menudecen sus quitan y la joya dond",
+                "perplexity": 3.438392506066428
+            },
+            {
+                "text": "\n-Y ¿no es este peino?\n–No hay más, señora mía –respondió Dorotea–, que estoy por esa pobreza, se",
+                "perplexity": 2.301144132966681
+            },
+            {
+                "text": "\nquerer, que, pues conversación que él había puesto en su padre, que de la mano, cuando quisiesen ",
+                "perplexity": 2.2681075947357945
+            },
+            {
+                "text": "\nSancho dijo:\n-Si vuestra merced -respondió Sancho-, que ya sabéis que se me quitarán un peligro d",
+                "perplexity": 1.859224909609981
+            },
+            {
+                "text": "\nSi bien podría ser que me tiene por vuestra merced la fermosura, me han de venir en el bien que má",
+                "perplexity": 2.071438619148088
+            },
+            {
+                "text": "\nSalvió en la carta y la vida. –Traía un paso, y tan apriesa Don Quijote suyo molino, que aún le h",
+                "perplexity": 2.9169975543884363
+            },
+            {
+                "text": "\nY, y así, por lo que a tocaba estar en buscarle salirse. Díjose que derramando a su autor se le re",
+                "perplexity": 2.6979496070896665
+            },
+            {
+                "text": "\nocuparé con los que decía, cuando no volvía en todas buscando los descubiertos de la cabeza, y as",
+                "perplexity": 2.3870963934662885
+            },
+            {
+                "text": "\nPuesta la boca en la corral del enemigo, porque su escudero no tengan valer pensativo Arido, puesto ",
+                "perplexity": 2.556473863587455
+            },
+            {
+                "text": "\nPor el mundo, señora, que quiere que te entiende haga, fino de fe que licencia está muerto; y que,",
+                "perplexity": 2.6323617344389745
+            },
+            {
+                "text": "\nLoco Caballero\nY al jumento de los zapatos y en tanta manera con la córdica están consigo Sancho P",
+                "perplexity": 2.6165277165553475
+            },
+            {
+                "text": "\n-No lo hará en reposar la condición que yo dejó de conquierda tener para hacer la pretenda que ca",
+                "perplexity": 2.6106153626617288
+            },
+            {
+                "text": "\nlos se mandaron por el suelo, se sabía los con el estado, por más diferentes de los mejores y dive",
+                "perplexity": 2.870255813108042
+            },
+            {
+                "text": "\nQuijote la ausente don Quijote!\n-Digo -replicó don Quijote-, porque te dé entendr, porque, que no ",
+                "perplexity": 2.025636998424691
+            },
+            {
+                "text": "\nQue había dicho Sancho Panza, si parecía, que en solo del cura, sin casa de sobreshonra la vez pod",
+                "perplexity": 2.669413353061565
+            },
+            {
+                "text": "\nmerced, ¡oh fermosura que te he dicho tomado el seco! No hagas tú que guardase por improvecho de mi",
+                "perplexity": 2.794613982057315
+            },
+            {
+                "text": "\nAy, Lotario Camila lo que aquellos que han pede suceder los libros, porque fue que\nle había de toma",
+                "perplexity": 2.6542372031305494
+            },
+            {
+                "text": "\nQuijote-, sino que el triste estaba parecer no quiere ra las lágrimas de la extraña para dormir de",
+                "perplexity": 2.3618146746663298
+            },
+            {
+                "text": "\n-Pa el criador -respondió don Fernando-, y en este castillo no sé cómo eso, o porque dejé de hab",
+                "perplexity": 2.2434403948592534
+            },
+            {
+                "text": "\nDe ti tanto estoy, que no lo haga.\n-Digo que los que ahora no quieren -respondió Sancho-, mirad los",
+                "perplexity": 2.2367463761193047
+            },
+            {
+                "text": "\nagora dicen: «Aquí me mate, ausente y la misma razón que el tiempo que los tiene, especialmente (y",
+                "perplexity": 2.6795987144161746
+            },
+            {
+                "text": "\nQuijote por las que saben estaban. Llorárselos y el ventero les irse de la venta, y ellos se quedab",
+                "perplexity": 2.5743534712941307
+            },
+            {
+                "text": "\nDiré mi brazo en el humo primero, y que ellos pasamos en acrecentarme a don Femando que yo soy, en ",
+                "perplexity": 2.6595938807679276
+            },
+            {
+                "text": "\nSosegar de todos los hambres de poesadumbre y de no se llamaban, porque, que, amigo, y que bien no e",
+                "perplexity": 2.730894943342433
+            },
+            {
+                "text": "\nY el barbero traía simple:\n-El cual fue abestido y el cortesero que así le hiciera su rodela noche",
+                "perplexity": 2.919415649611132
+            },
+            {
+                "text": "\nQue fue Dios que vuestra merced el término.\nEstaba en esta capitán y prevenía los cortesía y la ",
+                "perplexity": 2.295365490675524
+            },
+            {
+                "text": "\nLa Santa Triste Figura–, y el ventero, que sabía qué confundado estaba aquella que que mujer cisti",
+                "perplexity": 2.542203592356944
+            },
+            {
+                "text": "\n-Digo, pues -dijo Camila-, quienquiero que no sé este blanco; y si este castillo es que dice que se",
+                "perplexity": 2.156281416991314
+            },
+            {
+                "text": "\n-De ¿qué te ha de prometar en eso –respondió Clara–, si no fui ni este castillo hizo, aunque su no",
+                "perplexity": 2.3474515998827234
+            },
+            {
+                "text": "\nY don Fernando, que se cubrimos y se quedó con nosotros nuestro caballero alguno; así le vio que n",
+                "perplexity": 2.3476314027074405
+            },
+            {
+                "text": "\nPanza ruin el pobre a pedir el barbero, porque dasda las cartas cosas, veras entre otras montañas q",
+                "perplexity": 2.8920289452814307
+            },
+            {
+                "text": "\ncelos fue que los tratase por las cerrados, perdón, no pudiendo seguir lo que juzgaron; y fue que v",
+                "perplexity": 2.7504135828553338
+            },
+            {
+                "text": "\n-Al lo dijo el sabio- que en esta libertad ha mostrado otras cosas que vivir, porque no tengo nueva ",
+                "perplexity": 2.4154827848309686
+            },
+            {
+                "text": "\n-En quien no se saca de la cena que con tanto apenas o Dios, ni ba de los moros que su amigo y le to",
+                "perplexity": 3.081678613699576
+            },
+            {
+                "text": "\nLuscinda merced la hora por que Luscinda había era aquella noche; y prometióse y la mano, por la b",
+                "perplexity": 2.3070719436596288
+            },
+            {
+                "text": "\nLlegó el otro, y, puesto que su amo en nuestra promesa de un rico que se detuvo paciencia del jardi",
+                "perplexity": 2.4015140861599726
+            },
+            {
+                "text": "\nQuijote-, y aun ningunos vuestros bellacos que ellos merecían; porque las cuales llevaban conmigo y",
+                "perplexity": 2.2141914529007103
+            },
+            {
+                "text": "\n–Todo más tratar nuestra belleza –dijo Andrés–, que tengo dado cuidado ayudado a saber quién es s",
+                "perplexity": 2.4079853370791766
+            },
+            {
+                "text": "\ndescubrirme el día a la cabeza, dijo:\n-Libertad, señora, que sé mi mal el libro que yo me quisier",
+                "perplexity": 2.312369072637342
+            }
+        ]
+    },
+    {
+        "model": "transformer",
+        "dataset": "valenciano",
+        "mean_perplexity": 2.4811182531170974,
+        "std_perplexity": 0.40200893017066497,
+        "samples": [
+            {
+                "text": "\nAlbanès d’acostumar a l’Emperador posà primer en orde, e ella no n’hi hagué pres. La Princesa eixint",
+                "perplexity": 2.493230862021723
+            },
+            {
+                "text": "\nànima gràcia molt ric e los pits que hi havia conegut, e jo feriren contínuament com besaren los màr",
+                "perplexity": 2.8435872083379947
+            },
+            {
+                "text": "\n\nCom Tirant véu al matí son germà per negre, lo qual estava en història de la nau, del camp li havia",
+                "perplexity": 2.159150059944806
+            },
+            {
+                "text": "\n\n\n\nAX\n\n\nCom Tirant hagué atesa la dita la terra\n\nCom Plaerdemavida explicà a semblant raons e sembla",
+                "perplexity": 2.16940924178884
+            },
+            {
+                "text": "\n\nCom los ulls ab veu que ens havia volgut exercir la mala, la qual eren espillades ab veu e féu los ",
+                "perplexity": 2.5193819528931654
+            },
+            {
+                "text": "\n\nLo capità tots los escuts anaren al port de Rodes que aquí eren ells venguts conquistades e obertes",
+                "perplexity": 2.1399673811654845
+            },
+            {
+                "text": "\nCom la Kirieleisa, la Reina prés la Infanta prestament féu a cavall en lo retret, e havia-hi vist lo",
+                "perplexity": 2.360522149723211
+            },
+            {
+                "text": "\n\nDe complir una filla del senyor d’Egipte, per res, per ço com tant se n’era estat prou per un camp ",
+                "perplexity": 2.452488273056016
+            },
+            {
+                "text": "\n—Com véu que haver-se complit lo Rei de tanta amor de servir, no hi sabés que era estat a mi, car si",
+                "perplexity": 2.474820344226907
+            },
+            {
+                "text": "\nCom Tirant fos fet, Tirant li féu molt gran estol de major discreció, e Tirant li féu graciosament l",
+                "perplexity": 1.9178748020133065
+            },
+            {
+                "text": "\n\nLo seu que tramès que ell la se deu seure, e digueren que era molt certificat que li dix que lo Rei",
+                "perplexity": 2.570268369346559
+            },
+            {
+                "text": "\n—Oh cavaller ànimo, qui vós senyorejar ab natural que ixí dejús ha, ans los meus ulls vos són aproun",
+                "perplexity": 3.2339271454146767
+            },
+            {
+                "text": "\n\nXII\n\n\nLa cruel semblants paraules féu l’Emperador que fon lo Vescomte\n\n—Lo vostre rei Escariano, a ",
+                "perplexity": 2.088378211199837
+            },
+            {
+                "text": "\n\n—Ara, ¿e qurta tempesta és l’ernidor de la divinal cruel cruel menyspreada, entrada en l’art de la ",
+                "perplexity": 3.2774137944884685
+            },
+            {
+                "text": "\n\nLa Infanta batalla, que es fon sabuda lo poner de Contestinoble; e la guerra que ell donà en lo ret",
+                "perplexity": 2.4340592619758477
+            },
+            {
+                "text": "\neferint-lo la mà que sabia que aprés dec dir o de tots los altres, no li podia bé. E Tirant en dar-l",
+                "perplexity": 3.057801050919707
+            },
+            {
+                "text": "\nTirant, no l’home en semblant fortuna.\n\n\n\n\n\nCVII\n\n\nCom lo rei de Sicília pres comiat del Langoll e P",
+                "perplexity": 2.2319632927261264
+            },
+            {
+                "text": "\n—Ací vos haveu feta perquè no és en poc d’escalar no voler-me deixar la glòria que per a moltos desi",
+                "perplexity": 2.854993038074079
+            },
+            {
+                "text": "\n\nDix Tirant:\n\n—Si bé es lliga per record de gran desorde, que prensau a venir alguna cosa fi, ab tan",
+                "perplexity": 2.708404956673292
+            },
+            {
+                "text": "\n\n\nCCLXXI\n\n\n\nCom lo Rei hi anà a la guerra de Canària en Itàlia e donà prosperitat l’escala\n\n—Senyora",
+                "perplexity": 2.2101076599398684
+            },
+            {
+                "text": "\n—¿Honor —dix lo Rei—, «Què pensau que la mia ànima los peus enemics són enemics tals que enemics són",
+                "perplexity": 2.3410810718397514
+            },
+            {
+                "text": "\n»Lo cel és honor sia dit, molt aconseguida d’aquesta santa bellea honor, fels de tota cavalleria, e ",
+                "perplexity": 2.6495469390895114
+            },
+            {
+                "text": "\n\n—Com No la podeu pregar lo parer, jo la vija ésser batalla, hauré a descolrir, per ço com l’extrema",
+                "perplexity": 2.924625998682954
+            },
+            {
+                "text": "\n La Princesa no li dix fins a semblant asseit parlar.\n\n\n\n\n\nCCCIX\n\n\nCom Tirant se llevà Tirant volgué",
+                "perplexity": 2.132816672593354
+            },
+            {
+                "text": "\n»Digau, jóvens lo que no vull, car lo seu ànimo u esforç e en l’ànimo que tinGala vos fan, no per re",
+                "perplexity": 3.325977150236661
+            },
+            {
+                "text": "\n\n\nCLXXIII\n\n\nLo nostre conservació que Tirant féu principi a paraules de semblant estil, com Plaerdem",
+                "perplexity": 1.6431228879967728
+            },
+            {
+                "text": "\n\nLo cambrer féu tornar a l’ermità del Rei que molt bella dolor se retrà e mès en la primera, e jo li",
+                "perplexity": 2.327309023539754
+            },
+            {
+                "text": "\n»Aprés digueren que les mies de la senyoria crueldat sua no pogués més presestar sinó per les tues p",
+                "perplexity": 2.4897591203168417
+            },
+            {
+                "text": "\n—Senyor, me manàs a la majestat del senyor Emperadriu; e aquesta és la glòria que jo ho té, partís m",
+                "perplexity": 2.1565166294490052
+            },
+            {
+                "text": "\n\n—Menyss és temps de vós antic que de pau ací sies per semblant mercè. E si l’endemàeu que jo us ne ",
+                "perplexity": 3.320542977113292
+            },
+            {
+                "text": "\n—Plàcí’t poré tenir totes les pus dones de moneda.\n\n—No penses —dix lo Rei—, si jo jo m’haja fet ten",
+                "perplexity": 2.8419893572522725
+            },
+            {
+                "text": "\n\n\nCom la Princesa es fon davant no volgué parlar, més de gran amicícia que un dia havia pensat que s",
+                "perplexity": 2.2228521210298875
+            },
+            {
+                "text": "\n\nL’Emperadriu primer Hipòlit, ho deixaren de fora de molta virtut a com açò hagué prou les coses atr",
+                "perplexity": 2.8978173346840057
+            },
+            {
+                "text": "\n\n\nCom l’Emperador ordenà de l’Emperadriu e dix al Rei:\n\n—Mal com faça a mi a mi, totes les vies dolo",
+                "perplexity": 2.3666561002393864
+            },
+            {
+                "text": "\n\n—Voleu prepretar fer —dix l’ermità—, bé benaventurat com crear les tues paraules mans són de mi mol",
+                "perplexity": 2.6298465587930266
+            },
+            {
+                "text": "\n\n\nCom Tirant, qui dix un poc rei de Sicília; e Tirant li regé la recitar-li la cambra, e dix:\n\n»—Sen",
+                "perplexity": 2.334235812061654
+            },
+            {
+                "text": "\n—Molt metge en lloc de fortuna, haveu vengut al cavaller notificat d’herbats en semblant estil desor",
+                "perplexity": 2.5931411801651194
+            },
+            {
+                "text": "\n—Senyor —dix Tirant—, lo més raó parer que la vida.\n\n—Senyor —dix Vestifeus— que Tirant li rebé e di",
+                "perplexity": 2.4778243054189506
+            },
+            {
+                "text": "\nCom lo gran foc ixqueren les fustes de moltes cogitats e de gran phonor de tota amor e passaen tots ",
+                "perplexity": 2.534478075821951
+            },
+            {
+                "text": "\nE li venent una sala al mou e altra volta, ab aquella paraula és, e si s’hagués rebut, per avisar aq",
+                "perplexity": 3.4143928470768854
+            },
+            {
+                "text": "\n\nLa batalla, e Felip dava de tals enemics, los quals e tramès totes les donzelles de Tirant, e lo Re",
+                "perplexity": 2.2370439672104485
+            },
+            {
+                "text": "\nE los quars qui es venien en lo món secret no es podien! Car ab los altres quatre cavallers paraules",
+                "perplexity": 2.3392633016921582
+            },
+            {
+                "text": "\n\nLo virtuós Capità féu feta respondre pena d’aquest rei de Partugal e de Liçana, e exemplescació a t",
+                "perplexity": 2.501763946828504
+            },
+            {
+                "text": "\n\nCom Tirant tramès per la molta virtut del Capità prestament a Tirant parlà del rei de Sicília e de ",
+                "perplexity": 1.7084102000827948
+            },
+            {
+                "text": "\n\n»E tornà a recitar un cor ab ell en terra e dix:\n\n»—Llevau-s raons en fer principi a una donzella e",
+                "perplexity": 2.431330508871124
+            },
+            {
+                "text": "\n\nLo Rei li llevà lo costà de la mà dels genolls en la disposició de Contestinoble. Havia-li un any e",
+                "perplexity": 2.115940218307326
+            },
+            {
+                "text": "\nCom l’Emperador hagué pres per l’Emperador com lo véu dinar semblants paraules:\n\n—Mas vull que ab ra",
+                "perplexity": 2.005677641303583
+            },
+            {
+                "text": "\n’Emperador, e comtessa se’n tornà a part d’un gran Turc, e cascun dia ell li dirà sinó que fos cobra",
+                "perplexity": 2.500532098487667
+            },
+            {
+                "text": "\n—Quina dit vostra majestat vostra dóna altesa injugació? Seria infels compte, que us ho dic a fer pe",
+                "perplexity": 3.063960679841594
+            },
+            {
+                "text": "\nCom Diafebus la Viuda hagué ixquí dita aquesta roba per què no n’hagués vista, tornà cosa l’Emperado",
+                "perplexity": 2.508084028548226
+            },
+            {
+                "text": "\n—Com los actes e la mia parent sua venç: jo no eneguessen en temps de gran maldat e temps atural: ai",
+                "perplexity": 3.241455734278207
+            },
+            {
+                "text": "\n\n\n—La senyora Princesa, majorment vos dieu lo moro e que jo he tramès per fer-li fer res. Hauré tota",
+                "perplexity": 2.5532290601807297
+            },
+            {
+                "text": "\n\n\n\n\nCXXVII\n\n\nLletra la resposta a l’Emperador\n\n—Ha perdrà la mia ànima Mare, que és aquí fortuna, e ",
+                "perplexity": 2.4187625774612598
+            },
+            {
+                "text": "\nLlevà’l a la posada e posà-la al peu de les pus donzelles, e donà tots los altres ixqueren al cap de",
+                "perplexity": 2.2081055718821214
+            },
+            {
+                "text": "\n\nCom Tirant los veren anar a ell, féu la nit e allí foren elegides. Com totes les dames hagueren lle",
+                "perplexity": 2.164035578687836
+            },
+            {
+                "text": "\n\néLXXII\n\n\nD’això mateix\n\n»Lo que demanà a Tirant per aquell altre espill en son pare senyor lo món, ",
+                "perplexity": 2.262261560888762
+            },
+            {
+                "text": "\n\n\nE Plaerdemavida respòs la Princesa—, que li donàs gran necessitat en amor. ¿Par què faré? Que us e",
+                "perplexity": 2.35083826180574
+            },
+            {
+                "text": "\n—Puix tots podeu fer donar lo príncep remei de la vostra majestat en sepultura, los més bells vivita",
+                "perplexity": 2.5095442570755897
+            },
+            {
+                "text": "\n\nCom lo Rei li fon davall licència de batalla e dix-li semblant.\n\n\n\n\n\nCCCXLIX\n\n\nCom lo Rei fon conse",
+                "perplexity": 1.8578590202159395
+            },
+            {
+                "text": "\n\nCCLVIII\n\n\nLletra tu só cobert poca entenidora dins la tua infàmia de béns, puix la celsitud vostra ",
+                "perplexity": 2.3140224961055225
+            },
+            {
+                "text": "\n\n»L’endemà, ans que lo Mestre Tirant volgué anar armar, e, dient-se que entràs dins la cambra anàs l",
+                "perplexity": 2.3824275695669113
+            },
+            {
+                "text": "\n\nTirant pres llevà’s de la cambra e hagué’s en la mà e besà-la envers la mà. Com li recità lo Rei, e",
+                "perplexity": 2.0167221078700455
+            },
+            {
+                "text": "\nE com lo rei Escariano véu que ell prestament vingués vengués de tota la gent en semblant estil torr",
+                "perplexity": 1.9268288402645788
+            },
+            {
+                "text": "\n\nCom Tirant s’acostà en guardar un cap de vellut brodada, e que entràs ab ell, e, e per lo matí port",
+                "perplexity": 2.3832740622575628
+            },
+            {
+                "text": "\n—Lo siti fortuna e l’honor és perduda com tu desitges, així com só estat de tota discreció, anam cos",
+                "perplexity": 2.6664336247718006
+            },
+            {
+                "text": "\n—Senyor, qui són lliberts per vidors! —dix l’ermità—, veeu lo premi que no haveu surpitat, car ans s",
+                "perplexity": 2.5400897588723015
+            },
+            {
+                "text": "\n\n—Senyors, poc ací sou ab tal parlar, puix un consell ha donat en temps d’ací avant més que jo só re",
+                "perplexity": 2.7046980764003363
+            },
+            {
+                "text": "\n—De tot hom és tenir que no jo et menys plàcia, lo meu cos tan poc fatigara desitjar.\n\nE presentà es",
+                "perplexity": 3.3560694671683082
+            },
+            {
+                "text": "\n\n—Seria com a bon costum de les tues bombardes és més que de mi ésser sol la que la  tua glòria que ",
+                "perplexity": 2.6819032963783793
+            },
+            {
+                "text": "\n\n—Lo meu estable! —dix la Infanta—, en què és lo que siau-se molt grau honestat, en lo nom e ha-hi a",
+                "perplexity": 2.792193740463763
+            },
+            {
+                "text": "\n\n\n\nDuquessa seria un camp perdés al Capità, en aquest món, de ¡Oh tristor e de mort? Deixau-me de bé",
+                "perplexity": 3.0779319361870927
+            },
+            {
+                "text": "\n\nE conec que Tirant ab esforçat ànimo molt grans festes, així com lo camí ell estava, feriríeu allí ",
+                "perplexity": 2.3603825813498927
+            },
+            {
+                "text": "\n\nLlevà’s del que li pres molt raonament la sacratíssima com de mal, e, lo qual comet altre contra xe",
+                "perplexity": 2.869382750646324
+            },
+            {
+                "text": "\n—Com reste concòrdia. Com lo Capità venien davant les grans raons! Com Tirant hagué recollit que pre",
+                "perplexity": 2.474694815730397
+            },
+            {
+                "text": "\nCom lo rei Menà tots los qui anats los estaven daven e ordenà que lo rei Escariano havia novès. E to",
+                "perplexity": 2.3583517545923987
+            },
+            {
+                "text": "\n\n\n\n\n\nCXIII\n\n\nCom lo gran comte de Longoig de Sant Joan era fora dit, dix al rei d’Anglaterra:\n\n»—Sen",
+                "perplexity": 1.9972857827679749
+            },
+            {
+                "text": "\n—Car no vulles obrir la immensa sinó d’aquests mals ve de tres altres.\n\nCom Tirant no fon dins lo Co",
+                "perplexity": 2.634022898398041
+            },
+            {
+                "text": "\n\nCom Sidòlit se requé fort en Papa e així com se n’anà prestament com la sua hora davant hi havia ob",
+                "perplexity": 2.6661200707104755
+            },
+            {
+                "text": "\n\n\n\n\nCCLXX\n\n\nReprensió que Plaerdemavida a Plaerdemavida sots la qual conegué que la Princesa li havi",
+                "perplexity": 1.7189951088296007
+            },
+            {
+                "text": "\n\n\n—Senyor Capità siau cavaller, trametre’m a ribular de rei d’armes, e per la sua cara, la gràcia qu",
+                "perplexity": 2.391006657257425
+            },
+            {
+                "text": "\n—No vull oferir la primera dolor, car altre suplic que la senyoria vostra altesa no ignora sia negú ",
+                "perplexity": 2.088245647358259
+            },
+            {
+                "text": "\nNo diu lo meu Emperador millor que lo Rei no tenia que no tornàs a la Infanta que Tirant li venia, q",
+                "perplexity": 2.384550476854944
+            },
+            {
+                "text": "\n\nDix lo fill que si la pogués diència de Guarrotar-los a Tirant era. Ajudà’ls tots los drets e dix-l",
+                "perplexity": 3.0755478924408095
+            },
+            {
+                "text": "\n\nCLXX\n\n\nCom Tirant hagué fet dar lo primer del món si li manà la gran dolor que tots los moros prese",
+                "perplexity": 2.120285467379502
+            },
+            {
+                "text": "\n\n—Com tu sies ben ací em saber dar lo camí que tot argent en complire de cavalleria de tots los fets",
+                "perplexity": 2.982591017706316
+            },
+            {
+                "text": "\n—Senyora —dix Plaerdemavida—. ¿E no és estada tanta delitat, que no tu me’n só que promès en aquesta",
+                "perplexity": 2.1845578168925055
+            },
+            {
+                "text": "\n\nCom lo dia següent fon la confessió que Tirant féu principi que fon parlat, féu Plaerdemavida:\n\n—Bé",
+                "perplexity": 1.90319105141012
+            },
+            {
+                "text": "\n\nE com Tirant hagué a content ell deixà lo que més pravès l’Emperador havia fet ab noves com estava,",
+                "perplexity": 2.2730537597727545
+            },
+            {
+                "text": "\n—Lo vostre contrari de tot lo que de ma senyoria no vull pus servir de pendre les nostres peces fust",
+                "perplexity": 2.3341683343582362
+            },
+            {
+                "text": "\nom Estefania ixqué d’açò fins a semblants paraules, mas que lo rei Escariano acceptà ab ell laor e s",
+                "perplexity": 2.222891206605278
+            },
+            {
+                "text": "\n\nE aprés sabé una fe volta que per la santa altesa part era perduda, e per la major via que la Gales",
+                "perplexity": 2.7437867036947696
+            },
+            {
+                "text": "\n\n—Los meus pecats damns que fon acostumat de bé que tot lo que diu Senyorejar, e tanta dolor com lo ",
+                "perplexity": 2.4783594434791767
+            },
+            {
+                "text": "\n—dix la Infanta— que li ha feta no és res armes ni dies ha al que negú no hi trametés a l’altre, ans",
+                "perplexity": 2.5464028432999593
+            },
+            {
+                "text": "\nCom Tirant no tingué posat consentir, mas per tots aquells qui vengueren llur matrimoni, dix:\n\n—Ara ",
+                "perplexity": 2.063563691234559
+            },
+            {
+                "text": "\nDeixau aquestes coses dotze qui véu lo rei de Tunis e lo Rei morí ab lo jueu. Tirant bé combat, pass",
+                "perplexity": 2.855047493264081
+            },
+            {
+                "text": "\n\n—Lo dia senyor —dix Hipòlit— lo que és de vós acabada, que dic a les senyories, puix en lo cel forç",
+                "perplexity": 2.7084824458691465
+            },
+            {
+                "text": "\nCom l’Emperador se contentava, e féu davant Tirant ell. Com Tirant sabé que lo Rei ermità véu que se",
+                "perplexity": 1.8574558704483077
+            },
+            {
+                "text": "\n\nCom Tirant hagué acabada l’Emperador de la celsitud que si havia manàs que fos ell en les naus de l",
+                "perplexity": 2.0271813348837795
+            },
+            {
+                "text": "\n—Mas ensems donau-nos dir. ¿Cosa és condeció és aquell qui volen ésser escoltaes desordenades incord",
+                "perplexity": 3.648649797247777
+            },
+            {
+                "text": "\n\n\nAprés, d’aquí Tirant li hagué recitat tota la creure: los moguts de la terra foren e posats en ord",
+                "perplexity": 2.500596187939786
+            }
+        ]
+    }
+]

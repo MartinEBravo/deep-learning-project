@@ -1,10 +1,5 @@
 **.DS_Store
 .venv/
-**.pt
-**.json
-**.txt
-**.p
-**.pdf
 
 **.egg-info
 __pycache__/

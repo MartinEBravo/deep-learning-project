@@ -1,0 +1,32 @@
+[
+    {
+        "model":"bigram",
+        "dataset":"el_quijote",
+        "mean_perplexity":9.311687492,
+        "std_perplexity":0.8540686726
+    },
+    {
+        "model":"bigram",
+        "dataset":"el_quijote",
+        "mean_perplexity":9.3390767946,
+        "std_perplexity":0.9395188891
+    },
+    {
+        "model":"bigram",
+        "dataset":"valenciano",
+        "mean_perplexity":9.1673060033,
+        "std_perplexity":1.1267030552
+    },
+    {
+        "model":"transformer",
+        "dataset":"el_quijote",
+        "mean_perplexity":2.528042146,
+        "std_perplexity":0.3250843224
+    },
+    {
+        "model":"transformer",
+        "dataset":"valenciano",
+        "mean_perplexity":2.5751244058,
+        "std_perplexity":0.477527327
+    }
+]
