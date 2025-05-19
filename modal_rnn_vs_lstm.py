@@ -19,7 +19,7 @@ image = (
 def train_main(model_name: str, dataset: str):
     import sys
     sys.path.append("/root/project")
-    from dlkth.train import train_workflow
+    from dlkth.train_rnn_vs_lstm import train_workflow
 
     train_workflow(model_name, dataset, save_dir="/vol/checkpoints")
     checkpoints_vol.commit()
