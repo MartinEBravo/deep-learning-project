@@ -23,7 +23,7 @@ Each model is trained on ancient literary texts to replicate their structure and
 
 ## 🧪 Training
 
-To train models (on Modal or locally):
+To train models (on Modal):
 
 ```bash
 make train
