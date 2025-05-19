@@ -40,7 +40,7 @@ def train_workflow(hidden_dim, dataset, save_dir="./checkpoints"):
         learning_rate=3e-3,
         device=device,
         eval_iters=200,
-        max_iters=3000,
+        max_iters=800, #3000,
         eval_interval=25,
     )
 

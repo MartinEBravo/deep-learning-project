@@ -53,7 +53,7 @@ def train_workflow(
         learning_rate=3e-3,
         device=device,
         eval_iters=200,
-        max_iters=3000,
+        max_iters=800,
         eval_interval=25,
     )
 
