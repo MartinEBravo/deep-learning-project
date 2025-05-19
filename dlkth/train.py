@@ -48,7 +48,7 @@ def train_workflow(model_name, dataset, save_dir="./checkpoints"):
             train_data,
             val_data,
             block_size=128,
-            batch_size=64,
+            batch_size=1,
             learning_rate=3e-3,
             device=device,
             eval_iters=200,

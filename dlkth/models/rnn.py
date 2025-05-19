@@ -72,7 +72,7 @@ class RNN(nn.Module):
                 for split, data in [("train", train_data), ("val", val_data)]:
                     losses = []
                     for _ in range(eval_iters):
-                        i = torch.randint(len(data) - block_size, (1,)).item()
+                        i = torch.randint(len(data) - block_size, (batch_size,)).item()
                         x = data[i : i + block_size].unsqueeze(0).to(device)
                         y = data[i + 1 : i + 1 + block_size].unsqueeze(0).to(device)
                         _, loss = self(x, y)
