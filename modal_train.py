@@ -28,12 +28,12 @@ def train_main(model_name: str, dataset: str):
 @app.local_entrypoint()
 def main():
     datasets = [
-        "el_quijote", 
-        "valenciano"
+        # "el_quijote", 
+        # "valenciano"
     ]
     models = [
         # "bigram",
-        "rnn",
+        # "rnn",
         # "transformer"
     ]
     for dataset in datasets:
