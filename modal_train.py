@@ -30,11 +30,12 @@ def main():
     datasets = [
         # "el_quijote", 
         # "valenciano"
+        "shakespeare"
     ]
     models = [
-        # "bigram",
-        # "rnn",
-        # "transformer"
+        "bigram",
+        "rnn",
+        "transformer"
     ]
     for dataset in datasets:
         for model in models:

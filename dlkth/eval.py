@@ -38,7 +38,7 @@ def generate_and_eval(model, tokenizer, device, n_samples=100, max_new_tokens=10
     return outputs
 
 
-def eval_all(n_samples=100, max_new_tokens=100):
+def eval_all(n_samples=100, max_new_tokens=250):
     results = []
     for filename in os.listdir(CHECKPOINTS_DIR):
         if filename.endswith(".json"):
