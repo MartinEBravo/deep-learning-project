@@ -36,7 +36,7 @@ def main():
         # "bigram",
         # "rnn",
         #"rnn_baseline",
-        "lstm",
+        "lstm"
         # "transformer",
     ]
     for dataset in datasets:
