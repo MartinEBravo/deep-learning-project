@@ -18,8 +18,8 @@ Each model is trained on ancient literary texts to replicate their structure and
 - `data/`: Text corpora (e.g., `el_quijote.txt`, `valenciano.txt`)
 - `checkpoints/`: Saved weights and training metadata.
 - `reports/`: Evaluation metrics (JSON) and figures (PDF).
-- `main.py`: Modal-compatible training launcher.
-- `eval_all.py`: Evaluation script to generate text + compute perplexities.
+- `modal_train.py`: Modal-compatible training launcher.
+- `modal_eval.py`: Evaluation script to generate text + compute perplexities.
 
 ## 🧪 Training
 
