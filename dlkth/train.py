@@ -2,7 +2,7 @@ import time
 import torch
 
 from dlkth.data_loader import load_data
-from dlkth.models import Bigram, Transformer
+from dlkth.models import Bigram, Transformer, RNN
 from dlkth.utils import save_model, save_results
 from dlkth.tokenizer import CharTokenizer
 
@@ -41,7 +41,18 @@ def train_workflow(model_name, dataset, save_dir="./checkpoints"):
             eval_interval=25,
         )
     elif model_name == "rnn":
-        raise NotImplementedError("RNN training not implemented yet")
+        model = RNN(vocab_size, n_embd=128, block_size=128, hidden_dim=256, n_layers=2).to(device)
+        train_losses, val_losses = model.train_model(
+            train_data,
+            val_data,
+            block_size=128,
+            batch_size=64,
+            learning_rate=3e-3,
+            device=device,
+            eval_iters=200,
+            max_iters=3000,
+            eval_interval=25,
+        )
     elif model_name == "transformer":
         model = Transformer(
             vocab_size, n_embd=384, n_head=6, n_layer=6, block_size=256, dropout=0.2

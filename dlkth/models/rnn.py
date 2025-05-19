@@ -1,165 +1,86 @@
-import numpy as np
 import torch
-from torch import nn
+import torch.nn as nn
 import torch.nn.functional as F
-from torch.optim import Optimizer
-from torch.utils.data import DataLoader
+import numpy as np
 
 
 class RNN(nn.Module):
-    def __init__(
-        self,
-        vocab_size: int,
-        output_size: int,
-        embedding_dim: int,
-        hidden_dim: int,
-        n_layers: int,
-        dropout: float,
-    ) -> None:
-        super(RNN, self).__init__()
-        self.embedding = nn.Embedding(vocab_size, embedding_dim)
-
-        self.lstm = nn.LSTM(
-            embedding_dim, hidden_dim, n_layers, dropout=dropout, batch_first=True
-        )
-
-        self.vocab_size = vocab_size
-        self.output_size = output_size
-        self.embedding_dim = embedding_dim
-        self.hidden_dim = hidden_dim
+    def __init__(self, vocab_size, n_embd, block_size, hidden_dim, n_layers=2, dropout=0.2):
+        super().__init__()
+        self.block_size = block_size
+        self.embedding = nn.Embedding(vocab_size, n_embd)
+        self.lstm = nn.LSTM(n_embd, hidden_dim, n_layers, batch_first=True, dropout=dropout)
+        self.ln_f = nn.LayerNorm(hidden_dim)
+        self.head = nn.Linear(hidden_dim, vocab_size)
         self.n_layers = n_layers
+        self.hidden_dim = hidden_dim
+        self.vocab_size = vocab_size
 
-        self.fc = nn.Linear(hidden_dim, output_size)
+    def forward(self, idx, targets=None):
+        B, T = idx.shape
+        device = idx.device
+        x = self.embedding(idx)
+        h0 = torch.zeros(self.n_layers, B, self.hidden_dim).to(device)
+        c0 = torch.zeros(self.n_layers, B, self.hidden_dim).to(device)
+        output, _ = self.lstm(x, (h0, c0))
+        output = self.ln_f(output)
+        logits = self.head(output)
 
-    def forward(
-        self, x: torch.Tensor, hidden: torch.Tensor
-    ) -> tuple[torch.Tensor, torch.Tensor]:
-        batch_size = x.size(0)
-        x = x.long()
+        loss = None
+        if targets is not None:
+            logits = logits.view(B * T, self.vocab_size)
+            targets = targets.view(B * T)
+            loss = F.cross_entropy(logits, targets)
 
-        embeds = self.embedding(x)
-        lstm_out, hidden = self.lstm(embeds, hidden)
+        return logits, loss
 
-        lstm_out = lstm_out.contiguous().view(-1, self.hidden_dim)
-
-        out = self.fc(lstm_out)
-
-        out = out.view(batch_size, -1, self.output_size)
-
-        out = out[:, -1]
-
-        return out, hidden
-
-    def init_hidden(
-        self, batch_size: int, device: torch.device
-    ) -> tuple[torch.Tensor, torch.Tensor]:
-        weights = next(self.parameters()).data
-        hidden = (
-            weights.new(self.n_layers, batch_size, self.hidden_dim).zero_().to(device),
-            weights.new(self.n_layers, batch_size, self.hidden_dim).zero_().to(device),
-        )
-
-        return hidden
-
-    def forward_back_prop(
-        self,
-        optimizer: Optimizer,
-        criterion: nn.Module,
-        inp: torch.Tensor,
-        target: torch.Tensor,
-        hidden: tuple[torch.Tensor, torch.Tensor],
-        device: torch.device,
-    ) -> tuple[float, tuple[torch.Tensor, torch.Tensor]]:
-        self.to(device)
-
-        h = tuple([each.data for each in hidden])
-
-        self.zero_grad()
-        inputs, targets = inp.to(device), target.to(device)
-
-        output, h = self.forward(inputs, h)
-
-        loss = criterion(output, targets)
-
-        loss.backward()
-        nn.utils.clip_grad_norm_(self.parameters(), 5)
-        optimizer.step()
-
-        return loss.item(), h
+    def generate(self, idx, max_new_tokens):
+        for _ in range(max_new_tokens):
+            idx_cond = idx[:, -self.block_size:]
+            logits, _ = self(idx_cond)
+            logits = logits[:, -1, :]
+            probs = F.softmax(logits, dim=-1)
+            idx_next = torch.multinomial(probs, num_samples=1)
+            idx = torch.cat((idx, idx_next), dim=1)
+        return idx
 
     def train_model(
         self,
-        train_loader: DataLoader,
-        batch_size: int,
-        optimizer: Optimizer,
-        criterion: nn.Module,
-        n_epochs: int,
-        device: torch.device,
-        show_every_n_batches=100,
-    ) -> None:
-        batch_losses = []
+        train_data,
+        val_data,
+        block_size,
+        batch_size,
+        learning_rate,
+        device,
+        eval_iters,
+        max_iters,
+        eval_interval,
+    ):
+        train_losses, val_losses = [], []
+        optimizer = torch.optim.Adam(self.parameters(), lr=learning_rate)
+        for iter in range(max_iters):
+            if iter % eval_interval == 0:
+                self.eval()
+                out = {}
+                for split, data in [("train", train_data), ("val", val_data)]:
+                    losses = []
+                    for _ in range(eval_iters):
+                        i = torch.randint(len(data) - block_size, (1,)).item()
+                        x = data[i:i+block_size].unsqueeze(0).to(device)
+                        y = data[i+1:i+1+block_size].unsqueeze(0).to(device)
+                        _, loss = self(x, y)
+                        losses.append(loss.item())
+                    out[split] = np.mean(losses)
+                self.train()
+                print(f"Step {iter}: train loss {out['train']:.4f}, val loss {out['val']:.4f}")
+                train_losses.append(out["train"])
+                val_losses.append(out["val"])
 
-        print("Training for %d epoch(s)..." % n_epochs)
-        for epoch_i in range(1, n_epochs + 1):
-            hidden = self.init_hidden(batch_size, device)
-
-            for batch_i, (inputs, labels) in enumerate(train_loader, 1):
-                n_batches = len(train_loader.dataset) // batch_size
-
-                if batch_i > n_batches:
-                    break
-
-                loss, hidden = self.forward_back_prop(
-                    optimizer=optimizer,
-                    criterion=criterion,
-                    inp=inputs,
-                    target=labels,
-                    hidden=hidden,
-                    device=device,
-                )
-                batch_losses.append(loss)
-
-                if batch_i % show_every_n_batches == 0:
-                    print(
-                        "Epoch: {:>4}/{:<4}  Loss: {}\n".format(
-                            epoch_i, n_epochs, np.average(batch_losses)
-                        )
-                    )
-                    batch_losses = []
-
-        print("Training complete.")
-
-
-def generate(
-    rnn: RNN,
-    prime_id: int,
-    pad_token_id: int,
-    device: torch.device,
-    predict_len: int = 100,
-) -> list[int]:
-    from dlkth.config import config_rnn as config
-
-    sequence_length = config.text_sequence_length  # same as training
-    current_seq = np.full((1, sequence_length), pad_token_id)
-    current_seq[0, -1] = prime_id
-    predicted_ids = [prime_id]
-
-    for _ in range(predict_len):
-        input_tensor = torch.LongTensor(current_seq).to(device)
-        hidden = rnn.init_hidden(input_tensor.size(0), device)
-
-        output, _ = rnn.forward(input_tensor, hidden)
-        p = F.softmax(output, dim=1).data.cpu()
-
-        top_k = 5
-        p, top_i = p.topk(top_k)
-        top_i = top_i.numpy().squeeze()
-        p = p.numpy().squeeze()
-
-        next_token_id = np.random.choice(top_i, p=p / p.sum())
-        predicted_ids.append(next_token_id)
-
-        current_seq = np.roll(current_seq, -1, axis=1)
-        current_seq[0, -1] = next_token_id
-
-    return predicted_ids
+            i = torch.randint(len(train_data) - block_size, (1,)).item()
+            xb = train_data[i:i+block_size].unsqueeze(0).to(device)
+            yb = train_data[i+1:i+1+block_size].unsqueeze(0).to(device)
+            _, loss = self(xb, yb)
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
+        return train_losses, val_losses
