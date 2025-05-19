@@ -11,9 +11,9 @@ def get_checkpoint_path(filename, save_dir=None):
     return os.path.join(base_dir, "../checkpoints", filename)
 
 
-def load_model(filename: str, save_dir=None):
+def load_model(filename: str, save_dir=None, device="cpu"):
     path = get_checkpoint_path(filename, save_dir)
-    return torch.load(path, weights_only=False)
+    return torch.load(path, weights_only=False, map_location=torch.device(device))
 
 
 def save_model(filename: str, model, save_dir=None):

@@ -1,58 +1,96 @@
+import os
+import json
 import torch
 import numpy as np
+import tqdm
+
+from dlkth.utils import load_model
 from dlkth.tokenizer import CharTokenizer
 from dlkth.data_loader import load_data
-from dlkth.models import Bigram, Transformer
-from dlkth.utils import load_model
 
-def calculate_loss_and_perplexity(model, tokenizer, texts, device="cpu"):
+
+CHECKPOINTS_DIR = "/vol/checkpoints"
+REPORTS_DIR = "/vol/reports"
+
+
+def calculate_perplexity(model, tokenizer, text, device):
     model.eval()
-    losses = []
-    for text in texts:
-        encoded = torch.tensor(tokenizer.encode(text), dtype=torch.long, device=device).unsqueeze(0)
-        with torch.no_grad():
-            logits, loss = model(encoded[:, :-1], encoded[:, 1:])
-        losses.append(loss.item())
-    avg_loss = np.mean(losses)
-    perplexity = np.exp(avg_loss)
-    return avg_loss, perplexity
+    with torch.no_grad():
+        input_ids = torch.tensor(
+            tokenizer.encode(text), dtype=torch.long, device=device
+        ).unsqueeze(0)
+        if input_ids.size(1) < 2:
+            return np.nan
+        targets = input_ids.clone()
+        _, loss = model(input_ids[:, :-1], targets[:, 1:])
+        return np.exp(loss.item())
 
-def generate_texts(model, tokenizer, num_texts=100, length=200, device="cpu"):
+
+def generate_and_eval(model, tokenizer, device, n_samples=100, max_new_tokens=100):
+    outputs = []
     model.eval()
-    generated_texts = []
-    context = torch.zeros((1, 1), dtype=torch.long, device=device)
-    for _ in range(num_texts):
-        out_idx = model.generate(context, max_new_tokens=length)[0].tolist()
-        text = tokenizer.decode(out_idx)
-        generated_texts.append(text)
-    return generated_texts
+    for _ in tqdm.tqdm(range(n_samples)):
+        context = torch.zeros((1, 1), dtype=torch.long, device=device)
+        generated = model.generate(context, max_new_tokens=max_new_tokens)[0].tolist()
+        text = tokenizer.decode(generated)
+        perplexity = calculate_perplexity(model, tokenizer, text, device)
+        outputs.append({"text": text, "perplexity": perplexity})
+    return outputs
 
-def main(checkpoint_path, dataset_path, device="cpu"):
-    # 1. Load dataset and tokenizer
-    text = load_data(dataset_path)
-    tokenizer = CharTokenizer(text)
-    vocab_size = tokenizer.vocab_size
 
-    # 2. Load model
-    model = load_model(checkpoint_path)
-    model = model.to(device)
+def eval_all(n_samples=100, max_new_tokens=100):
+    results = []
+    for filename in os.listdir(CHECKPOINTS_DIR):
+        if filename.endswith(".json"):
+            path = os.path.join(CHECKPOINTS_DIR, filename)
+            with open(path, "r") as f:
+                obj = json.load(f)
+                model_name = obj["model"]
+                dataset_name = obj["dataset"]
+                pt_name = filename.replace(".json", ".pt")
+                pt_path = os.path.join(CHECKPOINTS_DIR, pt_name)
+                if not os.path.isfile(pt_path):
+                    print(f"[WARN] Missing {pt_path}, skipping...")
+                    continue
 
-    # 3. Generate texts
-    generated_texts = generate_texts(model, tokenizer, num_texts=100, length=200, device=device)
+                device = "cuda" if torch.cuda.is_available() else "cpu"
+                try:
+                    model = load_model(pt_name, save_dir=CHECKPOINTS_DIR, device=device)
+                except Exception as e:
+                    print(f"[ERROR] Can't load model {pt_name}: {e}")
+                    continue
 
-    # 4. Calculate loss and perplexity for each generated text
-    avg_loss, perplexity = calculate_loss_and_perplexity(model, tokenizer, generated_texts, device=device)
+                dataset_file = f"{dataset_name}.txt"
+                text = load_data(dataset_file)
+                tokenizer = CharTokenizer(text)
+                model = model.to(device)
 
-    print(f"Promedio de Loss en 100 textos: {avg_loss:.4f}")
-    print(f"Perplexity promedio: {perplexity:.4f}")
+                print(f"Evaluating {model_name} on {dataset_name}...")
+                outputs = generate_and_eval(
+                    model,
+                    tokenizer,
+                    device,
+                    n_samples=n_samples,
+                    max_new_tokens=max_new_tokens,
+                )
+                perplexities = [
+                    s["perplexity"] for s in outputs if not np.isnan(s["perplexity"])
+                ]
+                mean_ppl = float(np.mean(perplexities))
+                std_ppl = float(np.std(perplexities))
 
-if __name__ == "__main__":
-    import argparse
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--model_name", type=str, choices=["bigram", "transformer"], required=True)
-    parser.add_argument("--checkpoint", type=str, required=True)
-    parser.add_argument("--dataset", type=str, default="el_quijote.txt")
-    parser.add_argument("--device", type=str, default="cpu")
-    args = parser.parse_args()
+                results.append(
+                    {
+                        "model": model_name,
+                        "dataset": dataset_name,
+                        "mean_perplexity": mean_ppl,
+                        "std_perplexity": std_ppl,
+                        "samples": outputs,
+                    }
+                )
 
-    main(args.model_name, args.checkpoint, args.dataset, device=args.device)
+    os.makedirs(REPORTS_DIR, exist_ok=True)
+    output_path = os.path.join(REPORTS_DIR, "perplexity_samples.json")
+    with open(output_path, "w") as f:
+        json.dump(results, f, indent=4, ensure_ascii=False)
+    print("Saved report to:", output_path)

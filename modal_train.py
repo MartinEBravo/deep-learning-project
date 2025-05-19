@@ -5,7 +5,7 @@ checkpoints_vol = modal.Volume.from_name("checkpoints", create_if_missing=True)
 app = modal.App()
 image = (
     modal.Image.debian_slim()
-    .pip_install("torch", "numpy<2", "transformers")
+    .pip_install("torch", "numpy<2", "pandas", "tqdm", "transformers")    
     .add_local_dir(".", "/root/project") 
     .add_local_dir("data", "/root/project/data")
 )
